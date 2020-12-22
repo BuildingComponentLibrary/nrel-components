@@ -1,0 +1,73 @@
+
+OS:Version,
+  {a73009b6-fc11-4f8f-9914-2985a879e45d}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {c7be8ee3-fe1a-461f-bf1f-9812db537429}, ! Handle
+  1IN Wood Decking,                       ! Name
+  MediumSmooth,                           ! Roughness
+  0.0254,                                 ! Thickness {m}
+  0.1211,                                 ! Conductivity {W/m-K}
+  593,                                    ! Density {kg/m3}
+  2510,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Construction,
+  {72982325-79e9-4bb2-a6ce-6b7307072f30}, ! Handle
+  AEDG-SmOffice 6B Roof Attic and Other,  ! Name
+  ,                                       ! Surface Rendering Name
+  {890a9890-6c41-4a03-87a8-c6589fb79754}, ! Layer 1
+  {c7be8ee3-fe1a-461f-bf1f-9812db537429}, ! Layer 2
+  {5140556e-0721-430c-9da6-b312bb510ce2}, ! Layer 3
+  {bb1cc871-8aad-468a-8b73-a986fce695e5}; ! Layer 4
+
+OS:Material,
+  {890a9890-6c41-4a03-87a8-c6589fb79754}, ! Handle
+  Wood Shingles,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0178,                                 ! Thickness {m}
+  0.115,                                  ! Conductivity {W/m-K}
+  513,                                    ! Density {kg/m3}
+  1255,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {5140556e-0721-430c-9da6-b312bb510ce2}, ! Handle
+  Roof Insulation [5],                    ! Name
+  MediumRough,                            ! Roughness
+  0.286906,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {bb1cc871-8aad-468a-8b73-a986fce695e5}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {0d640b25-1319-4a67-b5ce-20b2acaf0cb6}, ! Handle
+  AEDG-SmOffice 6B Roof Attic and Other,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 6B Roof Attic and Other,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  34.757,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

@@ -1,0 +1,39 @@
+
+OS:Version,
+  {8ac1d266-4bab-474f-b4c0-b9346df5a0a2}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {4bdbed3a-46f5-440b-837b-f1e2d4fdab24}, ! Handle
+  90.1 Windows Window Fixed 2660 Vnl-ClrSpe-Ins-ClrSpe, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2660 Vnl-ClrSpe-Ins-ClrSpe, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {7c1786ed-443c-4e81-b743-7845d4211815}, ! Handle
+  Theoretical Glass [606],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.425891,                               ! Solar Transmittance at Normal Incidence
+  0.524109,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.524109,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.579352,                               ! Visible Transmittance at Normal Incidence
+  0.370648,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.370648,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00776668;                             ! Conductivity {W/m-K}
+
+OS:Construction,
+  {d1f543cd-f14a-4bf4-b7c5-4753a2303588}, ! Handle
+  90.1 Windows Window Fixed 2660 Vnl-ClrSpe-Ins-ClrSpe, ! Name
+  ,                                       ! Surface Rendering Name
+  {7c1786ed-443c-4e81-b743-7845d4211815}; ! Layer 1
+

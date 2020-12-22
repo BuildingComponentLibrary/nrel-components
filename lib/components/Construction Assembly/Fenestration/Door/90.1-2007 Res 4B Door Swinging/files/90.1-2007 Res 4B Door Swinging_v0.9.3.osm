@@ -1,0 +1,57 @@
+
+OS:Version,
+  {7d066926-ce9d-4339-a7be-eb232c5458c6}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {a1636a63-18c0-46c8-9720-e8ac9d7add5d}, ! Handle
+  90.1-2007 Res 4B Door Swinging,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 4B Door Swinging,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {f5c455b3-2006-41c3-8a09-5da8048293a0}, ! Handle
+  AIR,                                    ! Name
+  Smooth,                                 ! Roughness
+  0.251489,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {ac0635b1-efd0-4e08-a82f-5c6bb999b76e}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {a2907e83-22d1-40dd-bdc0-97e12c926acf}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {8f1c4e05-fd5a-4844-a9d7-7d8e7f63a30f}, ! Handle
+  90.1-2007 Res 4B Door Swinging,         ! Name
+  ,                                       ! Surface Rendering Name
+  {a2907e83-22d1-40dd-bdc0-97e12c926acf}, ! Layer 1
+  {f5c455b3-2006-41c3-8a09-5da8048293a0}, ! Layer 2
+  {ac0635b1-efd0-4e08-a82f-5c6bb999b76e}; ! Layer 3
+

@@ -1,0 +1,57 @@
+
+OS:Version,
+  {5d243264-7fe1-4997-871c-875763be0947}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {aeeb5e2f-a96b-43c0-af74-1b84cb0200be}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {c61b2eb2-0a1d-41ab-88d7-27ca76e72a1f}, ! Handle
+  AIR [2],                                ! Name
+  Smooth,                                 ! Roughness
+  0.352085,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {3a721420-b09b-4eea-94c4-661800b4514d}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {f11b1ce6-5823-426d-91f5-ff4069dd183d}, ! Handle
+  189.1-2009 Nonres 1A Door Non-Swinging, ! Name
+  ,                                       ! Surface Rendering Name
+  {3a721420-b09b-4eea-94c4-661800b4514d}, ! Layer 1
+  {c61b2eb2-0a1d-41ab-88d7-27ca76e72a1f}, ! Layer 2
+  {aeeb5e2f-a96b-43c0-af74-1b84cb0200be}; ! Layer 3
+
+OS:ComponentCost:LineItem,
+  {6c4ee21a-5e9d-4a71-bc2c-d51b265c12b0}, ! Handle
+  189.1-2009 Nonres 1A Door Non-Swinging, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 1A Door Non-Swinging, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

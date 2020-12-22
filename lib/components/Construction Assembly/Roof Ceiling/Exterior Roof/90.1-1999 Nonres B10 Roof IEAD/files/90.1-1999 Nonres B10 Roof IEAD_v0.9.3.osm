@@ -1,0 +1,60 @@
+
+OS:Version,
+  {6931115a-1576-4530-9493-416e8a9a969e}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {934a30ad-9eff-4ce3-8c2c-84553749e076}, ! Handle
+  90.1-1999 Nonres B10 Roof IEAD,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Nonres B10 Roof IEAD,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  49.208,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {449f87ce-5474-4c78-9ced-913b271266d3}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {b594e792-22ee-462f-a79b-9844cdbd8ab7}, ! Handle
+  Roof Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.124958,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {6d9e2f37-c0ca-442d-8a64-4f9e93514905}, ! Handle
+  90.1-1999 Nonres B10 Roof IEAD,         ! Name
+  ,                                       ! Surface Rendering Name
+  {449f87ce-5474-4c78-9ced-913b271266d3}, ! Layer 1
+  {b594e792-22ee-462f-a79b-9844cdbd8ab7}, ! Layer 2
+  {f11ffbf2-22d3-4b90-b2cb-f3d1da54066e}; ! Layer 3
+
+OS:Material,
+  {f11ffbf2-22d3-4b90-b2cb-f3d1da54066e}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+

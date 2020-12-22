@@ -1,0 +1,70 @@
+
+OS:Version,
+  {afa7cc8f-3615-4755-9b33-e894565e5141}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {e06d6923-5974-4105-96aa-354ad629aaf8}, ! Handle
+  189.1-2009 Res 8A Door Non-Swinging,    ! Name
+  ,                                       ! Surface Rendering Name
+  {17041115-49e2-4a7d-9a8d-f02da3a9d947}, ! Layer 1
+  {ed1948e3-36f1-470f-828e-608000f66596}, ! Layer 2
+  {a946ca83-034f-4541-a391-328a105d9411}; ! Layer 3
+
+OS:Material,
+  {17041115-49e2-4a7d-9a8d-f02da3a9d947}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {ed1948e3-36f1-470f-828e-608000f66596}, ! Handle
+  AIR [5],                                ! Name
+  Smooth,                                 ! Roughness
+  0.440339,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {a946ca83-034f-4541-a391-328a105d9411}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {53ecb6ec-a2a5-445d-bc44-bf1a0b51fd2f}, ! Handle
+  189.1-2009 Res 8A Door Non-Swinging,    ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 8A Door Non-Swinging,    ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {7b71c87e-2662-4e26-83af-6cc78df6a618}, ! Handle
+  Component Data 1,                       ! Name
+  {be68da09-d544-49f0-9781-c06d09ad5b7d}, ! UUID
+  {dd99a9cb-1ba5-4fc5-8e9f-315dcf255e21}, ! Version UUID
+  1363980989,                             ! Creation Timestamp
+  1363980989,                             ! Version Timestamp
+  {e06d6923-5974-4105-96aa-354ad629aaf8}, ! Name of Object 1
+  {17041115-49e2-4a7d-9a8d-f02da3a9d947}, ! Name of Object 2
+  {ed1948e3-36f1-470f-828e-608000f66596}, ! Name of Object 3
+  {a946ca83-034f-4541-a391-328a105d9411}, ! Name of Object 4
+  {53ecb6ec-a2a5-445d-bc44-bf1a0b51fd2f}; ! Name of Object 5
+

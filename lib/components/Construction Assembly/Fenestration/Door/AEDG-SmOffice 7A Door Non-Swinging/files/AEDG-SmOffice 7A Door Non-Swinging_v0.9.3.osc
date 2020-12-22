@@ -1,0 +1,42 @@
+
+OS:Version,
+  {e421d4b1-9a82-460c-b3eb-bd557d3f3778}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {a519d5e1-c503-4bf9-88e8-a3b1087798a5}, ! Handle
+  AEDG-SmOffice 7A Door Non-Swinging,     ! Name
+  ,                                       ! Surface Rendering Name
+  {642e5400-4e36-4b95-a338-32904b1ab2b5}; ! Layer 1
+
+OS:Material:NoMass,
+  {642e5400-4e36-4b95-a338-32904b1ab2b5}, ! Handle
+  DoorMaterial,                           ! Name
+  MediumRough,                            ! Roughness
+  0.251589,                               ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {003bbeff-01fb-44cd-941d-59b42cf94262}, ! Handle
+  AEDG-SmOffice 7A Door Non-Swinging,     ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 7A Door Non-Swinging,     ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {e0b547a6-2635-4dc5-b114-66f2c1efea1c}, ! Handle
+  Component Data 1,                       ! Name
+  {24ac6f3d-39fa-4e01-a83f-85d634dc9bce}, ! UUID
+  {a29b6498-3a98-429a-abe2-0ae445ef43ff}, ! Version UUID
+  1363981966,                             ! Creation Timestamp
+  1363981966,                             ! Version Timestamp
+  {a519d5e1-c503-4bf9-88e8-a3b1087798a5}, ! Name of Object 1
+  {642e5400-4e36-4b95-a338-32904b1ab2b5}, ! Name of Object 2
+  {003bbeff-01fb-44cd-941d-59b42cf94262}; ! Name of Object 3
+

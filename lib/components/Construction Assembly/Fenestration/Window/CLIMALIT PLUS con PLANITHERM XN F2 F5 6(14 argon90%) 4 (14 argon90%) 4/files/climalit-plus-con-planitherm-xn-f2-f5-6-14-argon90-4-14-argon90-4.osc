@@ -1,0 +1,49 @@
+
+OS:Version,
+  {2a1ec191-d3fa-4339-8ec2-6035364be7d5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {03b791d2-61c4-4e51-b3fe-d1d09dc65a2e}, !- Handle
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4,                         !- Name
+  ,                                       !- Surface Rendering Name
+  {d94e08c1-e1bc-4ae3-a397-7bca45ba117d}; !- Layer 1  
+  
+
+
+
+        
+OS:WindowMaterial:SimpleGlazingSystem,
+  {d94e08c1-e1bc-4ae3-a397-7bca45ba117d}, !- Handle
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4, !- Name
+  0.6,                                    !- U-Factor {W/m2-K}
+  0.54,                                    !- Solar Heat Gain Coefficient
+  0.74;                                    !- Visible Transmittance     
+
+
+OS:ComponentCost:LineItem,
+  {2cbc071b-9329-4512-be0f-588c3cc96c61}, ! Handle
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  600.0,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+
+
+OS:ComponentData,
+  {33d50ec6-be16-4a4a-9f24-4ea27c1f3136}, ! Handle
+  Component Data 1,                       ! Name
+  {14d43bcd-5158-4772-8397-ddfefbc24dda}, ! UUID
+  {dffd5616-0b2d-449e-8645-866d893c0572}, ! Version UUID
+  1487924014,                             ! Creation Timestamp
+  1487924014,                             ! Version Timestamp
+  {03b791d2-61c4-4e51-b3fe-d1d09dc65a2e}, ! Name of Object 1
+  {d94e08c1-e1bc-4ae3-a397-7bca45ba117d}, ! Name of Object 2
+  {2cbc071b-9329-4512-be0f-588c3cc96c61}; ! Name of Object 3
+
+  
+

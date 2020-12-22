@@ -1,0 +1,39 @@
+
+OS:Version,
+  {515899c5-0d6f-49db-92bd-412fc6d9d65d}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {f79ee5c9-9b94-4491-8424-5a192c3c1804}, ! Handle
+  90.1-2007 Nonres 5B Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 5B Window Metal framing curtainwall-storefront, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  512.02,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {495636ce-b636-48c3-a1dd-438de0a187ac}, ! Handle
+  Theoretical Glass [184],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.394694,                               ! Solar Transmittance at Normal Incidence
+  0.555306,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.555306,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.507883,                               ! Visible Transmittance at Normal Incidence
+  0.442117,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.442117,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0129994;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {0075ef42-26c1-4d99-a58d-d828ac85c93d}, ! Handle
+  90.1-2007 Nonres 5B Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Surface Rendering Name
+  {495636ce-b636-48c3-a1dd-438de0a187ac}; ! Layer 1
+

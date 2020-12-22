@@ -1,0 +1,60 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Window:fixed
+! Description: 2426 Brk/HptMpr-Ins-ClrPye
+! Glazing Facade: East
+! Glazing Facade: South
+! Glazing Facade: West
+! Glazing Facade: North
+! Glazing Range Min: 0
+! Glazing Range Max: 1
+! Effective U-Value (SI): 2.555
+! SHGC: 0.25
+! VLT: 0.32
+! Layer 1: Theoretical Glass [510]
+WindowMaterial:Glazing,
+  Theoretical Glass [510],                !- Name
+  SpectralAverage,                        !-
+  ,                                       !-
+  0.003,                                  !- Thickness
+  0.245075,                               !- Solar Transmittance
+  0.704925,                               !- Solar Reflectance Front
+  0.704925,                               !- Solar Reflectance Back
+  0.320998,                               !- Visible Transmittance
+  0.629002,                               !- Visible Reflectance Front
+  0.629002,                               !- Visible Reflectance Back
+  0,                                      !- IR Transmittance
+  0.9,                                    !- IR Emmissivity Front
+  0.9,                                    !- IR Emmissivity Back
+  0.0129885;                              !- Conductivity
+
+Construction,
+  90.1 Windows Window Fixed 2426 Brk-HptMpr-Ins-ClrPye, !- Name
+  Theoretical Glass [510];                !- Layer 1
+
+! CostSource: 
+! InstallCost {$/m2}: 0.000
+! MaterialCost {$/m2}: 0.000
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  90.1 Windows Window Fixed 2426 Brk-HptMpr-Ins-ClrPye, !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  90.1 Windows Window Fixed 2426 Brk-HptMpr-Ins-ClrPye, !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  0.000,                                  !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

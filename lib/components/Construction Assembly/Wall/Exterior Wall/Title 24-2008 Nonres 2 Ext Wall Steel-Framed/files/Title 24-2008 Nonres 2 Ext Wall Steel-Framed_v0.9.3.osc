@@ -1,0 +1,70 @@
+
+OS:Version,
+  {cbfa589c-8b46-4b4f-933c-a7dd7a43deeb}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {3d620c3b-42c3-4995-a9c8-bb9a6c4e1527}, ! Handle
+  Title 24-2008 Nonres 2 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {261160d3-d17b-42f5-b630-7b06251d49dc}, ! Layer 1
+  {865b0394-4c63-48e8-ac1d-83e7ea051136}, ! Layer 2
+  {26254dc8-773c-4c4b-92ef-15fe98bbd459}; ! Layer 3
+
+OS:Material:NoMass,
+  {261160d3-d17b-42f5-b630-7b06251d49dc}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {865b0394-4c63-48e8-ac1d-83e7ea051136}, ! Handle
+  Wall Insulation [159],                  ! Name
+  MediumRough,                            ! Roughness
+  0.0812,                                 ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {26254dc8-773c-4c4b-92ef-15fe98bbd459}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {8adfd1e8-af6a-4e64-b4d5-c792aeaed655}, ! Handle
+  Title 24-2008 Nonres 2 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 2 Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  155.805,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {a6f11c7d-b4a6-45fb-bce8-9ede5d763bcf}, ! Handle
+  Component Data 1,                       ! Name
+  {93fca3a0-41a9-4c86-a651-48e9a0a3013f}, ! UUID
+  {854df847-b623-4e91-bae2-287d2df865a9}, ! Version UUID
+  1363981991,                             ! Creation Timestamp
+  1363981991,                             ! Version Timestamp
+  {3d620c3b-42c3-4995-a9c8-bb9a6c4e1527}, ! Name of Object 1
+  {261160d3-d17b-42f5-b630-7b06251d49dc}, ! Name of Object 2
+  {865b0394-4c63-48e8-ac1d-83e7ea051136}, ! Name of Object 3
+  {26254dc8-773c-4c4b-92ef-15fe98bbd459}, ! Name of Object 4
+  {8adfd1e8-af6a-4e64-b4d5-c792aeaed655}; ! Name of Object 5
+

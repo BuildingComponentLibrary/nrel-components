@@ -1,0 +1,39 @@
+
+OS:Version,
+  {7f32ac7a-da9f-4a52-92ee-c5f4a8e398ad}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {6e1d6f01-bd48-4bc8-ac78-7ecfab70e1bd}, ! Handle
+  Title 24-2008 Nonres 10 Skylight without Curb, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 10 Skylight without Curb, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  529.667,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {a63e9cc1-5f36-40e3-b078-f171ebfc2004}, ! Handle
+  Theoretical Glass [667],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.351757,                               ! Solar Transmittance at Normal Incidence
+  0.598243,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.598243,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.360158,                               ! Visible Transmittance at Normal Incidence
+  0.589842,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.589842,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.84,                                   ! Front Side Infrared Hemispherical Emissivity
+  0.84,                                   ! Back Side Infrared Hemispherical Emissivity
+  0.0305466;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {0f8bfc06-325d-46fc-a068-550b3b86590c}, ! Handle
+  Title 24-2008 Nonres 10 Skylight without Curb, ! Name
+  ,                                       ! Surface Rendering Name
+  {a63e9cc1-5f36-40e3-b078-f171ebfc2004}; ! Layer 1
+

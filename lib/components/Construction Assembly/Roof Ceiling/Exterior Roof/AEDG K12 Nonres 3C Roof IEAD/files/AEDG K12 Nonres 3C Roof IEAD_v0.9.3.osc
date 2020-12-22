@@ -1,0 +1,73 @@
+
+OS:Version,
+  {340c79dd-88be-40d4-8ad7-01de36a49b29}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {6cc883ec-bebd-4723-8a67-36998d8486ee}, ! Handle
+  AEDG K12 Nonres 3C Roof IEAD,           ! Name
+  ,                                       ! Surface Rendering Name
+  {5b52b10c-9fca-495b-8907-3cdd173a22e0}, ! Layer 1
+  {910a577c-3fd1-4c90-9521-80df2514af0a}, ! Layer 2
+  {7069d90b-0046-4214-8c5c-72be273d4f8f}; ! Layer 3
+
+OS:Material,
+  {5b52b10c-9fca-495b-8907-3cdd173a22e0}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {910a577c-3fd1-4c90-9521-80df2514af0a}, ! Handle
+  Roof Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.124958,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {7069d90b-0046-4214-8c5c-72be273d4f8f}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {c8f74868-3df4-4a90-b13e-6f896968d625}, ! Handle
+  AEDG K12 Nonres 3C Roof IEAD,           ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 3C Roof IEAD,           ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  98.49,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {efb4b418-f27f-4b56-84e1-40f19abf504f}, ! Handle
+  Component Data 1,                       ! Name
+  {463f441c-9c0f-48ec-a81f-baa3707efb5a}, ! UUID
+  {3773312c-e773-4f61-8732-e542aa176228}, ! Version UUID
+  1363981890,                             ! Creation Timestamp
+  1363981890,                             ! Version Timestamp
+  {6cc883ec-bebd-4723-8a67-36998d8486ee}, ! Name of Object 1
+  {5b52b10c-9fca-495b-8907-3cdd173a22e0}, ! Name of Object 2
+  {910a577c-3fd1-4c90-9521-80df2514af0a}, ! Name of Object 3
+  {7069d90b-0046-4214-8c5c-72be273d4f8f}, ! Name of Object 4
+  {c8f74868-3df4-4a90-b13e-6f896968d625}; ! Name of Object 5
+

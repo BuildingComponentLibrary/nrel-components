@@ -1,0 +1,56 @@
+
+OS:Version,
+  {a8c74442-5261-40bc-b680-442871d43904}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {7e296edd-65d2-41b1-b088-1e7d4994284e}, ! Handle
+  90.1-2004 Nonres 1A Exposed Floor Mass, ! Name
+  ,                                       ! Surface Rendering Name
+  {1b8b9a58-dfa3-48c8-bc3a-ca10f4219ea7}, ! Layer 1
+  {c531b14b-6dde-44d6-a173-2a9d0efd1ee0}; ! Layer 2
+
+OS:Material,
+  {1b8b9a58-dfa3-48c8-bc3a-ca10f4219ea7}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {c531b14b-6dde-44d6-a173-2a9d0efd1ee0}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {4fe4231c-f927-4ee1-8815-6d5841939f86}, ! Handle
+  90.1-2004 Nonres 1A Exposed Floor Mass, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 1A Exposed Floor Mass, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  39.18,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {a1571688-032f-4491-82ef-f54d6733d2dc}, ! Handle
+  Component Data 1,                       ! Name
+  {a91654f3-5ee2-4f02-a19d-032aaa59f6d1}, ! UUID
+  {fd02d5ea-c8f3-4263-b25b-694c176e8c7e}, ! Version UUID
+  1363981631,                             ! Creation Timestamp
+  1363981631,                             ! Version Timestamp
+  {7e296edd-65d2-41b1-b088-1e7d4994284e}, ! Name of Object 1
+  {1b8b9a58-dfa3-48c8-bc3a-ca10f4219ea7}, ! Name of Object 2
+  {c531b14b-6dde-44d6-a173-2a9d0efd1ee0}, ! Name of Object 3
+  {4fe4231c-f927-4ee1-8815-6d5841939f86}; ! Name of Object 4
+

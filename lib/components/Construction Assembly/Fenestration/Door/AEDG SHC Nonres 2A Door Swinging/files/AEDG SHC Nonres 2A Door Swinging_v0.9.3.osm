@@ -1,0 +1,57 @@
+
+OS:Version,
+  {d5d7e34a-a50c-4148-a800-52eeb9ffe52e}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {89c8ec00-73ed-4b59-90db-75d612bcb200}, ! Handle
+  AIR [6],                                ! Name
+  Smooth,                                 ! Roughness
+  0.251464,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {f7423144-c46d-4108-9b07-c1938e5f9886}, ! Handle
+  AEDG SHC Nonres 2A Door Swinging,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 2A Door Swinging,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {0e596431-b822-4b0b-ac07-cbad4ca2ec96}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {8ac01dac-6cdd-47ee-ae8f-807beb7cf466}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {cbabdf22-cae3-4e4e-b58d-bf3530764f4b}, ! Handle
+  AEDG SHC Nonres 2A Door Swinging,       ! Name
+  ,                                       ! Surface Rendering Name
+  {0e596431-b822-4b0b-ac07-cbad4ca2ec96}, ! Layer 1
+  {89c8ec00-73ed-4b59-90db-75d612bcb200}, ! Layer 2
+  {8ac01dac-6cdd-47ee-ae8f-807beb7cf466}; ! Layer 3
+

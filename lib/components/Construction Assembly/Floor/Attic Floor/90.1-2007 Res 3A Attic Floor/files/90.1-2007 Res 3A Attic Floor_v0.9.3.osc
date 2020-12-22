@@ -1,0 +1,73 @@
+
+OS:Version,
+  {42fb8aba-2e5e-4145-a6e1-a34b5f2112d0}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {1efa3898-2ed7-4c93-811c-9f4454478a9e}, ! Handle
+  90.1-2007 Res 3A Attic Floor,           ! Name
+  ,                                       ! Surface Rendering Name
+  {b5b63a4c-6a33-4e9e-9a73-77b4339a487f}, ! Layer 1
+  {428d7836-f7a5-4211-97de-192ff933d9fd}, ! Layer 2
+  {3bdf72ee-60bb-4ff9-9540-6f4ddf82c20e}; ! Layer 3
+
+OS:Material,
+  {b5b63a4c-6a33-4e9e-9a73-77b4339a487f}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {428d7836-f7a5-4211-97de-192ff933d9fd}, ! Handle
+  AtticFloor Insulation [1],              ! Name
+  MediumRough,                            ! Roughness
+  0.303719,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {3bdf72ee-60bb-4ff9-9540-6f4ddf82c20e}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {a2b42e4e-801d-4cbb-8128-8b1f93784983}, ! Handle
+  90.1-2007 Res 3A Attic Floor,           ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 3A Attic Floor,           ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  35.009,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {ceb068a5-bbea-4213-b492-21e8f900ab25}, ! Handle
+  Component Data 1,                       ! Name
+  {d872c293-ae10-4d79-8144-53efb39033ea}, ! UUID
+  {8f0d6a4a-49cc-430e-88c4-8b375e79f9fa}, ! Version UUID
+  1363981844,                             ! Creation Timestamp
+  1363981844,                             ! Version Timestamp
+  {1efa3898-2ed7-4c93-811c-9f4454478a9e}, ! Name of Object 1
+  {b5b63a4c-6a33-4e9e-9a73-77b4339a487f}, ! Name of Object 2
+  {428d7836-f7a5-4211-97de-192ff933d9fd}, ! Name of Object 3
+  {3bdf72ee-60bb-4ff9-9540-6f4ddf82c20e}, ! Name of Object 4
+  {a2b42e4e-801d-4cbb-8128-8b1f93784983}; ! Name of Object 5
+

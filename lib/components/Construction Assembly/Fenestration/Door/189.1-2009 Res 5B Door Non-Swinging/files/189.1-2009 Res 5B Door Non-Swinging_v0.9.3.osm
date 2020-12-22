@@ -1,0 +1,57 @@
+
+OS:Version,
+  {e3051af8-0ef8-46de-9db3-5bf7f1a2d9ab}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {fdd54589-3586-4956-b5d7-c97f13e89176}, ! Handle
+  AIR [5],                                ! Name
+  Smooth,                                 ! Roughness
+  0.440339,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {6e416f19-c202-46b1-ace9-ff47bfa2ed8b}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {fc8463b8-5f9d-47a5-b778-4aeaa6c4ab28}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {3260dc43-bd17-414e-96ea-08973530e531}, ! Handle
+  189.1-2009 Res 5B Door Non-Swinging,    ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 5B Door Non-Swinging,    ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {40a8fca7-1d5e-40c2-a684-38b56f6447d5}, ! Handle
+  189.1-2009 Res 5B Door Non-Swinging,    ! Name
+  ,                                       ! Surface Rendering Name
+  {fc8463b8-5f9d-47a5-b778-4aeaa6c4ab28}, ! Layer 1
+  {fdd54589-3586-4956-b5d7-c97f13e89176}, ! Layer 2
+  {6e416f19-c202-46b1-ace9-ff47bfa2ed8b}; ! Layer 3
+

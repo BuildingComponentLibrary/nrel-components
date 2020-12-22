@@ -1,0 +1,57 @@
+
+OS:Version,
+  {e3f9b25f-8807-444d-9818-180d496a4a2d}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {68d84865-aab7-4a12-b697-91623d38e223}, ! Handle
+  Title 24-2008 Nonres 15 Door Swinging,  ! Name
+  ,                                       ! Surface Rendering Name
+  {fcdc8bdb-a024-40d2-ad4a-90fb4c09c9b7}, ! Layer 1
+  {23126788-01a8-49a1-9e88-5d190fe5130f}, ! Layer 2
+  {77e9ed6b-0fde-45b0-b359-c4b7afa7d302}; ! Layer 3
+
+OS:Material,
+  {fcdc8bdb-a024-40d2-ad4a-90fb4c09c9b7}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {23126788-01a8-49a1-9e88-5d190fe5130f}, ! Handle
+  AIR [15],                               ! Name
+  Smooth,                                 ! Roughness
+  0.251781,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {77e9ed6b-0fde-45b0-b359-c4b7afa7d302}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {35da1b8f-5355-455b-823d-a244b00629a8}, ! Handle
+  Title 24-2008 Nonres 15 Door Swinging,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 15 Door Swinging,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

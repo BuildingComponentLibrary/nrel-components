@@ -1,0 +1,47 @@
+
+OS:Version,
+  {9f3878f7-139d-45aa-bc61-5601504273f5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {085b1394-0504-40e8-a941-b0bf37b95472}, ! Handle
+  90.1-2001 Nonres B18 Int Wall,          ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B18 Int Wall,          ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {d3090cc4-5460-4728-ba98-0eccd5b955ad}, ! Handle
+  GP01 1/2 GYPSUM 1,                      ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {96ec07de-f0d7-46c5-bede-f2f214487bf1}, ! Handle
+  GP01 1/2 GYPSUM,                        ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {ad4b4e30-625a-4ac5-b952-80baaff85980}, ! Handle
+  90.1-2001 Nonres B18 Int Wall,          ! Name
+  ,                                       ! Surface Rendering Name
+  {96ec07de-f0d7-46c5-bede-f2f214487bf1}, ! Layer 1
+  {96ec07de-f0d7-46c5-bede-f2f214487bf1}; ! Layer 2
+

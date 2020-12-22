@@ -1,0 +1,39 @@
+
+OS:Version,
+  {3d7db896-e41e-44ef-ae76-3a8f57d9b25f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {0c1905eb-a98b-4be9-978b-b6ae82f89ecc}, ! Handle
+  90.1 Windows Window Fixed 2143 Mtl-Hpt-Std-ClrSue, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2143 Mtl-Hpt-Std-ClrSue, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {9bba971b-64d4-41a8-8ead-e8e80b5398eb}, ! Handle
+  Theoretical Glass [406],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.342898,                               ! Solar Transmittance at Normal Incidence
+  0.607102,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.607102,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.469723,                               ! Visible Transmittance at Normal Incidence
+  0.480277,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.480277,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0198691;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {85051996-9a70-4ad6-8f8a-75aacc1517c4}, ! Handle
+  90.1 Windows Window Fixed 2143 Mtl-Hpt-Std-ClrSue, ! Name
+  ,                                       ! Surface Rendering Name
+  {9bba971b-64d4-41a8-8ead-e8e80b5398eb}; ! Layer 1
+

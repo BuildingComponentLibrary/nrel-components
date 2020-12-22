@@ -1,0 +1,40 @@
+
+Version,
+  8.0;                                    !- Version Identifier
+
+Material,
+  200mm Normalweight concrete wall,       !- Name
+  MediumRough,                            !- Roughness
+  0.2032,                                 !- Thickness {m}
+  2.31,                                   !- Conductivity {W/m-K}
+  2322,                                   !- Density {kg/m3}
+  832,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  G01 13mm gypsum board,                  !- Name
+  Smooth,                                 !- Roughness
+  0.0127,                                 !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  1090,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+Material:NoMass,
+  Frame With Cavity Insulation,           !- Name
+  MediumSmooth,                           !- Roughness
+  2.61813587127657,                       !- Thermal Resistance {m2-K/W}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Construction,
+  189.1-2011 Nonres 7 Ext Wall Mass 8in Solid Concrete with Steel frame, !- Name
+  200mm Normalweight concrete wall,       !- Layer 1
+  Frame With Cavity Insulation,           !- Layer 2
+  G01 13mm gypsum board;                  !- Layer 3
+

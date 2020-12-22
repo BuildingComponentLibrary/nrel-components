@@ -1,0 +1,57 @@
+
+OS:Version,
+  {7e9c0d90-b2f0-415f-9804-6af87d000f53}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {12c42a31-a085-45e2-9849-5b5cd2694ea0}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {98a120dd-b6f1-4c18-a9a0-a154b83041cc}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {d18dac6b-f1dd-462a-94c0-1856687a14d5}, ! Handle
+  AIR [15],                               ! Name
+  Smooth,                                 ! Roughness
+  0.251781,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {eeeb7606-96db-41ab-948c-07bcee94dce5}, ! Handle
+  Title 24-2008 Nonres 13 Door Swinging,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 13 Door Swinging,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {5ac580d2-b796-4adb-a889-05c3df30cb22}, ! Handle
+  Title 24-2008 Nonres 13 Door Swinging,  ! Name
+  ,                                       ! Surface Rendering Name
+  {98a120dd-b6f1-4c18-a9a0-a154b83041cc}, ! Layer 1
+  {d18dac6b-f1dd-462a-94c0-1856687a14d5}, ! Layer 2
+  {12c42a31-a085-45e2-9849-5b5cd2694ea0}; ! Layer 3
+

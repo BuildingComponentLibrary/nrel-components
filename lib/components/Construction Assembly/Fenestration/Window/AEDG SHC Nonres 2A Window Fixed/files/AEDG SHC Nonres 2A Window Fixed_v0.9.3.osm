@@ -1,0 +1,39 @@
+
+OS:Version,
+  {13a1e1c3-0340-4d87-9c45-5eb26f557df1}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {4dccab1e-0816-4830-96b1-0d8844f0120f}, ! Handle
+  AEDG SHC Nonres 2A Window Fixed,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 2A Window Fixed,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {abc6e4c5-55ee-45c2-9436-65284ab06b15}, ! Handle
+  AEDG SHC Nonres 2A Window Fixed,        ! Name
+  ,                                       ! Surface Rendering Name
+  {1215aff5-ec16-4dd1-a0e9-6560ec78bd99}; ! Layer 1
+
+OS:WindowMaterial:Glazing,
+  {1215aff5-ec16-4dd1-a0e9-6560ec78bd99}, ! Handle
+  Theoretical Glass [237],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.241279,                               ! Solar Transmittance at Normal Incidence
+  0.708721,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.708721,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.629707,                               ! Visible Transmittance at Normal Incidence
+  0.320293,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.320293,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0123106;                              ! Conductivity {W/m-K}
+

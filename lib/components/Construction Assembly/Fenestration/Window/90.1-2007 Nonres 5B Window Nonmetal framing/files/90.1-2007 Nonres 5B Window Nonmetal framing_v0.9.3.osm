@@ -1,0 +1,39 @@
+
+OS:Version,
+  {1e42e2c0-82b1-4e41-b3fc-b6bfc776608a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {e357593a-ed5b-42fb-b7c2-4d2cf1eb0a1c}, ! Handle
+  Theoretical Glass [183],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.395208,                               ! Solar Transmittance at Normal Incidence
+  0.554792,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.554792,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.507883,                               ! Visible Transmittance at Normal Incidence
+  0.442117,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.442117,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00882612;                             ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {fe3d9687-bfc9-46c1-9eba-1a5035da0a28}, ! Handle
+  90.1-2007 Nonres 5B Window Nonmetal framing, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 5B Window Nonmetal framing, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  512.02,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {d12c7ab5-773e-4aeb-8364-8dbd1a0fe138}, ! Handle
+  90.1-2007 Nonres 5B Window Nonmetal framing, ! Name
+  ,                                       ! Surface Rendering Name
+  {e357593a-ed5b-42fb-b7c2-4d2cf1eb0a1c}; ! Layer 1
+

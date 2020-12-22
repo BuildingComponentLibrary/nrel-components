@@ -1,0 +1,39 @@
+
+OS:Version,
+  {ac778cc8-36e5-4ff0-9107-19fbc1ce5a7f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {4706b82b-1902-4647-8731-0831b2b1a97a}, ! Handle
+  90.1-1999 Res B13 Skylight without Curb, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B13 Skylight without Curb, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  535.8,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {ede92266-5109-49ee-9407-305fd69af6e1}, ! Handle
+  Theoretical Glass [91],                 ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.37308,                                ! Solar Transmittance at Normal Incidence
+  0.57692,                                ! Front Side Solar Reflectance at Normal Incidence
+  0.57692,                                ! Back Side Solar Reflectance at Normal Incidence
+  0.390045,                               ! Visible Transmittance at Normal Incidence
+  0.559955,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.559955,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0324872;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {648eb3fd-8253-4d28-b5d6-a7bcb42988b3}, ! Handle
+  90.1-1999 Res B13 Skylight without Curb, ! Name
+  ,                                       ! Surface Rendering Name
+  {ede92266-5109-49ee-9407-305fd69af6e1}; ! Layer 1
+

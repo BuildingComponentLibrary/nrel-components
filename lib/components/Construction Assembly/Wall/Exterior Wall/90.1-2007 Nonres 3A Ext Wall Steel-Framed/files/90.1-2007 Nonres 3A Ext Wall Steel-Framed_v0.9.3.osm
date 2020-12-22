@@ -1,0 +1,57 @@
+
+OS:Version,
+  {dfdaceee-7621-47db-b86d-dc95af072c4f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {a661b440-b95b-4cec-b899-8c79bf94da76}, ! Handle
+  90.1-2007 Nonres 3A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 3A Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  91.749,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {3a4e767f-1977-4820-b1bb-ffdac2fecb87}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {e0afc6d2-3b6f-47ff-abdf-143f09d56b48}, ! Handle
+  Wall Insulation [6],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0678449,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {913e04e1-df55-4869-ba3a-99dcd39ab548}, ! Handle
+  90.1-2007 Nonres 3A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {2e82f71b-4c5f-4211-b540-5fa34ceb40b0}, ! Layer 1
+  {e0afc6d2-3b6f-47ff-abdf-143f09d56b48}, ! Layer 2
+  {3a4e767f-1977-4820-b1bb-ffdac2fecb87}; ! Layer 3
+
+OS:Material:NoMass,
+  {2e82f71b-4c5f-4211-b540-5fa34ceb40b0}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

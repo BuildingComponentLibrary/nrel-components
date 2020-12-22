@@ -1,0 +1,60 @@
+
+OS:Version,
+  {aaa4c9c5-9323-4dae-83fd-3c62f5b065ee}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {fe019d7b-943a-4388-b3f0-ed4f8ad7cd5c}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {58c5e413-92d5-44ab-90cf-b26841727f70}, ! Handle
+  AtticFloor Insulation [1],              ! Name
+  MediumRough,                            ! Roughness
+  0.303719,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {03527c94-7603-4ddc-a7f0-74b1b31bc637}, ! Handle
+  90.1-2007 Nonres 7A Attic Floor,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 7A Attic Floor,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  35.009,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {e5873c3c-e88f-4ca4-9312-8d4853fc6374}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {dcddbdb1-aa6b-4d3b-b892-b18c9a6e6fd5}, ! Handle
+  90.1-2007 Nonres 7A Attic Floor,        ! Name
+  ,                                       ! Surface Rendering Name
+  {e5873c3c-e88f-4ca4-9312-8d4853fc6374}, ! Layer 1
+  {58c5e413-92d5-44ab-90cf-b26841727f70}, ! Layer 2
+  {fe019d7b-943a-4388-b3f0-ed4f8ad7cd5c}; ! Layer 3
+

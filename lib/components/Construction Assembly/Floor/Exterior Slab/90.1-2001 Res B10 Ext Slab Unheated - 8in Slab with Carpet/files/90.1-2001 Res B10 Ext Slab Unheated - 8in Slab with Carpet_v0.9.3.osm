@@ -1,0 +1,44 @@
+
+OS:Version,
+  {52655196-6eca-40c3-b71a-72cdb8871d9f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {7f98e9cf-b2d4-4016-a563-c47d299f3578}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {bc9a0cf1-8d69-41d4-8b7f-489012d921a3}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Construction,
+  {ad87514e-5f1c-49a0-8adc-bce9e9a283a7}, ! Handle
+  90.1-2001 Res B10 Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {7f98e9cf-b2d4-4016-a563-c47d299f3578}, ! Layer 1
+  {bc9a0cf1-8d69-41d4-8b7f-489012d921a3}; ! Layer 2
+
+OS:ComponentCost:LineItem,
+  {51150026-593a-49f7-97b8-29ac6bc0ed2b}, ! Handle
+  90.1-2001 Res B10 Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B10 Ext Slab Unheated - 8in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

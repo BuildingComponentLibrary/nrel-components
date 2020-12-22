@@ -1,0 +1,47 @@
+
+OS:Version,
+  {c4351ed0-2ec1-4778-b317-6dabe8720c63}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {f18ddbbd-3aa6-4500-90b8-df8ed784a878}, ! Handle
+  Title 24-2008 Nonres 2 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {2989deff-3251-4987-8f2f-96e8491e354a}, ! Layer 1
+  {98f1f01e-9399-4435-949a-78238bb21681}; ! Layer 2
+
+OS:Material,
+  {2989deff-3251-4987-8f2f-96e8491e354a}, ! Handle
+  Metal Roofing [1],                      ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.85;                                   ! Visible Absorptance
+
+OS:Material,
+  {98f1f01e-9399-4435-949a-78238bb21681}, ! Handle
+  Roof Insulation [15],                   ! Name
+  MediumRough,                            ! Roughness
+  0.123565,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {91bf8242-2720-42e5-9e44-a05c86aac751}, ! Handle
+  Title 24-2008 Nonres 2 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 2 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.21,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

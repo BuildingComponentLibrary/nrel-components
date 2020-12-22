@@ -1,0 +1,60 @@
+
+OS:Version,
+  {517dea2c-f608-4a4a-a5e0-ad7c3d0aa9f7}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {4fbc76a4-e559-45a7-a21d-ecda6005daef}, ! Handle
+  189.1-2009 Res 6B Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 6B Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  82.923,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {fa12df3d-9711-4309-bfdd-9a52550eb378}, ! Handle
+  Wall Insulation [43],                   ! Name
+  MediumRough,                            ! Roughness
+  0.15833,                                ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {297efc89-da4d-48f2-b572-89804af963c9}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {7ceb38d5-bb8d-4d00-94a2-8085276ee910}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Construction,
+  {745b2252-0972-4cf0-bb86-ecc9b40f2ad8}, ! Handle
+  189.1-2009 Res 6B Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {7ceb38d5-bb8d-4d00-94a2-8085276ee910}, ! Layer 1
+  {fa12df3d-9711-4309-bfdd-9a52550eb378}, ! Layer 2
+  {297efc89-da4d-48f2-b572-89804af963c9}; ! Layer 3
+

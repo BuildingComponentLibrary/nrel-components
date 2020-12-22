@@ -1,0 +1,47 @@
+
+OS:Version,
+  {bdfe3c86-8997-442e-8394-6aaa7ef7fba0}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {8428b6c9-81e4-4709-b142-6f3ff0830113}, ! Handle
+  GP01 1/2 GYPSUM 1,                      ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {7444f8d3-b22a-4a16-ae85-ebcc95d79566}, ! Handle
+  AEDG K12 Nonres 1A Int Wall,            ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 1A Int Wall,            ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {bbdc654c-e390-49cf-bc2f-ab2e73663f2d}, ! Handle
+  GP01 1/2 GYPSUM,                        ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {6d133aae-7d67-437f-a59e-49d9f9c98f8e}, ! Handle
+  AEDG K12 Nonres 1A Int Wall,            ! Name
+  ,                                       ! Surface Rendering Name
+  {bbdc654c-e390-49cf-bc2f-ab2e73663f2d}, ! Layer 1
+  {bbdc654c-e390-49cf-bc2f-ab2e73663f2d}; ! Layer 2
+

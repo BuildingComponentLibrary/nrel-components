@@ -1,0 +1,73 @@
+
+OS:Version,
+  {bbdecad0-3412-44cc-8d63-5982fbc7e0ed}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {d0636ba8-6ff1-4ec1-a5c8-fcf68f6a4742}, ! Handle
+  90.1-1999 Nonres B9 Ext Wall Mass,      ! Name
+  ,                                       ! Surface Rendering Name
+  {08a855c0-0a30-47b4-ba94-db01b625287a}, ! Layer 1
+  {689a8a21-8d21-4c2b-98c9-93bb08897fcd}, ! Layer 2
+  {ed9cb5d7-3b97-4a3d-8cc6-d69cc953544b}; ! Layer 3
+
+OS:Material,
+  {08a855c0-0a30-47b4-ba94-db01b625287a}, ! Handle
+  1IN Stucco,                             ! Name
+  Smooth,                                 ! Roughness
+  0.0253,                                 ! Thickness {m}
+  0.6918,                                 ! Conductivity {W/m-K}
+  1858,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {689a8a21-8d21-4c2b-98c9-93bb08897fcd}, ! Handle
+  8IN Concrete HW,                        ! Name
+  MediumRough,                            ! Roughness
+  0.2033,                                 ! Thickness {m}
+  1.7296,                                 ! Conductivity {W/m-K}
+  2243,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.65,                                   ! Solar Absorptance
+  0.65;                                   ! Visible Absorptance
+
+OS:Material,
+  {ed9cb5d7-3b97-4a3d-8cc6-d69cc953544b}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {8dc6eeed-7711-40f6-9cc4-54a3e7eafd36}, ! Handle
+  90.1-1999 Nonres B9 Ext Wall Mass,      ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Nonres B9 Ext Wall Mass,      ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  41.397,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {7421c4f4-f08f-4c7f-aea5-a345ad07952a}, ! Handle
+  Component Data 1,                       ! Name
+  {e554397a-a9bd-44d3-82d8-629c4925439e}, ! UUID
+  {f8b5d85f-46cd-4f9d-a108-34b925605bf0}, ! Version UUID
+  1363981076,                             ! Creation Timestamp
+  1363981076,                             ! Version Timestamp
+  {d0636ba8-6ff1-4ec1-a5c8-fcf68f6a4742}, ! Name of Object 1
+  {08a855c0-0a30-47b4-ba94-db01b625287a}, ! Name of Object 2
+  {689a8a21-8d21-4c2b-98c9-93bb08897fcd}, ! Name of Object 3
+  {ed9cb5d7-3b97-4a3d-8cc6-d69cc953544b}, ! Name of Object 4
+  {8dc6eeed-7711-40f6-9cc4-54a3e7eafd36}; ! Name of Object 5
+

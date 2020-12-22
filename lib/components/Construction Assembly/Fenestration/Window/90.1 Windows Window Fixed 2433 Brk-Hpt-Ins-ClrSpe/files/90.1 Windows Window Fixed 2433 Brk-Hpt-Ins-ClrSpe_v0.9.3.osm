@@ -1,0 +1,39 @@
+
+OS:Version,
+  {6f223b51-435e-4c9f-89f0-a461532513ea}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {ae8faaad-fd8d-4160-8cab-6fc96fd86f4a}, ! Handle
+  Theoretical Glass [422],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.335477,                               ! Solar Transmittance at Normal Incidence
+  0.614523,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.614523,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.489393,                               ! Visible Transmittance at Normal Incidence
+  0.460607,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.460607,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0125239;                              ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {c8e2982e-2c34-41c0-afd4-63418172467a}, ! Handle
+  90.1 Windows Window Fixed 2433 Brk-Hpt-Ins-ClrSpe, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2433 Brk-Hpt-Ins-ClrSpe, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {b6697014-2e42-4163-a306-528a4d066f26}, ! Handle
+  90.1 Windows Window Fixed 2433 Brk-Hpt-Ins-ClrSpe, ! Name
+  ,                                       ! Surface Rendering Name
+  {ae8faaad-fd8d-4160-8cab-6fc96fd86f4a}; ! Layer 1
+

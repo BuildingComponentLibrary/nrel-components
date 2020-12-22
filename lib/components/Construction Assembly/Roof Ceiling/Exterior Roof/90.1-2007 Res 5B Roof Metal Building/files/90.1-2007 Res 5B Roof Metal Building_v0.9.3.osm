@@ -1,0 +1,47 @@
+
+OS:Version,
+  {09230c1d-d3f9-42ac-a280-e50b9e42df27}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {a31fccbe-52e3-4ea0-8d1a-e77d8ce11cb0}, ! Handle
+  Metal Roofing,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {fea6afd5-d67b-4099-b472-1d80b602c28e}, ! Handle
+  90.1-2007 Res 5B Roof Metal Building,   ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 5B Roof Metal Building,   ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.21,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {7fa4e7c4-a625-4ee6-8828-7543b7ddf80e}, ! Handle
+  Roof Insulation [15],                   ! Name
+  MediumRough,                            ! Roughness
+  0.123565,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {6c44182e-5e3d-4f69-af1e-51fc467366e1}, ! Handle
+  90.1-2007 Res 5B Roof Metal Building,   ! Name
+  ,                                       ! Surface Rendering Name
+  {a31fccbe-52e3-4ea0-8d1a-e77d8ce11cb0}, ! Layer 1
+  {7fa4e7c4-a625-4ee6-8828-7543b7ddf80e}; ! Layer 2
+

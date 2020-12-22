@@ -1,0 +1,47 @@
+
+OS:Version,
+  {dc3aa833-6f8e-4e0f-a89c-3a4a3a223a81}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {9f20e354-e5d4-46bc-9d3a-cdaf7da54ed7}, ! Handle
+  AEDG K12 Nonres 7A Int Wall,            ! Name
+  ,                                       ! Surface Rendering Name
+  {51f3686e-a7c3-4a7d-bf69-4dad5d1201d3}, ! Layer 1
+  {51f3686e-a7c3-4a7d-bf69-4dad5d1201d3}; ! Layer 2
+
+OS:Material,
+  {51f3686e-a7c3-4a7d-bf69-4dad5d1201d3}, ! Handle
+  GP01 1/2 GYPSUM,                        ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {83fafd5e-d367-471e-8f5a-8c5b18e5f7be}, ! Handle
+  GP01 1/2 GYPSUM 1,                      ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {44730ed3-3426-44da-a62c-fac447b0757f}, ! Handle
+  AEDG K12 Nonres 7A Int Wall,            ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 7A Int Wall,            ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

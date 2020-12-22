@@ -1,0 +1,70 @@
+
+OS:Version,
+  {030d9bc5-5eeb-4566-98f3-fcf8779eed6b}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {9a16e2ca-196b-40a0-9216-b623e2ac0b87}, ! Handle
+  90.1-2004 Nonres 3C Exposed Floor Mass, ! Name
+  ,                                       ! Surface Rendering Name
+  {913b47fb-830c-461d-89e3-82c7374248b2}, ! Layer 1
+  {901564df-ff95-4590-960a-761109cc9f9d}, ! Layer 2
+  {b17bcc42-c1b2-4c09-81c6-b4adede0a331}; ! Layer 3
+
+OS:Material,
+  {913b47fb-830c-461d-89e3-82c7374248b2}, ! Handle
+  Floor Insulation [1],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0463846,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {901564df-ff95-4590-960a-761109cc9f9d}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {b17bcc42-c1b2-4c09-81c6-b4adede0a331}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {d275f1ed-7819-462b-af17-47b738e22d00}, ! Handle
+  90.1-2004 Nonres 3C Exposed Floor Mass, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 3C Exposed Floor Mass, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  47.214,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {e030dfd3-59ae-4a68-9133-88b27fcb90a1}, ! Handle
+  Component Data 1,                       ! Name
+  {4e584dc2-20a4-4bf0-9157-ee855353bc5d}, ! UUID
+  {27bde1e9-e971-42fc-94d0-245e123b1e8f}, ! Version UUID
+  1363981657,                             ! Creation Timestamp
+  1363981657,                             ! Version Timestamp
+  {9a16e2ca-196b-40a0-9216-b623e2ac0b87}, ! Name of Object 1
+  {913b47fb-830c-461d-89e3-82c7374248b2}, ! Name of Object 2
+  {901564df-ff95-4590-960a-761109cc9f9d}, ! Name of Object 3
+  {b17bcc42-c1b2-4c09-81c6-b4adede0a331}, ! Name of Object 4
+  {d275f1ed-7819-462b-af17-47b738e22d00}; ! Name of Object 5
+

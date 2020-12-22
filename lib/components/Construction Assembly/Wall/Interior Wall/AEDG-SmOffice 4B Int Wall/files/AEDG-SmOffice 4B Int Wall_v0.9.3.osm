@@ -1,0 +1,47 @@
+
+OS:Version,
+  {44bf8b33-568f-4007-9237-d0178a1daae1}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {97fd042f-4c69-42ae-9323-a10dd186cb36}, ! Handle
+  AEDG-SmOffice 4B Int Wall,              ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 4B Int Wall,              ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {9aa498ac-8ef6-4644-b2fa-1277bb25512a}, ! Handle
+  GP01 1/2 GYPSUM,                        ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {89c879a6-df80-4ca6-b81a-244ae07c94cc}, ! Handle
+  GP01 1/2 GYPSUM 1,                      ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {f73317dc-f430-4483-bacb-214da58515d0}, ! Handle
+  AEDG-SmOffice 4B Int Wall,              ! Name
+  ,                                       ! Surface Rendering Name
+  {9aa498ac-8ef6-4644-b2fa-1277bb25512a}, ! Layer 1
+  {9aa498ac-8ef6-4644-b2fa-1277bb25512a}; ! Layer 2
+

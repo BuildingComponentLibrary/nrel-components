@@ -1,0 +1,47 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: ExtSlab:Unheated - 4in Slab without Carpet
+! Description: 
+! Effective R-Value (SI): 0.07752
+! Layer 1: MAT-CC05 4 HW CONCRETE
+Material,
+  MAT-CC05 4 HW CONCRETE,                 !- Name
+  Rough,                                  !- Roughness
+  0.1016,                                 !- Thickness
+  1.311,                                  !- Conductivity
+  2240,                                   !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Construction,
+  90.1-2004 Res 1A Ext Slab Unheated - 4in Slab without Carpet, !- Name
+  MAT-CC05 4 HW CONCRETE;                 !- Layer 1
+
+! CostSource: MEANS 2005 - B1010.258
+! InstallCost {$/m2}: 20.660
+! MaterialCost {$/m2}: 24.860
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  90.1-2004 Res 1A Ext Slab Unheated - 4in Slab without Carpet, !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  90.1-2004 Res 1A Ext Slab Unheated - 4in Slab without Carpet, !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  45.520,                                 !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

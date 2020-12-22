@@ -1,0 +1,47 @@
+
+OS:Version,
+  {a21583f3-ee0a-4347-8854-cd7dc6ea40cc}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {2f5c8eaa-4e7d-4990-9391-9931aa477b90}, ! Handle
+  GP01 1/2 GYPSUM,                        ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {b218481f-db82-403a-8cf3-01edbb17192d}, ! Handle
+  AEDG SHC Nonres 3A Int Wall,            ! Name
+  ,                                       ! Surface Rendering Name
+  {2f5c8eaa-4e7d-4990-9391-9931aa477b90}, ! Layer 1
+  {2f5c8eaa-4e7d-4990-9391-9931aa477b90}; ! Layer 2
+
+OS:ComponentCost:LineItem,
+  {293e2358-ffc4-4205-8a3f-2c5cd8ae4e5c}, ! Handle
+  AEDG SHC Nonres 3A Int Wall,            ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 3A Int Wall,            ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {40502c12-3b75-46cc-84f7-7890a1847cba}, ! Handle
+  GP01 1/2 GYPSUM 1,                      ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+

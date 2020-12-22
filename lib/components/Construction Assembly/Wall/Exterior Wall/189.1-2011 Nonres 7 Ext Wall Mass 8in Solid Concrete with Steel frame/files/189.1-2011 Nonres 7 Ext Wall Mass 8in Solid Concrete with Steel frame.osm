@@ -1,0 +1,43 @@
+
+OS:Version,
+  {e2574fcd-03d7-4daa-a9b9-53cb1db0c045}, !- Handle
+  1.1.0;                                  !- Version Identifier
+
+OS:Material,
+  {47916b8d-c933-4641-9c3f-ba6e56b7879d}, !- Handle
+  200mm Normalweight concrete wall,       !- Name
+  MediumRough,                            !- Roughness
+  0.2032,                                 !- Thickness {m}
+  2.31,                                   !- Conductivity {W/m-K}
+  2322,                                   !- Density {kg/m3}
+  832;                                    !- Specific Heat {J/kg-K}
+
+OS:Material:NoMass,
+  {546849e8-0e70-4dde-bc94-eeb60ed39b3f}, !- Handle
+  Frame With Cavity Insulation,           !- Name
+  MediumSmooth,                           !- Roughness
+  2.61813587127657,                       !- Thermal Resistance {m2-K/W}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+OS:Material,
+  {80e76b85-50ee-4242-b146-7e80c8aeaa26}, !- Handle
+  G01 13mm gypsum board,                  !- Name
+  Smooth,                                 !- Roughness
+  0.0127,                                 !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  1090,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+OS:Construction,
+  {32400885-f146-44a8-80b8-a29765be5fc1}, !- Handle
+  189.1-2011 Nonres 7 Ext Wall Mass 8in Solid Concrete with Steel frame, !- Name
+  ,                                       !- Surface Rendering Name
+  {47916b8d-c933-4641-9c3f-ba6e56b7879d}, !- Layer 1
+  {546849e8-0e70-4dde-bc94-eeb60ed39b3f}, !- Layer 2
+  {80e76b85-50ee-4242-b146-7e80c8aeaa26}; !- Layer 3
+

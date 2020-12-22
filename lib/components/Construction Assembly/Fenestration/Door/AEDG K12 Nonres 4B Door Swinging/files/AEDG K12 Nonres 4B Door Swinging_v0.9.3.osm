@@ -1,0 +1,57 @@
+
+OS:Version,
+  {9243a808-707f-4547-91db-9810181b4f14}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {160640d1-0b0c-4405-9f88-a9120ff84cf8}, ! Handle
+  AIR,                                    ! Name
+  Smooth,                                 ! Roughness
+  0.251489,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {45035365-f132-4233-8bf3-96f1be9e71f2}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {013321cd-9b62-4d2f-b270-186db18bbeb7}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {a6d000e2-30c8-4219-b1c9-48ce570730f4}, ! Handle
+  AEDG K12 Nonres 4B Door Swinging,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 4B Door Swinging,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {804db1d2-11b4-4a9a-b25f-a673390c7a85}, ! Handle
+  AEDG K12 Nonres 4B Door Swinging,       ! Name
+  ,                                       ! Surface Rendering Name
+  {013321cd-9b62-4d2f-b270-186db18bbeb7}, ! Layer 1
+  {160640d1-0b0c-4405-9f88-a9120ff84cf8}, ! Layer 2
+  {45035365-f132-4233-8bf3-96f1be9e71f2}; ! Layer 3
+

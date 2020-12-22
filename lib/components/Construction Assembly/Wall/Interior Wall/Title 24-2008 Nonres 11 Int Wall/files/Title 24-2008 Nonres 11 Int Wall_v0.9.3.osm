@@ -1,0 +1,47 @@
+
+OS:Version,
+  {539e025e-706b-4487-ad92-2f2a60b14230}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {e2c9bc99-9fa6-44d9-9d55-3a8176bdcd95}, ! Handle
+  Title 24-2008 Nonres 11 Int Wall,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 11 Int Wall,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {a8d616c0-9826-461c-a9ab-8b0db0581a55}, ! Handle
+  GP01 1/2 GYPSUM,                        ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {e6f89923-b5f9-4b5b-93d1-af8b77416f77}, ! Handle
+  GP01 1/2 GYPSUM 1,                      ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {a5aa571f-86eb-4b1d-94a3-5f1ac19922a3}, ! Handle
+  Title 24-2008 Nonres 11 Int Wall,       ! Name
+  ,                                       ! Surface Rendering Name
+  {a8d616c0-9826-461c-a9ab-8b0db0581a55}, ! Layer 1
+  {a8d616c0-9826-461c-a9ab-8b0db0581a55}; ! Layer 2
+

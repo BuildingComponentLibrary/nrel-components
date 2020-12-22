@@ -1,0 +1,59 @@
+
+OS:Version,
+  {e06f9bea-e10b-429f-92fc-7020f26fc1b8}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {daa82677-7d02-45cd-b5c6-4f0f81a48a9d}, ! Handle
+  90.1 Constructions Ext Wall Metal Building NR, ! Name
+  ,                                       ! Surface Rendering Name
+  {9eeb70a6-3590-4f45-92ad-7db8d69d6a51}, ! Layer 1
+  {0728775a-0696-4f6b-a143-8dbdf77062ce}; ! Layer 2
+
+OS:Material,
+  {9eeb70a6-3590-4f45-92ad-7db8d69d6a51}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+
+OS:Material,
+  {0728775a-0696-4f6b-a143-8dbdf77062ce}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {0f70cb13-a9e3-40b4-9f17-b903ebc95828}, ! Handle
+  90.1 Constructions Ext Wall Metal Building NR, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Ext Wall Metal Building NR, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  96.41,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {52994c73-9380-49b0-982b-ebada2898010}, ! Handle
+  Component Data 1,                       ! Name
+  {500cbef4-f677-42cd-b606-2daabc400d11}, ! UUID
+  {3c2688ab-bb43-4cef-9c34-d0da021a624b}, ! Version UUID
+  1363980992,                             ! Creation Timestamp
+  1363980992,                             ! Version Timestamp
+  {daa82677-7d02-45cd-b5c6-4f0f81a48a9d}, ! Name of Object 1
+  {9eeb70a6-3590-4f45-92ad-7db8d69d6a51}, ! Name of Object 2
+  {0728775a-0696-4f6b-a143-8dbdf77062ce}, ! Name of Object 3
+  {0f70cb13-a9e3-40b4-9f17-b903ebc95828}; ! Name of Object 4
+

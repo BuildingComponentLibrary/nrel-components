@@ -1,0 +1,73 @@
+
+OS:Version,
+  {c41d8c27-e252-42bb-970f-15d022d26a08}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {9fd03fdd-5809-43c8-8c98-b4843d425042}, ! Handle
+  90.1 Constructions Roof IEAD R-50.0 ci, ! Name
+  ,                                       ! Surface Rendering Name
+  {758a0cef-58f5-4566-b8be-2dfb7c461001}, ! Layer 1
+  {4683f54c-7774-4823-bc2f-ed5f9f3ce33d}, ! Layer 2
+  {f57f7e20-3b7f-40c3-8a13-b6872152af5b}; ! Layer 3
+
+OS:Material,
+  {758a0cef-58f5-4566-b8be-2dfb7c461001}, ! Handle
+  BUILT UP ROOFING 3/8 IN,                ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {4683f54c-7774-4823-bc2f-ed5f9f3ce33d}, ! Handle
+  Roof Insulation [78],                   ! Name
+  MediumRough,                            ! Roughness
+  0.425843,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {f57f7e20-3b7f-40c3-8a13-b6872152af5b}, ! Handle
+  MAT-METAL,                              ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {d11cf857-51ca-45b5-8041-158d71700920}, ! Handle
+  90.1 Constructions Roof IEAD R-50.0 ci, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Roof IEAD R-50.0 ci, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  73.943,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {39042768-01ba-4981-a4ea-afbe030ebc13}, ! Handle
+  Component Data 1,                       ! Name
+  {b049934b-3371-4442-80a5-b145232211ef}, ! UUID
+  {7f44e795-917e-460a-a0cf-0c74f8f0fc2a}, ! Version UUID
+  1363980998,                             ! Creation Timestamp
+  1363980998,                             ! Version Timestamp
+  {9fd03fdd-5809-43c8-8c98-b4843d425042}, ! Name of Object 1
+  {758a0cef-58f5-4566-b8be-2dfb7c461001}, ! Name of Object 2
+  {4683f54c-7774-4823-bc2f-ed5f9f3ce33d}, ! Name of Object 3
+  {f57f7e20-3b7f-40c3-8a13-b6872152af5b}, ! Name of Object 4
+  {d11cf857-51ca-45b5-8041-158d71700920}; ! Name of Object 5
+

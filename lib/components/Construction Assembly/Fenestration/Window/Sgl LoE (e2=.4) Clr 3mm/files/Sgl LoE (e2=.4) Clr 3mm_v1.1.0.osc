@@ -1,0 +1,38 @@
+
+OS:Version,
+  {ca94ed21-9df0-40d4-aec6-f890fc83ea8c}, !- Handle
+  1.1.0;                                  !- Version Identifier
+
+OS:Construction,
+  {98557483-61e2-47cc-bf40-1584d37ed91f}, !- Handle
+  Sgl LoE (e2=.4) Clr 3mm,                !- Name
+  ,                                       !- Surface Rendering Name
+  {e50654c0-4293-4b92-8a21-fd9f6bb9039b}; !- Layer 1
+
+OS:WindowMaterial:Glazing,
+  {e50654c0-4293-4b92-8a21-fd9f6bb9039b}, !- Handle
+  PYR A CLEAR 3MM,                        !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.003,                                  !- Thickness {m}
+  0.75,                                   !- Solar Transmittance at Normal Incidence
+  0.1,                                    !- Front Side Solar Reflectance at Normal Incidence
+  0.1,                                    !- Back Side Solar Reflectance at Normal Incidence
+  0.85,                                   !- Visible Transmittance at Normal Incidence
+  0.12,                                   !- Front Side Visible Reflectance at Normal Incidence
+  0.12,                                   !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.4,                                    !- Back Side Infrared Hemispherical Emissivity
+  0.9;                                    !- Conductivity {W/m-K}
+
+OS:ComponentData,
+  {53dc4c20-a4f8-4a26-9d78-845f05b274cf}, !- Handle
+  Component Data 1,                       !- Name
+  {f9b0632e-edd3-4dd2-8625-5b444aad48d8}, !- UUID
+  {924a474b-7c26-45e2-b5f2-e54826960775}, !- Version UUID
+  1384380197,                             !- Creation Timestamp
+  1384380197,                             !- Version Timestamp
+  {98557483-61e2-47cc-bf40-1584d37ed91f}, !- Name of Object 1
+  {e50654c0-4293-4b92-8a21-fd9f6bb9039b}; !- Name of Object 2
+

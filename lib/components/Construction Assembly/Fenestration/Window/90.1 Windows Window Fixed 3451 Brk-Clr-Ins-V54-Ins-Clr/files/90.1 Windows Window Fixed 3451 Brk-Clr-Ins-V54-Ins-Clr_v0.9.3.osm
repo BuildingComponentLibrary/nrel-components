@@ -1,0 +1,39 @@
+
+OS:Version,
+  {f7d5a721-7ead-4608-99bd-15874445a8c2}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {17fc30d7-05c8-4770-b442-974aae788940}, ! Handle
+  90.1 Windows Window Fixed 3451 Brk-Clr-Ins-V54-Ins-Clr, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 3451 Brk-Clr-Ins-V54-Ins-Clr, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {4f69c285-a79e-430c-9671-b1a8a4388b94}, ! Handle
+  Theoretical Glass [462],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.296268,                               ! Solar Transmittance at Normal Incidence
+  0.653732,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.653732,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.410537,                               ! Visible Transmittance at Normal Incidence
+  0.539463,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.539463,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00845959;                             ! Conductivity {W/m-K}
+
+OS:Construction,
+  {472ab2c0-a818-48cf-a5d1-48258b02cc77}, ! Handle
+  90.1 Windows Window Fixed 3451 Brk-Clr-Ins-V54-Ins-Clr, ! Name
+  ,                                       ! Surface Rendering Name
+  {4f69c285-a79e-430c-9671-b1a8a4388b94}; ! Layer 1
+

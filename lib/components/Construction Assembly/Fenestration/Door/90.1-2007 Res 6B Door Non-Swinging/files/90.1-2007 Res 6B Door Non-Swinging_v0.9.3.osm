@@ -1,0 +1,57 @@
+
+OS:Version,
+  {06b127ec-18be-4698-86bb-95df1bc5d37c}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {06fdfee1-ddd5-46f9-a58b-a4e87d1625c3}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {f39ad237-646a-4bf4-8c44-be05fc435df4}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {1033e0d4-8426-4406-9d3a-f62655bf73ea}, ! Handle
+  90.1-2007 Res 6B Door Non-Swinging,     ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 6B Door Non-Swinging,     ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {ad8e47a6-76c7-43e5-8046-59d0934e4cd6}, ! Handle
+  AIR [2],                                ! Name
+  Smooth,                                 ! Roughness
+  0.352085,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {6c40811d-5ddb-4072-81f0-0eda546ae461}, ! Handle
+  90.1-2007 Res 6B Door Non-Swinging,     ! Name
+  ,                                       ! Surface Rendering Name
+  {f39ad237-646a-4bf4-8c44-be05fc435df4}, ! Layer 1
+  {ad8e47a6-76c7-43e5-8046-59d0934e4cd6}, ! Layer 2
+  {06fdfee1-ddd5-46f9-a58b-a4e87d1625c3}; ! Layer 3
+

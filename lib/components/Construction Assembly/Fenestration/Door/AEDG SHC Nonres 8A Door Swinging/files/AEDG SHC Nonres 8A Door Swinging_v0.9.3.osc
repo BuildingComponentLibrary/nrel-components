@@ -1,0 +1,70 @@
+
+OS:Version,
+  {ad57e1bd-b47c-4045-9f48-304e97b2be24}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {fb3c699d-7330-4e82-8964-b91f2314537a}, ! Handle
+  AEDG SHC Nonres 8A Door Swinging,       ! Name
+  ,                                       ! Surface Rendering Name
+  {ab0ec366-e3a6-422c-afe8-477bc697adc0}, ! Layer 1
+  {92e3d735-a588-4d9a-a87a-bcdc74bfed09}, ! Layer 2
+  {f73c0134-111f-4838-872b-38086e44781a}; ! Layer 3
+
+OS:Material,
+  {ab0ec366-e3a6-422c-afe8-477bc697adc0}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {92e3d735-a588-4d9a-a87a-bcdc74bfed09}, ! Handle
+  AIR [2],                                ! Name
+  Smooth,                                 ! Roughness
+  0.352085,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {f73c0134-111f-4838-872b-38086e44781a}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {52d0d47c-73f0-4e6f-8eaa-7b5db9a773a0}, ! Handle
+  AEDG SHC Nonres 8A Door Swinging,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 8A Door Swinging,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {6bbda9bd-5210-4da2-97bb-72c2cc1bb3ba}, ! Handle
+  Component Data 1,                       ! Name
+  {72fb45ce-f68e-4cce-ae4e-80667b6e42c3}, ! UUID
+  {7a8a6bc6-1da4-4aad-ab3e-458ff4469f73}, ! Version UUID
+  1363981934,                             ! Creation Timestamp
+  1363981934,                             ! Version Timestamp
+  {fb3c699d-7330-4e82-8964-b91f2314537a}, ! Name of Object 1
+  {ab0ec366-e3a6-422c-afe8-477bc697adc0}, ! Name of Object 2
+  {92e3d735-a588-4d9a-a87a-bcdc74bfed09}, ! Name of Object 3
+  {f73c0134-111f-4838-872b-38086e44781a}, ! Name of Object 4
+  {52d0d47c-73f0-4e6f-8eaa-7b5db9a773a0}; ! Name of Object 5
+

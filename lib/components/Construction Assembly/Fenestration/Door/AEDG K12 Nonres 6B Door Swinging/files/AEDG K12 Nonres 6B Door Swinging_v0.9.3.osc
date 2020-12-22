@@ -1,0 +1,70 @@
+
+OS:Version,
+  {b141c9b3-fcbe-498b-8129-0e28c27f09e5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {1eabbb1d-9009-4635-a774-c32f282b7426}, ! Handle
+  AEDG K12 Nonres 6B Door Swinging,       ! Name
+  ,                                       ! Surface Rendering Name
+  {bc307865-9055-4006-884f-70b09bb08239}, ! Layer 1
+  {358ee46f-f161-4d7d-adec-06f43a4b23b3}, ! Layer 2
+  {c78e9fd8-c26d-4f92-a3aa-390992c69bad}; ! Layer 3
+
+OS:Material,
+  {bc307865-9055-4006-884f-70b09bb08239}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {358ee46f-f161-4d7d-adec-06f43a4b23b3}, ! Handle
+  AIR,                                    ! Name
+  Smooth,                                 ! Roughness
+  0.251489,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {c78e9fd8-c26d-4f92-a3aa-390992c69bad}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {fa4e22e2-5ce0-482d-9b68-735c8d764cd5}, ! Handle
+  AEDG K12 Nonres 6B Door Swinging,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 6B Door Swinging,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {4a1a6c61-4e9e-4bc2-b2c3-e5f5dcc4d047}, ! Handle
+  Component Data 1,                       ! Name
+  {e8821b5c-2049-4fca-aca3-6a652004efe4}, ! UUID
+  {cdc0ba24-288e-4ade-91e9-031f92bfb17b}, ! Version UUID
+  1363981900,                             ! Creation Timestamp
+  1363981900,                             ! Version Timestamp
+  {1eabbb1d-9009-4635-a774-c32f282b7426}, ! Name of Object 1
+  {bc307865-9055-4006-884f-70b09bb08239}, ! Name of Object 2
+  {358ee46f-f161-4d7d-adec-06f43a4b23b3}, ! Name of Object 3
+  {c78e9fd8-c26d-4f92-a3aa-390992c69bad}, ! Name of Object 4
+  {fa4e22e2-5ce0-482d-9b68-735c8d764cd5}; ! Name of Object 5
+

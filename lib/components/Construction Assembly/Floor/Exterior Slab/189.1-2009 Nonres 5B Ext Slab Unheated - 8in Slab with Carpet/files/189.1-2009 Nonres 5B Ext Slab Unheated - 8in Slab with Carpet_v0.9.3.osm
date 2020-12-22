@@ -1,0 +1,44 @@
+
+OS:Version,
+  {d2d17b56-906a-4ed2-8088-b9b987d1f161}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {f48abd31-2e1a-46b2-af1c-919bc3d9d67e}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {3e6bfdc1-11f2-425b-a0c9-0249b979089f}, ! Handle
+  189.1-2009 Nonres 5B Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 5B Ext Slab Unheated - 8in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {800c83c7-9cf3-48e3-b615-5879b2a476ec}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {c2a0e3a5-12a0-4806-95d8-80f30dd05f3c}, ! Handle
+  189.1-2009 Nonres 5B Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {800c83c7-9cf3-48e3-b615-5879b2a476ec}, ! Layer 1
+  {f48abd31-2e1a-46b2-af1c-919bc3d9d67e}; ! Layer 2
+

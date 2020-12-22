@@ -1,0 +1,73 @@
+
+OS:Version,
+  {96dc4947-fd9a-4c4d-9b8d-a97f6d40d8f3}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {bff50638-2395-4449-abbe-280735d9fd31}, ! Handle
+  AEDG SHC Nonres 1A Ext Wall Mass,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 1A Ext Wall Mass,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {4feb9d81-c75f-4486-9564-aec6d0479239}, ! Handle
+  8IN Concrete HW,                        ! Name
+  MediumRough,                            ! Roughness
+  0.2033,                                 ! Thickness {m}
+  1.7296,                                 ! Conductivity {W/m-K}
+  2243,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.65,                                   ! Solar Absorptance
+  0.65;                                   ! Visible Absorptance
+
+OS:Material,
+  {7ae93a39-3e12-4cc7-9c02-8ceea306e1ca}, ! Handle
+  1IN Stucco,                             ! Name
+  Smooth,                                 ! Roughness
+  0.0253,                                 ! Thickness {m}
+  0.6918,                                 ! Conductivity {W/m-K}
+  1858,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {2cc1fb48-7edd-44f2-9ab1-fc90996e3565}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {e0d46541-abe8-443f-801c-9d31229139e4}, ! Handle
+  AEDG SHC Nonres 1A Ext Wall Mass,       ! Name
+  ,                                       ! Surface Rendering Name
+  {7ae93a39-3e12-4cc7-9c02-8ceea306e1ca}, ! Layer 1
+  {4feb9d81-c75f-4486-9564-aec6d0479239}, ! Layer 2
+  {a9ced12d-a262-402a-a236-60ec5db5a422}, ! Layer 3
+  {2cc1fb48-7edd-44f2-9ab1-fc90996e3565}; ! Layer 4
+
+OS:Material,
+  {a9ced12d-a262-402a-a236-60ec5db5a422}, ! Handle
+  Wall Insulation [58],                   ! Name
+  MediumRough,                            ! Roughness
+  0.033884,                               ! Thickness {m}
+  0.0432,                                 ! Conductivity {W/m-K}
+  91,                                     ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+

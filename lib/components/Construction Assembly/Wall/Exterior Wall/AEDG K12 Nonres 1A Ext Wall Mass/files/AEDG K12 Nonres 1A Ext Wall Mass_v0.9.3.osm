@@ -1,0 +1,60 @@
+
+OS:Version,
+  {4982fe32-5d84-40d4-a489-04e2211a4dd0}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {29f54b11-e9a7-40b2-8d66-3f915d7323bc}, ! Handle
+  MAT-CC05 3.5 HW CONCRETE,               ! Name
+  Rough,                                  ! Roughness
+  0.0889,                                 ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {75d50816-80f8-4275-9305-3e99bd864f06}, ! Handle
+  AEDG K12 Nonres 1A Ext Wall Mass,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 1A Ext Wall Mass,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  213.66,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {f7411b10-2400-4ddd-8c1e-f2322e6a9e0f}, ! Handle
+  AEDG K12 Nonres 1A Ext Wall Mass,       ! Name
+  ,                                       ! Surface Rendering Name
+  {29f54b11-e9a7-40b2-8d66-3f915d7323bc}, ! Layer 1
+  {8d56bfdc-20f8-432d-87e1-9e74c752c162}, ! Layer 2
+  {ae667cd4-32a8-4441-a541-845f9bd4ab73}; ! Layer 3
+
+OS:Material,
+  {8d56bfdc-20f8-432d-87e1-9e74c752c162}, ! Handle
+  Wall Insulation [67],                   ! Name
+  MediumRough,                            ! Roughness
+  0.000338117,                            ! Thickness {m}
+  0.0432,                                 ! Conductivity {W/m-K}
+  91,                                     ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {ae667cd4-32a8-4441-a541-845f9bd4ab73}, ! Handle
+  MAT-CC05 4 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.1016,                                 ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

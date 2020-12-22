@@ -1,0 +1,73 @@
+
+OS:Version,
+  {a320d516-4c32-4adf-99b0-fdc670bd86ac}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {5aa7f92c-f3ae-4f98-ba6f-87ab444f50ab}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {b69cce75-c012-4950-a2d8-3b1821dd795f}, ! Handle
+  1IN Stucco,                             ! Name
+  Smooth,                                 ! Roughness
+  0.0253,                                 ! Thickness {m}
+  0.6918,                                 ! Conductivity {W/m-K}
+  1858,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {7feb2350-6d4c-4937-bb77-578babbd9a65}, ! Handle
+  AEDG-SmOffice 8A Ext Wall Mass,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 8A Ext Wall Mass,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  70.253,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {7ba29bd8-d879-44bd-b8ef-332fc16d9cef}, ! Handle
+  8IN Concrete HW,                        ! Name
+  MediumRough,                            ! Roughness
+  0.2033,                                 ! Thickness {m}
+  1.7296,                                 ! Conductivity {W/m-K}
+  2243,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.65,                                   ! Solar Absorptance
+  0.65;                                   ! Visible Absorptance
+
+OS:Material,
+  {5f661a6a-1957-48f5-8ff5-bfd645095cfd}, ! Handle
+  Wall Insulation [14],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0905233,                              ! Thickness {m}
+  0.0432,                                 ! Conductivity {W/m-K}
+  91,                                     ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {4eabd31b-077f-4822-85b4-e04bb2a61943}, ! Handle
+  AEDG-SmOffice 8A Ext Wall Mass,         ! Name
+  ,                                       ! Surface Rendering Name
+  {b69cce75-c012-4950-a2d8-3b1821dd795f}, ! Layer 1
+  {7ba29bd8-d879-44bd-b8ef-332fc16d9cef}, ! Layer 2
+  {5f661a6a-1957-48f5-8ff5-bfd645095cfd}, ! Layer 3
+  {5aa7f92c-f3ae-4f98-ba6f-87ab444f50ab}; ! Layer 4
+

@@ -1,0 +1,73 @@
+
+OS:Version,
+  {15bf6db3-a73a-4d78-ab85-23237ec8b476}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {3ed52ab6-ba43-4137-9e34-1ff6367e10c4}, ! Handle
+  AEDG K12 Nonres 6B Attic Floor,         ! Name
+  ,                                       ! Surface Rendering Name
+  {7bad90c8-bdfe-41c6-92f4-4c43b48e5bb7}, ! Layer 1
+  {1e8e1501-d9a9-4322-8f34-672c24261e88}, ! Layer 2
+  {72c90244-6be3-4116-9bce-54e1c1241fbc}; ! Layer 3
+
+OS:Material,
+  {7bad90c8-bdfe-41c6-92f4-4c43b48e5bb7}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {1e8e1501-d9a9-4322-8f34-672c24261e88}, ! Handle
+  AtticFloor Insulation [1],              ! Name
+  MediumRough,                            ! Roughness
+  0.303719,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {72c90244-6be3-4116-9bce-54e1c1241fbc}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {bb84c1b1-99d0-4c66-8b89-f05b11df54af}, ! Handle
+  AEDG K12 Nonres 6B Attic Floor,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 6B Attic Floor,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  35.009,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {73249a23-9bf2-450b-b2bd-69d08fcbb3b7}, ! Handle
+  Component Data 1,                       ! Name
+  {edb4be67-f654-4c75-beae-6c245074917e}, ! UUID
+  {c18b0622-3b6d-416c-a832-eb5c0ad87798}, ! Version UUID
+  1363981899,                             ! Creation Timestamp
+  1363981899,                             ! Version Timestamp
+  {3ed52ab6-ba43-4137-9e34-1ff6367e10c4}, ! Name of Object 1
+  {7bad90c8-bdfe-41c6-92f4-4c43b48e5bb7}, ! Name of Object 2
+  {1e8e1501-d9a9-4322-8f34-672c24261e88}, ! Name of Object 3
+  {72c90244-6be3-4116-9bce-54e1c1241fbc}, ! Name of Object 4
+  {bb84c1b1-99d0-4c66-8b89-f05b11df54af}; ! Name of Object 5
+

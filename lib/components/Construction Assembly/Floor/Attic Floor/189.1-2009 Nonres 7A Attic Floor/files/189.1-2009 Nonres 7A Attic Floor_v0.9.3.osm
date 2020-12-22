@@ -1,0 +1,60 @@
+
+OS:Version,
+  {eac137b6-c30c-4331-aec9-06189277cb14}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {dd83f6f2-6417-438b-88dc-8808176cc0a8}, ! Handle
+  189.1-2009 Nonres 7A Attic Floor,       ! Name
+  ,                                       ! Surface Rendering Name
+  {12e4339a-3aeb-4f41-bd3d-733dc9b5e658}, ! Layer 1
+  {ce3ec92f-f684-4637-aa4f-310cf59c7b98}, ! Layer 2
+  {6de82939-96ec-4985-b067-7ad04c918644}; ! Layer 3
+
+OS:Material,
+  {12e4339a-3aeb-4f41-bd3d-733dc9b5e658}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {ce3ec92f-f684-4637-aa4f-310cf59c7b98}, ! Handle
+  AtticFloor Insulation [5],              ! Name
+  MediumRough,                            ! Roughness
+  0.47417,                                ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {6de82939-96ec-4985-b067-7ad04c918644}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {bfc36d87-3d1d-4ca1-badb-1af42d1578bf}, ! Handle
+  189.1-2009 Nonres 7A Attic Floor,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 7A Attic Floor,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.314,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

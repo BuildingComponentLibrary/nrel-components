@@ -1,0 +1,39 @@
+
+OS:Version,
+  {c2a1508d-df49-4066-b9cc-69b70f0e3630}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {f09de4e4-da40-4f3f-8b71-462bf7eaff47}, ! Handle
+  90.1 Windows Window Fixed 2570 Vnl-ClrSue-Std-ClrSue, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2570 Vnl-ClrSue-Std-ClrSue, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {72cfa798-dae9-4c42-8f2f-8b7be6ff2002}, ! Handle
+  Theoretical Glass [620],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.326547,                               ! Solar Transmittance at Normal Incidence
+  0.623453,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.623453,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.519963,                               ! Visible Transmittance at Normal Incidence
+  0.430037,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.430037,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0088199;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {4cb29b84-d946-420f-9cc1-1154f7cd71c3}, ! Handle
+  90.1 Windows Window Fixed 2570 Vnl-ClrSue-Std-ClrSue, ! Name
+  ,                                       ! Surface Rendering Name
+  {72cfa798-dae9-4c42-8f2f-8b7be6ff2002}; ! Layer 1
+

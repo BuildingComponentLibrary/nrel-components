@@ -1,0 +1,47 @@
+
+OS:Version,
+  {d447f9b4-9be6-45f3-bb77-fd41b5fc1e7f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {33c37521-00e7-4162-8d4c-f59853d6b503}, ! Handle
+  Roof Insulation [15],                   ! Name
+  MediumRough,                            ! Roughness
+  0.123565,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {2a7f6a9d-372c-4ef3-a7cf-b907686803c7}, ! Handle
+  Metal Roofing [1],                      ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.85;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {6e930e8f-101c-4a2d-9ec4-0aafa7eb3963}, ! Handle
+  Title 24-2008 Nonres 3 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 3 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.21,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {f83ab4c4-4baf-48e3-9454-ca96af03c51b}, ! Handle
+  Title 24-2008 Nonres 3 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {2a7f6a9d-372c-4ef3-a7cf-b907686803c7}, ! Layer 1
+  {33c37521-00e7-4162-8d4c-f59853d6b503}; ! Layer 2
+

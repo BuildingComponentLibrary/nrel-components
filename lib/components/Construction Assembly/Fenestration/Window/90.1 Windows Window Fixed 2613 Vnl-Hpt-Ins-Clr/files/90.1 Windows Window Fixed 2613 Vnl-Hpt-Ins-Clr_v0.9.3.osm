@@ -1,0 +1,39 @@
+
+OS:Version,
+  {16fd28c1-67a2-40e9-8ebe-a5238c2a8493}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {93d0a498-7a37-44a4-bb68-0e65018883cb}, ! Handle
+  Theoretical Glass [402],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.354018,                               ! Solar Transmittance at Normal Incidence
+  0.595982,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.595982,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.50965,                                ! Visible Transmittance at Normal Incidence
+  0.44035,                                ! Front Side Visible Reflectance at Normal Incidence
+  0.44035,                                ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0144853;                              ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {bb8dd6a1-7b15-4f6f-91a9-a51910b995fb}, ! Handle
+  90.1 Windows Window Fixed 2613 Vnl-Hpt-Ins-Clr, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2613 Vnl-Hpt-Ins-Clr, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {27db07e8-2303-4321-b9de-20faf49a4e81}, ! Handle
+  90.1 Windows Window Fixed 2613 Vnl-Hpt-Ins-Clr, ! Name
+  ,                                       ! Surface Rendering Name
+  {93d0a498-7a37-44a4-bb68-0e65018883cb}; ! Layer 1
+

@@ -1,0 +1,60 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: ExtWall:U-W DE MFH ExtWall -1918 9
+! Description: R-13
+! Effective R-Value (SI): 0.68
+! Layer 2: Naturstein 70cm
+! Layer 3: Gips-Kalk Innenputz 1.5cm
+Material,
+  Naturstein 70cm,                        !- Name
+  Smooth,                                 !- Roughness
+  0.7,                                    !- Thickness
+  0.55,                                   !- Conductivity
+  1800,                                   !- Density
+  1000,                                   !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  Gips-Kalk Innenputz 1.5cm,              !- Name
+  Smooth,                                 !- Roughness
+  0.015,                                  !- Thickness
+  0.7 ,                                   !- Conductivity
+  1100,                                   !- Density
+  1010,                                   !- Specific Heat
+  0.3,                                    !- Abs Thermal
+  0.3,                                    !- Abs Solar
+  0.3;                                    !- Abs Visible
+
+Construction,
+  U-W DE MFH ExtWall -1918 9,		 !- Name
+  Naturstein 70cm,                       !- Layer 2
+  Gips-Kalk Innenputz 1.5cm,             !- Layer 3
+
+! CostSource:
+! InstallCost {$/m2}: 0.
+! MaterialCost {$/m2}: 0.0
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  U-W DE MFH ExtWall -1918 9,             !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  U-W DE MFH ExtWall -1918 9,             !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  0.0,                                    !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

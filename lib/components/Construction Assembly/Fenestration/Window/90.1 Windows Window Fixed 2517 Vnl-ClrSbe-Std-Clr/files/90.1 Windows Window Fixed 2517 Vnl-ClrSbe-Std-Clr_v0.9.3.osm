@@ -1,0 +1,39 @@
+
+OS:Version,
+  {7c2582d1-3cef-4280-8882-102594536682}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {53fed92d-ddbf-4cb1-8424-f88658fc40ab}, ! Handle
+  90.1 Windows Window Fixed 2517 Vnl-ClrSbe-Std-Clr, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2517 Vnl-ClrSbe-Std-Clr, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {675dee23-0ebf-4e0d-8267-274f83eb5ca1}, ! Handle
+  Theoretical Glass [398],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.355367,                               ! Solar Transmittance at Normal Incidence
+  0.594633,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.594633,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.429741,                               ! Visible Transmittance at Normal Incidence
+  0.520259,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.520259,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00956511;                             ! Conductivity {W/m-K}
+
+OS:Construction,
+  {b0e39b6c-4321-43ab-9027-cf36eb47949d}, ! Handle
+  90.1 Windows Window Fixed 2517 Vnl-ClrSbe-Std-Clr, ! Name
+  ,                                       ! Surface Rendering Name
+  {675dee23-0ebf-4e0d-8267-274f83eb5ca1}; ! Layer 1
+

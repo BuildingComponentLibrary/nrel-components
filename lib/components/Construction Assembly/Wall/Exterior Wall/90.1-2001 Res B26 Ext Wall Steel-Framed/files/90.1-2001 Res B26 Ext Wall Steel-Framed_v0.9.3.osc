@@ -1,0 +1,70 @@
+
+OS:Version,
+  {a2fbdc17-1149-4db8-9282-b2ebebe5711d}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {c4bb762e-6449-4fe0-b1ae-9a9883a61e43}, ! Handle
+  90.1-2001 Res B26 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {656ad36d-9d5e-476a-96d2-3a638e6798bc}, ! Layer 1
+  {133ec2e3-f6dc-4ea1-ab60-1d6af3573be8}, ! Layer 2
+  {90d688f4-1723-40e7-a285-63f78aa745fa}; ! Layer 3
+
+OS:Material:NoMass,
+  {656ad36d-9d5e-476a-96d2-3a638e6798bc}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {133ec2e3-f6dc-4ea1-ab60-1d6af3573be8}, ! Handle
+  Wall Insulation [18],                   ! Name
+  MediumRough,                            ! Roughness
+  0.171309,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {90d688f4-1723-40e7-a285-63f78aa745fa}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {e9e8db26-be65-48c0-8068-a173891cb4c8}, ! Handle
+  90.1-2001 Res B26 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B26 Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  102.52,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {e4cf2a65-12fb-4e91-8b2c-63837a37a160}, ! Handle
+  Component Data 1,                       ! Name
+  {f0348fee-3b2e-4052-ad7a-1d5410483a9a}, ! UUID
+  {0f304405-75aa-430d-8ed0-17c175ffe5d8}, ! Version UUID
+  1363981619,                             ! Creation Timestamp
+  1363981619,                             ! Version Timestamp
+  {c4bb762e-6449-4fe0-b1ae-9a9883a61e43}, ! Name of Object 1
+  {656ad36d-9d5e-476a-96d2-3a638e6798bc}, ! Name of Object 2
+  {133ec2e3-f6dc-4ea1-ab60-1d6af3573be8}, ! Name of Object 3
+  {90d688f4-1723-40e7-a285-63f78aa745fa}, ! Name of Object 4
+  {e9e8db26-be65-48c0-8068-a173891cb4c8}; ! Name of Object 5
+

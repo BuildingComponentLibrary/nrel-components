@@ -1,0 +1,57 @@
+
+OS:Version,
+  {a5359bad-c704-4fe3-b9d1-30242f36ff1f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {7bda8c91-9c03-4342-a916-0fd75d6afc0a}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Material,
+  {3eb40649-305d-437c-a423-acbf1a6654a1}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {5da0b190-7c71-49c1-93f2-7e65e7078443}, ! Handle
+  189.1-2009 Nonres 2A Exposed Floor Mass, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 2A Exposed Floor Mass, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  47.183,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {92bedfd1-bbbd-413f-9690-4a35b7b5969b}, ! Handle
+  Floor Insulation [8],                   ! Name
+  MediumRough,                            ! Roughness
+  0.046144,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {059de0b2-9753-4fbe-b392-0d647d5f84f1}, ! Handle
+  189.1-2009 Nonres 2A Exposed Floor Mass, ! Name
+  ,                                       ! Surface Rendering Name
+  {92bedfd1-bbbd-413f-9690-4a35b7b5969b}, ! Layer 1
+  {3eb40649-305d-437c-a423-acbf1a6654a1}, ! Layer 2
+  {7bda8c91-9c03-4342-a916-0fd75d6afc0a}; ! Layer 3
+

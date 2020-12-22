@@ -1,0 +1,39 @@
+
+OS:Version,
+  {7579e415-efd1-49a4-ac6a-98f2edff3e2e}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {aa711a09-c748-4530-b36c-75813dc04794}, ! Handle
+  Theoretical Glass [216],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.380095,                               ! Solar Transmittance at Normal Incidence
+  0.569905,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.569905,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.507883,                               ! Visible Transmittance at Normal Incidence
+  0.442117,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.442117,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0133189;                              ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {b77619dd-019d-4dfe-9781-4c1379b4bc73}, ! Handle
+  189.1-2009 Nonres 6B Window Metal framing all other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 6B Window Metal framing all other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  512.02,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {cbfcaaba-fbb2-4695-bbe9-0b37b01995cb}, ! Handle
+  189.1-2009 Nonres 6B Window Metal framing all other, ! Name
+  ,                                       ! Surface Rendering Name
+  {aa711a09-c748-4530-b36c-75813dc04794}; ! Layer 1
+

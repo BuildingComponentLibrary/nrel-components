@@ -1,0 +1,57 @@
+
+OS:Version,
+  {0e3b51a8-1b2c-489d-b331-88202f668a51}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {37efd250-93ac-4a5c-962a-95af7da0ff07}, ! Handle
+  90.1-2001 Res B17 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B17 Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  94.657,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {4ce71888-6464-4664-85e9-3bd3cf346694}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {66c3cb70-5b27-4b14-9c28-eec8c39ca3a3}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {fec30192-adcc-4c17-a016-61da1291607b}, ! Handle
+  90.1-2001 Res B17 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {4ce71888-6464-4664-85e9-3bd3cf346694}, ! Layer 1
+  {8bdc636c-50f6-48db-b9b9-dbd9eec5916b}, ! Layer 2
+  {66c3cb70-5b27-4b14-9c28-eec8c39ca3a3}; ! Layer 3
+
+OS:Material,
+  {8bdc636c-50f6-48db-b9b9-dbd9eec5916b}, ! Handle
+  Wall Insulation [10],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0971136,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

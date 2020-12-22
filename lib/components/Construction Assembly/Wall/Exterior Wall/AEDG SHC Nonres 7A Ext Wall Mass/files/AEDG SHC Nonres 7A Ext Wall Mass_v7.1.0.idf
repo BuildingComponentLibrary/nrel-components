@@ -1,0 +1,86 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: ExtWall:Mass
+! Description: R-19.5 ci
+! Effective R-Value (SI): 2.739
+! Layer 1: 1IN Stucco 
+! Layer 2: 8IN Concrete HW
+! Layer 3: Wall Insulation [63]
+! Layer 4: 1/2IN Gypsum
+Material,
+  1IN Stucco,                             !- Name
+  Smooth,                                 !- Roughness
+  0.0253,                                 !- Thickness
+  0.6918,                                 !- Conductivity
+  1858,                                   !- Density
+  837,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.92,                                   !- Abs Solar
+  0.92;                                   !- Abs Visible
+
+Material,
+  8IN Concrete HW,                        !- Name
+  MediumRough,                            !- Roughness
+  0.2033,                                 !- Thickness
+  1.7296,                                 !- Conductivity
+  2243,                                   !- Density
+  837,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.65,                                   !- Abs Solar
+  0.65;                                   !- Abs Visible
+
+Material,
+  Wall Insulation [63],                   !- Name
+  MediumRough,                            !- Roughness
+  0.108236,                               !- Thickness
+  0.0432,                                 !- Conductivity
+  91,                                     !- Density
+  837,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.5,                                    !- Abs Solar
+  0.5;                                    !- Abs Visible
+
+Material,
+  1/2IN Gypsum,                           !- Name
+  Smooth,                                 !- Roughness
+  0.01271,                                !- Thickness
+  0.16,                                   !- Conductivity
+  784.9,                                  !- Density
+  830,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.92,                                   !- Abs Solar
+  0.92;                                   !- Abs Visible
+
+Construction,
+  AEDG SHC Nonres 7A Ext Wall Mass,       !- Name
+  1IN Stucco,                             !- Layer 1
+  8IN Concrete HW,                        !- Layer 2
+  Wall Insulation [63],                   !- Layer 3
+  1/2IN Gypsum;                           !- Layer 4
+
+! CostSource: 
+! InstallCost {$/m2}: 0.000
+! MaterialCost {$/m2}: 0.000
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  AEDG SHC Nonres 7A Ext Wall Mass,       !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  AEDG SHC Nonres 7A Ext Wall Mass,       !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  0.000,                                  !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

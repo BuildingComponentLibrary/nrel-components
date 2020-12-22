@@ -1,0 +1,57 @@
+
+OS:Version,
+  {2010767c-0b7d-41d2-bfc7-fb1f12e68dca}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {07bcb0a7-591c-4705-a6cd-845a196d1103}, ! Handle
+  AIR [2],                                ! Name
+  Smooth,                                 ! Roughness
+  0.352085,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {c01c2582-18dd-4da3-a7fb-c99a6eb5d255}, ! Handle
+  AEDG SHC Nonres 6B Door Non-Swinging,   ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 6B Door Non-Swinging,   ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {4be53598-ca4a-45c8-aab6-773b3ac70dee}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {ee4c07a8-aa99-43c6-ac4d-8dae0d501fe7}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {306e9317-8278-43a4-a038-6935a273da7f}, ! Handle
+  AEDG SHC Nonres 6B Door Non-Swinging,   ! Name
+  ,                                       ! Surface Rendering Name
+  {4be53598-ca4a-45c8-aab6-773b3ac70dee}, ! Layer 1
+  {07bcb0a7-591c-4705-a6cd-845a196d1103}, ! Layer 2
+  {ee4c07a8-aa99-43c6-ac4d-8dae0d501fe7}; ! Layer 3
+

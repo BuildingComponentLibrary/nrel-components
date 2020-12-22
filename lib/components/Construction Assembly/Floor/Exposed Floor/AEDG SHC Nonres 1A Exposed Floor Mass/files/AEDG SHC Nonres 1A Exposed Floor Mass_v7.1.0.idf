@@ -1,0 +1,70 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: ExposedFloor:Mass
+! Description: R-4.2 ci
+! Effective R-Value (SI): 1.043
+! Layer 1: Floor Insulation
+! Layer 2: MAT-CC05 8 HW CONCRETE
+! Layer 3: CP02 CARPET PAD
+Material,
+  Floor Insulation,                       !- Name
+  MediumRough,                            !- Roughness
+  0.0302276,                              !- Thickness
+  0.045,                                  !- Conductivity
+  265,                                    !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  MAT-CC05 8 HW CONCRETE,                 !- Name
+  Rough,                                  !- Roughness
+  0.20321,                                !- Thickness
+  1.311,                                  !- Conductivity
+  2240,                                   !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material:NoMass,
+  CP02 CARPET PAD,                        !- Name
+  VeryRough,                              !- Roughness
+  0.21648,                                !- Thermal Resistance
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.8;                                    !- Abs Visible
+
+Construction,
+  AEDG SHC Nonres 1A Exposed Floor Mass,  !- Name
+  Floor Insulation,                       !- Layer 1
+  MAT-CC05 8 HW CONCRETE,                 !- Layer 2
+  CP02 CARPET PAD;                        !- Layer 3
+
+! CostSource: 
+! InstallCost {$/m2}: 0.000
+! MaterialCost {$/m2}: 0.000
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  AEDG SHC Nonres 1A Exposed Floor Mass,  !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  AEDG SHC Nonres 1A Exposed Floor Mass,  !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  0.000,                                  !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

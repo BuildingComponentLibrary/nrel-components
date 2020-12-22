@@ -1,0 +1,31 @@
+
+OS:Version,
+  {3bbb377a-fd46-4da8-b868-0f05d849fcd7}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {bff25ee6-89b7-4af5-b0a6-9e3ec23b1dec}, ! Handle
+  AEDG-SmOffice 1A Door Swinging,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 1A Door Swinging,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {6195dd5f-217e-4fea-b25b-a7f0d53e2212}, ! Handle
+  DoorMaterial,                           ! Name
+  MediumRough,                            ! Roughness
+  0.251589,                               ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {bdd1e68e-02b7-4ddb-a8c5-44e0f2e9f455}, ! Handle
+  AEDG-SmOffice 1A Door Swinging,         ! Name
+  ,                                       ! Surface Rendering Name
+  {6195dd5f-217e-4fea-b25b-a7f0d53e2212}; ! Layer 1
+

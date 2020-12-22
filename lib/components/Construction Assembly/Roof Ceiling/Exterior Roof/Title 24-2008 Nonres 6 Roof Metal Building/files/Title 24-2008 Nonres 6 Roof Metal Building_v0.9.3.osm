@@ -1,0 +1,47 @@
+
+OS:Version,
+  {d60510e2-d512-4419-8b5b-a81d59420620}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {2eca56b1-dfe3-4044-bdfb-75af7f5e0f3b}, ! Handle
+  Metal Roofing [1],                      ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.85;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {6cf4834f-a5aa-4774-b2ac-c349fa9b0b0e}, ! Handle
+  Title 24-2008 Nonres 6 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 6 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.21,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {eefd5e20-2377-4618-8fc8-bd331e0540a2}, ! Handle
+  Roof Insulation [15],                   ! Name
+  MediumRough,                            ! Roughness
+  0.123565,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {af69301b-155c-4705-87ad-1027cc3ac7d9}, ! Handle
+  Title 24-2008 Nonres 6 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {2eca56b1-dfe3-4044-bdfb-75af7f5e0f3b}, ! Layer 1
+  {eefd5e20-2377-4618-8fc8-bd331e0540a2}; ! Layer 2
+

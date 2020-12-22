@@ -1,0 +1,57 @@
+
+OS:Version,
+  {49b5d97b-8ed3-44c9-a45a-50e459f9ee6a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {d16333fe-a2dd-470d-b918-344ae0faec8d}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {d7074fe1-86c0-4f25-a055-64a2f66908d6}, ! Handle
+  AIR [5],                                ! Name
+  Smooth,                                 ! Roughness
+  0.440339,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {ad6c72e8-5b7b-4c47-b1e2-e671dba2c2a2}, ! Handle
+  189.1-2009 Res 3A Door Non-Swinging,    ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 3A Door Non-Swinging,    ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {829802b8-3c8a-41fe-840e-7013f7cbe2ae}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {43dc8797-275e-4f0b-a8d9-546213d737d9}, ! Handle
+  189.1-2009 Res 3A Door Non-Swinging,    ! Name
+  ,                                       ! Surface Rendering Name
+  {829802b8-3c8a-41fe-840e-7013f7cbe2ae}, ! Layer 1
+  {d7074fe1-86c0-4f25-a055-64a2f66908d6}, ! Layer 2
+  {d16333fe-a2dd-470d-b918-344ae0faec8d}; ! Layer 3
+

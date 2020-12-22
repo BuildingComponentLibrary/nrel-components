@@ -1,0 +1,57 @@
+
+OS:Version,
+  {105f2b05-eaf8-4e96-9404-1c68ce380bde}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {5d155c08-376d-48d1-894b-20c047a13516}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {f0e31fb6-baae-4f55-87c4-4b0ef756fa8a}, ! Handle
+  AIR [2],                                ! Name
+  Smooth,                                 ! Roughness
+  0.352085,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {160698ea-6d78-45cb-b8b9-0c79efe7b78d}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {028dab1d-9543-418a-8884-f90c040872c1}, ! Handle
+  90.1-2007 Res 4B Door Non-Swinging,     ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 4B Door Non-Swinging,     ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {24c5ff80-f932-494e-9340-f92b0a6d027e}, ! Handle
+  90.1-2007 Res 4B Door Non-Swinging,     ! Name
+  ,                                       ! Surface Rendering Name
+  {160698ea-6d78-45cb-b8b9-0c79efe7b78d}, ! Layer 1
+  {f0e31fb6-baae-4f55-87c4-4b0ef756fa8a}, ! Layer 2
+  {5d155c08-376d-48d1-894b-20c047a13516}; ! Layer 3
+

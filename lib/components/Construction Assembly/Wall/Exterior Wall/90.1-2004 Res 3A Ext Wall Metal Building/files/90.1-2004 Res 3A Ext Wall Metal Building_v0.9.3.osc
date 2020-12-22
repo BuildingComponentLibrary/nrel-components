@@ -1,0 +1,73 @@
+
+OS:Version,
+  {933d11ec-b56d-4063-9f1d-a7af9f49a6f1}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {fc2d7d37-f075-4c28-9f8a-cbd85d2689f5}, ! Handle
+  90.1-2004 Res 3A Ext Wall Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {65ff3e59-dda2-408a-ba58-34fd1828e0ea}, ! Layer 1
+  {45296279-abff-466b-b4d0-9325eb89b323}, ! Layer 2
+  {eea8dfd6-02d6-4baa-97bd-74f28dc6d53c}; ! Layer 3
+
+OS:Material,
+  {65ff3e59-dda2-408a-ba58-34fd1828e0ea}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+
+OS:Material,
+  {45296279-abff-466b-b4d0-9325eb89b323}, ! Handle
+  Wall Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.0598725,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {eea8dfd6-02d6-4baa-97bd-74f28dc6d53c}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {55b1fb57-4eb2-45fe-8b42-8539776fbc2c}, ! Handle
+  90.1-2004 Res 3A Ext Wall Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Res 3A Ext Wall Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  98.78,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {a76d8756-63cf-41b3-8482-b53ab560779a}, ! Handle
+  Component Data 1,                       ! Name
+  {ebabea24-9831-41f1-824d-a1debe435432}, ! UUID
+  {1ea58f1c-d4cc-4193-b362-1b262156035f}, ! Version UUID
+  1363981724,                             ! Creation Timestamp
+  1363981724,                             ! Version Timestamp
+  {fc2d7d37-f075-4c28-9f8a-cbd85d2689f5}, ! Name of Object 1
+  {65ff3e59-dda2-408a-ba58-34fd1828e0ea}, ! Name of Object 2
+  {45296279-abff-466b-b4d0-9325eb89b323}, ! Name of Object 3
+  {eea8dfd6-02d6-4baa-97bd-74f28dc6d53c}, ! Name of Object 4
+  {55b1fb57-4eb2-45fe-8b42-8539776fbc2c}; ! Name of Object 5
+

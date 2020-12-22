@@ -1,0 +1,39 @@
+
+OS:Version,
+  {0b2e3229-ac64-4e83-aa1e-7f4c33d5f761}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {184cf811-5183-446e-ba51-ad54610007d0}, ! Handle
+  Theoretical Glass [224],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.380095,                               ! Solar Transmittance at Normal Incidence
+  0.569905,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.569905,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.507883,                               ! Visible Transmittance at Normal Incidence
+  0.442117,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.442117,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0109361;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {73a4b0ba-7352-436a-9cc8-32f506f08049}, ! Handle
+  189.1-2009 Res 4B Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Surface Rendering Name
+  {184cf811-5183-446e-ba51-ad54610007d0}; ! Layer 1
+
+OS:ComponentCost:LineItem,
+  {9b301d1e-9776-45ab-bc02-c4b168201182}, ! Handle
+  189.1-2009 Res 4B Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 4B Window Metal framing curtainwall-storefront, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  512.02,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

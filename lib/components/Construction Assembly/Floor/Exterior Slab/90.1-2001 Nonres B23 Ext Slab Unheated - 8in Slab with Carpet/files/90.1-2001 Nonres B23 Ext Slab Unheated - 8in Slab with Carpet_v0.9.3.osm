@@ -1,0 +1,44 @@
+
+OS:Version,
+  {bbfa4060-ad23-48f5-a766-0d416be02ac3}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {ba367bd2-0339-4e3e-b887-ee589fafe90a}, ! Handle
+  90.1-2001 Nonres B23 Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B23 Ext Slab Unheated - 8in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {7d01e70f-ded1-479c-9f9f-185bf89d37cf}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {b36be2fe-bd28-4ddf-83ab-9e383fbf2f78}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Construction,
+  {b04b6c08-8647-4978-bf6a-2f8e5c53baef}, ! Handle
+  90.1-2001 Nonres B23 Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {7d01e70f-ded1-479c-9f9f-185bf89d37cf}, ! Layer 1
+  {b36be2fe-bd28-4ddf-83ab-9e383fbf2f78}; ! Layer 2
+

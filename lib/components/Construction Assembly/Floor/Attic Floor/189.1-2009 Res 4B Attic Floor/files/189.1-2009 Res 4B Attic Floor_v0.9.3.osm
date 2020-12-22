@@ -1,0 +1,60 @@
+
+OS:Version,
+  {39695c6f-bdc1-42a5-b442-582f73025f38}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {054f113b-097c-4701-89c1-db7532bdf94a}, ! Handle
+  AtticFloor Insulation [4],              ! Name
+  MediumRough,                            ! Roughness
+  0.392234,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {e12e11e2-bd52-4cca-a96e-2df176bc18bd}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {d7504c6a-9a4b-44a5-b6a6-ede6bfa7d80b}, ! Handle
+  189.1-2009 Res 4B Attic Floor,          ! Name
+  ,                                       ! Surface Rendering Name
+  {e12e11e2-bd52-4cca-a96e-2df176bc18bd}, ! Layer 1
+  {054f113b-097c-4701-89c1-db7532bdf94a}, ! Layer 2
+  {648412be-3387-4075-bf2f-ab26f6f3b793}; ! Layer 3
+
+OS:Material,
+  {648412be-3387-4075-bf2f-ab26f6f3b793}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {489869e2-ae30-4fdf-8a03-74cee93f2d1a}, ! Handle
+  189.1-2009 Res 4B Attic Floor,          ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 4B Attic Floor,          ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  37.058,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

@@ -1,0 +1,44 @@
+
+OS:Version,
+  {9fdc099f-349a-40cc-8c27-4277b118c5ec}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {02ed2ab4-6873-4826-bbd9-0a6561b329e1}, ! Handle
+  90.1-2001 Nonres B4 Ext Slab Unheated - 4in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B4 Ext Slab Unheated - 4in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {b737f332-bfda-4427-a1f2-394a3504dc4a}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Construction,
+  {9910bbf7-87ec-463f-918f-4965280f01f7}, ! Handle
+  90.1-2001 Nonres B4 Ext Slab Unheated - 4in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {cf181d36-effc-4ed5-ab89-727372f1749e}, ! Layer 1
+  {b737f332-bfda-4427-a1f2-394a3504dc4a}; ! Layer 2
+
+OS:Material,
+  {cf181d36-effc-4ed5-ab89-727372f1749e}, ! Handle
+  MAT-CC05 4 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.1016,                                 ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

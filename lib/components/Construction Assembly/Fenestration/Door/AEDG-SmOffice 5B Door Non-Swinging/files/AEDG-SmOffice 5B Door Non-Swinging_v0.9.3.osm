@@ -1,0 +1,31 @@
+
+OS:Version,
+  {8c7c16cc-c59c-44ae-922c-25853a900139}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {b3041514-94af-4914-b7f0-f79920abbb3a}, ! Handle
+  AEDG-SmOffice 5B Door Non-Swinging,     ! Name
+  ,                                       ! Surface Rendering Name
+  {10321597-af37-4160-b232-66dac465780e}; ! Layer 1
+
+OS:Material:NoMass,
+  {10321597-af37-4160-b232-66dac465780e}, ! Handle
+  DoorMaterial [2],                       ! Name
+  MediumRough,                            ! Roughness
+  0.352225,                               ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {eaaeb412-b411-4e29-bde3-12dcd4796864}, ! Handle
+  AEDG-SmOffice 5B Door Non-Swinging,     ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 5B Door Non-Swinging,     ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

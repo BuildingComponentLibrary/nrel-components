@@ -1,0 +1,39 @@
+
+OS:Version,
+  {f2f446b3-d0be-4377-a314-3b76590d953b}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {c179d7db-f8e5-46bd-ba4f-2d59623ad9f8}, ! Handle
+  90.1 Windows Window Fixed 2425 Brk-GrnMpr-Ins-ClrPye, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2425 Brk-GrnMpr-Ins-ClrPye, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {6651372a-a37b-441c-b807-c68181faf5c5}, ! Handle
+  Theoretical Glass [466],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.28558,                                ! Solar Transmittance at Normal Incidence
+  0.66442,                                ! Front Side Solar Reflectance at Normal Incidence
+  0.66442,                                ! Back Side Solar Reflectance at Normal Incidence
+  0.330719,                               ! Visible Transmittance at Normal Incidence
+  0.619281,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.619281,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0129885;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {c94eead1-c781-453a-89fe-6272586b721b}, ! Handle
+  90.1 Windows Window Fixed 2425 Brk-GrnMpr-Ins-ClrPye, ! Name
+  ,                                       ! Surface Rendering Name
+  {6651372a-a37b-441c-b807-c68181faf5c5}; ! Layer 1
+

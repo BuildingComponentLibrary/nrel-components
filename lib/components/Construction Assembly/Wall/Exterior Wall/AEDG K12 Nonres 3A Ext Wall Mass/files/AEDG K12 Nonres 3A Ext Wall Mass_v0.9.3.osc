@@ -1,0 +1,73 @@
+
+OS:Version,
+  {25e760d7-a50e-4ed2-bb44-dad136cfcd95}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {705fc9a3-2b40-4cee-a18f-e1a91a84ab5e}, ! Handle
+  AEDG K12 Nonres 3A Ext Wall Mass,       ! Name
+  ,                                       ! Surface Rendering Name
+  {35a67e16-178f-405c-bb7e-36ec73eafdcb}, ! Layer 1
+  {fdf97614-9085-4b92-b907-9568c0e8cd63}, ! Layer 2
+  {3bb5869f-831e-43a9-ac66-e3a37d7cc9c3}; ! Layer 3
+
+OS:Material,
+  {35a67e16-178f-405c-bb7e-36ec73eafdcb}, ! Handle
+  MAT-CC05 3.5 HW CONCRETE,               ! Name
+  Rough,                                  ! Roughness
+  0.0889,                                 ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {fdf97614-9085-4b92-b907-9568c0e8cd63}, ! Handle
+  Wall Insulation [68],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0376692,                              ! Thickness {m}
+  0.0432,                                 ! Conductivity {W/m-K}
+  91,                                     ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {3bb5869f-831e-43a9-ac66-e3a37d7cc9c3}, ! Handle
+  MAT-CC05 4 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.1016,                                 ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {eee91d56-7602-406b-a6fd-7838c03d9af3}, ! Handle
+  AEDG K12 Nonres 3A Ext Wall Mass,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 3A Ext Wall Mass,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  223.35,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {493276f4-c749-4a63-a77e-735d81532288}, ! Handle
+  Component Data 1,                       ! Name
+  {21761fad-c32a-4606-b21b-5fa04971b336}, ! UUID
+  {1ecf5ffc-d6ee-44d1-91d9-5e2b16a18b8b}, ! Version UUID
+  1363981888,                             ! Creation Timestamp
+  1363981888,                             ! Version Timestamp
+  {705fc9a3-2b40-4cee-a18f-e1a91a84ab5e}, ! Name of Object 1
+  {35a67e16-178f-405c-bb7e-36ec73eafdcb}, ! Name of Object 2
+  {fdf97614-9085-4b92-b907-9568c0e8cd63}, ! Name of Object 3
+  {3bb5869f-831e-43a9-ac66-e3a37d7cc9c3}, ! Name of Object 4
+  {eee91d56-7602-406b-a6fd-7838c03d9af3}; ! Name of Object 5
+

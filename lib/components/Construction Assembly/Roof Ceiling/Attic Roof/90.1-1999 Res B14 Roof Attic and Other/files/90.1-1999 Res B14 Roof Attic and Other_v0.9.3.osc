@@ -1,0 +1,87 @@
+
+OS:Version,
+  {0b4f964e-8919-4fc0-afa4-b3ffe425aa75}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {800bec34-e233-4007-b9e1-2cb93f0a5259}, ! Handle
+  90.1-1999 Res B14 Roof Attic and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {46c2cf03-e734-4915-874b-929a1a67aa02}, ! Layer 1
+  {7944696e-1de7-48bc-8788-3e59d30fbf40}, ! Layer 2
+  {71d5be0e-2342-47e6-b282-26333c39105d}, ! Layer 3
+  {3a46b09c-f12b-4fd5-8de1-422f26de9c0d}; ! Layer 4
+
+OS:Material,
+  {46c2cf03-e734-4915-874b-929a1a67aa02}, ! Handle
+  Wood Shingles,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0178,                                 ! Thickness {m}
+  0.115,                                  ! Conductivity {W/m-K}
+  513,                                    ! Density {kg/m3}
+  1255,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {7944696e-1de7-48bc-8788-3e59d30fbf40}, ! Handle
+  1IN Wood Decking,                       ! Name
+  MediumSmooth,                           ! Roughness
+  0.0254,                                 ! Thickness {m}
+  0.1211,                                 ! Conductivity {W/m-K}
+  593,                                    ! Density {kg/m3}
+  2510,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {71d5be0e-2342-47e6-b282-26333c39105d}, ! Handle
+  Roof Insulation [2],                    ! Name
+  MediumRough,                            ! Roughness
+  0.221604,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {3a46b09c-f12b-4fd5-8de1-422f26de9c0d}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {86c2549b-4871-4cbf-9caa-f09432d69380}, ! Handle
+  90.1-1999 Res B14 Roof Attic and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B14 Roof Attic and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  33.39,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {b39d7ec3-2303-47c8-87c0-bbb2432e4e54}, ! Handle
+  Component Data 1,                       ! Name
+  {6d193946-9ebc-47f5-b401-7acfdc5f991e}, ! UUID
+  {b7fe73e7-c59e-4c5c-80e2-84f374388188}, ! Version UUID
+  1363981224,                             ! Creation Timestamp
+  1363981224,                             ! Version Timestamp
+  {800bec34-e233-4007-b9e1-2cb93f0a5259}, ! Name of Object 1
+  {46c2cf03-e734-4915-874b-929a1a67aa02}, ! Name of Object 2
+  {7944696e-1de7-48bc-8788-3e59d30fbf40}, ! Name of Object 3
+  {71d5be0e-2342-47e6-b282-26333c39105d}, ! Name of Object 4
+  {3a46b09c-f12b-4fd5-8de1-422f26de9c0d}, ! Name of Object 5
+  {86c2549b-4871-4cbf-9caa-f09432d69380}; ! Name of Object 6
+

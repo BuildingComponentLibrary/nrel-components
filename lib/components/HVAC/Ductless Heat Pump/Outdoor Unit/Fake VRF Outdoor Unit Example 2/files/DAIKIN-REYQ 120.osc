@@ -1,0 +1,691 @@
+
+OS:Version,
+  {c53d712d-f454-433a-9249-9245b3012b99}, !- Handle
+  1.11.2;                                 !- Version Identifier
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {571d3ea0-bcaa-4e2e-92d7-8e74fe7c8488}, !- Handle
+  DAIKINREYQ 120,                         !- Name
+  {dd5c5aa4-9923-4014-912e-033f9e4264d2}, !- Availability Schedule
+  35200,                                  !- Rated Total Cooling Capacity {W}
+  4.28745432399513,                       !- Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  43,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {78593f88-964f-4a0f-b776-f55f97c26d07}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve
+  {5119941d-3e68-4ccd-a111-0e3ec2541911}, !- Cooling Capacity Ratio Boundary Curve
+  {2d53d726-74c9-469c-9421-9d96f45ebacc}, !- Cooling Capacity Ratio Modifier Function of High Temperature Curve
+  {1a2f07d5-4ee1-4d1d-a3b2-4ce0a0faf3ac}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve
+  {9a8dcf9f-808e-4e87-86d1-f1ba3a9a2f4d}, !- Cooling Energy Input Ratio Boundary Curve
+  {5c4575aa-f665-435b-acac-7953ac7b5599}, !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve
+  {533eb4a1-f783-483f-8f87-5a4379b76dbe}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve
+  {9c6e8351-7d9e-43b8-bdd6-662e7bc6f475}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve
+  {2d357f34-7a49-4c83-9059-c75106829276}, !- Cooling Combination Ratio Correction Factor Curve
+  {fd3d5463-3c46-4b55-a7cb-d6b5d6fd139b}, !- Cooling Part-Load Fraction Correlation Curve
+  39600,                                  !- Rated Total Heating Capacity {W}
+  1,                                      !- Rated Total Heating Capacity Sizing Ratio {W/W}
+  4.14659685863874,                       !- Rated Heating COP {W/W}
+  -20,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  30,                                     !- Maximum Outdoor Temperature in Heating Mode {C}
+  {1ce878b8-b73d-48b0-a2c8-247cfe534165}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve
+  {4a37c183-7300-46b2-9cc9-073dea5666bc}, !- Heating Capacity Ratio Boundary Curve
+  {f552c5e9-d8a4-4a4b-9f2d-7a3c19240e29}, !- Heating Capacity Ratio Modifier Function of High Temperature Curve
+  {4de95c81-70ce-4996-9174-c087269fa634}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve
+  {ecf9db5f-8d93-45d2-b135-7db01ab1f8d9}, !- Heating Energy Input Ratio Boundary Curve
+  {779df64c-c0a1-47dd-b91a-8272a7aba3fd}, !- Heating Energy Input Ratio Modifier Function of High Temperature Curve
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {8548c9ca-3237-43a3-ac73-7fcbd0ba0c43}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve
+  {bc5eb09c-d3e0-41c3-933f-89e513ef27ab}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve
+  {6311b3df-5595-4cb4-a507-08a7a0feb251}, !- Heating Combination Ratio Correction Factor Curve
+  {3bf4c4cc-71f6-46f0-8995-0757ac21f4b5}, !- Heating Part-Load Fraction Correlation Curve
+  0.25,                                   !- Minimum Heat Pump Part-Load Ratio
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {921d4a09-e0da-486f-a92f-c7e7fcca94d5}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {99d150d1-233b-4ba7-8067-481b7adc1828}, !- Piping Correction Factor for Length in Cooling Mode Curve
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  ,                                       !- Piping Correction Factor for Length in Heating Mode Curve
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient
+  15,                                     !- Crankcase Heater Power per Compressor {W}
+  2,                                      !- Number of Compressors
+  0.33,                                   !- Ratio of Compressor Size to Total Compressor Capacity
+  7,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {125ffe2e-398a-488b-8ec6-98a424787d74}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve
+  0.058333,                               !- Defrost Time Period Fraction
+  1e-07,                                  !- Resistive Defrost Heater Capacity {W}
+  7,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  ,                                       !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  autosize,                               !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  autosize,                               !- Evaporative Condenser Air Flow Rate {m3/s}
+  autosize,                               !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  0,                                      !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  20,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  ,                                       !- Heat Recovery Cooling Capacity Modifier Curve
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  ,                                       !- Heat Recovery Cooling Energy Modifier Curve
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  ,                                       !- Heat Recovery Heating Capacity Modifier Curve
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  ,                                       !- Heat Recovery Heating Energy Modifier Curve
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Schedule:Constant,
+  {dd5c5aa4-9923-4014-912e-033f9e4264d2}, !- Handle
+  Always On Discrete,                     !- Name
+  {46589378-ea9a-46eb-94a3-89cd806d5194}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:Curve:Biquadratic,
+  {45fd42f9-b5a1-4b61-a771-682b0568dd55}, !- Handle
+  Curve Biquadratic 1,                    !- Name
+  -1.69653019339465,                      !- Coefficient1 Constant
+  0.207248180531939,                      !- Coefficient2 x
+  -0.00343146229659024,                   !- Coefficient3 x**2
+  0.016381597419714,                      !- Coefficient4 y
+  -6.7387172629965e-05,                   !- Coefficient5 y**2
+  -0.000849848402870241,                  !- Coefficient6 x*y
+  13.9,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -5,                                     !- Minimum Value of y
+  43.3,                                   !- Maximum Value of y
+  0.59,                                   !- Minimum Curve Output
+  1.33;                                   !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {9397d794-c8c2-4f43-8496-0a9a1dd06726}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolCapFTBoundary, !- Name
+  25.73,                                  !- Coefficient1 Constant
+  -0.03150043,                            !- Coefficient2 x
+  -0.01416595,                            !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  11,                                     !- Minimum Value of x
+  30;                                     !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {0270dd0e-2388-415e-bbf8-893c59bdf566}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolCapFTHi, !- Name
+  0.6867358,                              !- Coefficient1 Constant
+  0.0207631,                              !- Coefficient2 x
+  0.0005447,                              !- Coefficient3 x**2
+  -0.0016218,                             !- Coefficient4 y
+  -4.259e-07,                             !- Coefficient5 y**2
+  -0.0003392,                             !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  24,                                     !- Maximum Value of x
+  16,                                     !- Minimum Value of y
+  43;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {0489467a-df0b-454a-a9cd-f13b77f3d04c}, !- Handle
+  Curve Biquadratic 2,                    !- Name
+  -1.61908214818635,                      !- Coefficient1 Constant
+  0.185964818731756,                      !- Coefficient2 x
+  -0.00389610393381592,                   !- Coefficient3 x**2
+  -0.00901995326324613,                   !- Coefficient4 y
+  0.00030340007815629,                    !- Coefficient5 y**2
+  0.000476048529099348,                   !- Coefficient6 x*y
+  13.9,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -5,                                     !- Minimum Value of y
+  43.3,                                   !- Maximum Value of y
+  0.27,                                   !- Minimum Curve Output
+  1.15;                                   !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {a5c5ee8a-d59f-4c13-bd42-a2804bde8f20}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolEIRFTBoundary, !- Name
+  25.73473775,                            !- Coefficient1 Constant
+  -0.03150043,                            !- Coefficient2 x
+  -0.01416595,                            !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  15,                                     !- Minimum Value of x
+  24;                                     !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {7ddca597-7070-4547-9b8c-8ce482ff1878}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolEIRFTHi, !- Name
+  -1.4395110176,                          !- Coefficient1 Constant
+  0.1619850459,                           !- Coefficient2 x
+  -0.0034911781,                          !- Coefficient3 x**2
+  0.0269442645,                           !- Coefficient4 y
+  0.0001346163,                           !- Coefficient5 y**2
+  -0.0006714941,                          !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  16.8,                                   !- Minimum Value of y
+  43.3;                                   !- Maximum Value of y
+
+OS:Curve:Cubic,
+  {ce54d82d-b01b-43d8-9568-8158b0cafc8f}, !- Handle
+  Curve Cubic 1,                          !- Name
+  0.0734992169827752,                     !- Coefficient1 Constant
+  0.334783365234032,                      !- Coefficient2 x
+  0.591613015486343,                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  0.25,                                   !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Curve Output
+  1;                                      !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {bbe2723c-0b20-4cbb-b9bf-993040ebd21b}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 CoolingEIRHiPLR, !- Name
+  1,                                      !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1.5;                                    !- Maximum Value of x
+
+OS:Curve:Cubic,
+  {47ce58d0-25a1-4709-827a-99c0921e9ca0}, !- Handle
+  Curve Cubic 2,                          !- Name
+  0.24034,                                !- Coefficient1 Constant
+  -0.21873,                               !- Coefficient2 x
+  1.97941,                                !- Coefficient3 x**2
+  -1.02636,                               !- Coefficient4 x**3
+  0.5,                                    !- Minimum Value of x
+  2,                                      !- Maximum Value of x
+  0.5,                                    !- Minimum Curve Output
+  1.056;                                  !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {c3f5238a-5a31-4147-9324-10639f0caf38}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCPLFFPLR, !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {ba2ef6e7-b62a-4e8f-abe3-5b3d9bf8f579}, !- Handle
+  Curve Biquadratic 3,                    !- Name
+  0.983220174655636,                      !- Coefficient1 Constant
+  0.0157167577703294,                     !- Coefficient2 x
+  -0.000835032422884084,                  !- Coefficient3 x**2
+  0.0522939264581759,                     !- Coefficient4 y
+  -0.000531556035364549,                  !- Coefficient5 y**2
+  -0.00190605953116024,                   !- Coefficient6 x*y
+  16.1,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -25,                                    !- Minimum Value of y
+  13.3,                                   !- Maximum Value of y
+  0.515151515151515,                      !- Minimum Curve Output
+  1.2;                                    !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {ce267c40-b1be-465b-803a-447c5c93fd99}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatCapFTBoundary, !- Name
+  58.577,                                 !- Coefficient1 Constant
+  -3.0255,                                !- Coefficient2 x
+  0.0193,                                 !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  15,                                     !- Minimum Value of x
+  23.9;                                   !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {2611002a-fbe1-4155-a3dc-67042d6e80bf}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatCapFTHi, !- Name
+  2.5859872368,                           !- Coefficient1 Constant
+  -0.0953227101,                          !- Coefficient2 x
+  0.0009553288,                           !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  21.1,                                   !- Minimum Value of x
+  27.2,                                   !- Maximum Value of x
+  -9.44,                                  !- Minimum Value of y
+  15;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {c3b1cb27-2fa4-4188-b4d3-938d13abbb49}, !- Handle
+  Curve Biquadratic 4,                    !- Name
+  0.756830029796909,                      !- Coefficient1 Constant
+  0.0457499799042671,                     !- Coefficient2 x
+  -0.00136357240431388,                   !- Coefficient3 x**2
+  0.0554884599902023,                     !- Coefficient4 y
+  -0.00120700875497686,                   !- Coefficient5 y**2
+  -0.00303329271420931,                   !- Coefficient6 x*y
+  16.1,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -25,                                    !- Minimum Value of y
+  13.3,                                   !- Maximum Value of y
+  0.7,                                    !- Minimum Curve Output
+  1.184;                                  !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {61a11f81-d3c0-46ff-9723-23e0cdd37df7}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatEIRFTBoundary, !- Name
+  58.577,                                 !- Coefficient1 Constant
+  -3.0255,                                !- Coefficient2 x
+  0.0193,                                 !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  15,                                     !- Minimum Value of x
+  23.9;                                   !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {57a24470-5b44-43d1-acb0-16f1a580bbb6}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatEIRFTHi, !- Name
+  1.3885703646,                           !- Coefficient1 Constant
+  -0.0229771462,                          !- Coefficient2 x
+  0.000537274,                            !- Coefficient3 x**2
+  -0.0273936962,                          !- Coefficient4 y
+  0.0004030426,                           !- Coefficient5 y**2
+  -5.9786e-05,                            !- Coefficient6 x*y
+  21.1,                                   !- Minimum Value of x
+  27.2,                                   !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1;                                      !- Maximum Value of y
+
+OS:Curve:Cubic,
+  {3e648283-b757-49e6-83f5-f1af80488baf}, !- Handle
+  Curve Cubic 3,                          !- Name
+  0.0724906507105475,                     !- Coefficient1 Constant
+  0.658189977561701,                      !- Coefficient2 x
+  0.269259536275246,                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  0.25,                                   !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Curve Output
+  1;                                      !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {bef73f4a-61e9-4b20-931b-968389f52df5}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 HeatingEIRHiPLR, !- Name
+  1,                                      !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1.5;                                    !- Maximum Value of x
+
+OS:Curve:Cubic,
+  {12ac6921-ccb8-45c2-8260-430117de10b3}, !- Handle
+  Curve Cubic 4,                          !- Name
+  0.62115,                                !- Coefficient1 Constant
+  -1.55798,                               !- Coefficient2 x
+  3.36817,                                !- Coefficient3 x**2
+  -1.4224,                                !- Coefficient4 x**3
+  0.5,                                    !- Minimum Value of x
+  2,                                      !- Maximum Value of x
+  0.5,                                    !- Minimum Curve Output
+  1.155;                                  !- Maximum Curve Output
+
+OS:Curve:Biquadratic,
+  {2ce59d4d-8126-4bb0-86b0-069fcb2b7168}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 CoolingLengthCorrectionFactor, !- Name
+  2.0388158625,                           !- Coefficient1 Constant
+  -0.0024260645,                          !- Coefficient2 x
+  3.5512e-06,                             !- Coefficient3 x**2
+  -1.6858129772,                          !- Coefficient4 y
+  0.668703358,                            !- Coefficient5 y**2
+  -4.5706e-05,                            !- Coefficient6 x*y
+  7.62,                                   !- Minimum Value of x
+  182.88,                                 !- Maximum Value of x
+  0.8,                                    !- Minimum Value of y
+  1.5;                                    !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {125ffe2e-398a-488b-8ec6-98a424787d74}, !- Handle
+  Curve Biquadratic 5,                    !- Name
+  -1.61908214818635,                      !- Coefficient1 Constant
+  0.185964818731756,                      !- Coefficient2 x
+  -0.00389610393381592,                   !- Coefficient3 x**2
+  -0.00901995326324613,                   !- Coefficient4 y
+  0.00030340007815629,                    !- Coefficient5 y**2
+  0.000476048529099348,                   !- Coefficient6 x*y
+  13.9,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -5,                                     !- Minimum Value of y
+  50,                                     !- Maximum Value of y
+  0.27,                                   !- Minimum Curve Output
+  1.15;                                   !- Maximum Curve Output
+
+OS:ScheduleTypeLimits,
+  {46589378-ea9a-46eb-94a3-89cd806d5194}, !- Handle
+  OnOff,                                  !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:ModelObjectList,
+  {921d4a09-e0da-486f-a92f-c7e7fcca94d5}, !- Handle
+  Model Object List 1;                    !- Name
+
+OS:Curve:Biquadratic,
+  {78593f88-964f-4a0f-b776-f55f97c26d07}, !- Handle
+  Curve Biquadratic 6,                    !- Name
+  -1.69653019339465,                      !- Coefficient1 Constant
+  0.207248180531939,                      !- Coefficient2 x
+  -0.00343146229659024,                   !- Coefficient3 x**2
+  0.016381597419714,                      !- Coefficient4 y
+  -6.7387172629965e-05,                   !- Coefficient5 y**2
+  -0.000849848402870241,                  !- Coefficient6 x*y
+  13.9,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -5,                                     !- Minimum Value of y
+  43.3,                                   !- Maximum Value of y
+  0.59,                                   !- Minimum Curve Output
+  1.33;                                   !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {5119941d-3e68-4ccd-a111-0e3ec2541911}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolCapFTBoundary 1, !- Name
+  25.73,                                  !- Coefficient1 Constant
+  -0.03150043,                            !- Coefficient2 x
+  -0.01416595,                            !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  11,                                     !- Minimum Value of x
+  30;                                     !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {2d53d726-74c9-469c-9421-9d96f45ebacc}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolCapFTHi 1, !- Name
+  0.6867358,                              !- Coefficient1 Constant
+  0.0207631,                              !- Coefficient2 x
+  0.0005447,                              !- Coefficient3 x**2
+  -0.0016218,                             !- Coefficient4 y
+  -4.259e-07,                             !- Coefficient5 y**2
+  -0.0003392,                             !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  24,                                     !- Maximum Value of x
+  16,                                     !- Minimum Value of y
+  43;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {1a2f07d5-4ee1-4d1d-a3b2-4ce0a0faf3ac}, !- Handle
+  Curve Biquadratic 7,                    !- Name
+  -1.61908214818635,                      !- Coefficient1 Constant
+  0.185964818731756,                      !- Coefficient2 x
+  -0.00389610393381592,                   !- Coefficient3 x**2
+  -0.00901995326324613,                   !- Coefficient4 y
+  0.00030340007815629,                    !- Coefficient5 y**2
+  0.000476048529099348,                   !- Coefficient6 x*y
+  13.9,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -5,                                     !- Minimum Value of y
+  43.3,                                   !- Maximum Value of y
+  0.27,                                   !- Minimum Curve Output
+  1.15;                                   !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {9a8dcf9f-808e-4e87-86d1-f1ba3a9a2f4d}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolEIRFTBoundary 1, !- Name
+  25.73473775,                            !- Coefficient1 Constant
+  -0.03150043,                            !- Coefficient2 x
+  -0.01416595,                            !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  15,                                     !- Minimum Value of x
+  24;                                     !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {5c4575aa-f665-435b-acac-7953ac7b5599}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCoolEIRFTHi 1, !- Name
+  -1.4395110176,                          !- Coefficient1 Constant
+  0.1619850459,                           !- Coefficient2 x
+  -0.0034911781,                          !- Coefficient3 x**2
+  0.0269442645,                           !- Coefficient4 y
+  0.0001346163,                           !- Coefficient5 y**2
+  -0.0006714941,                          !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  16.8,                                   !- Minimum Value of y
+  43.3;                                   !- Maximum Value of y
+
+OS:Curve:Cubic,
+  {533eb4a1-f783-483f-8f87-5a4379b76dbe}, !- Handle
+  Curve Cubic 5,                          !- Name
+  0.0734992169827752,                     !- Coefficient1 Constant
+  0.334783365234032,                      !- Coefficient2 x
+  0.591613015486343,                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  0.25,                                   !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Curve Output
+  1;                                      !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {9c6e8351-7d9e-43b8-bdd6-662e7bc6f475}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 CoolingEIRHiPLR 1, !- Name
+  1,                                      !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1.5;                                    !- Maximum Value of x
+
+OS:Curve:Cubic,
+  {2d357f34-7a49-4c83-9059-c75106829276}, !- Handle
+  Curve Cubic 6,                          !- Name
+  0.24034,                                !- Coefficient1 Constant
+  -0.21873,                               !- Coefficient2 x
+  1.97941,                                !- Coefficient3 x**2
+  -1.02636,                               !- Coefficient4 x**3
+  0.5,                                    !- Minimum Value of x
+  2,                                      !- Maximum Value of x
+  0.5,                                    !- Minimum Curve Output
+  1.056;                                  !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {fd3d5463-3c46-4b55-a7cb-d6b5d6fd139b}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCPLFFPLR 1, !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {1ce878b8-b73d-48b0-a2c8-247cfe534165}, !- Handle
+  Curve Biquadratic 8,                    !- Name
+  0.983220174655636,                      !- Coefficient1 Constant
+  0.0157167577703294,                     !- Coefficient2 x
+  -0.000835032422884084,                  !- Coefficient3 x**2
+  0.0522939264581759,                     !- Coefficient4 y
+  -0.000531556035364549,                  !- Coefficient5 y**2
+  -0.00190605953116024,                   !- Coefficient6 x*y
+  16.1,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -25,                                    !- Minimum Value of y
+  13.3,                                   !- Maximum Value of y
+  0.515151515151515,                      !- Minimum Curve Output
+  1.2;                                    !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {4a37c183-7300-46b2-9cc9-073dea5666bc}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatCapFTBoundary 1, !- Name
+  58.577,                                 !- Coefficient1 Constant
+  -3.0255,                                !- Coefficient2 x
+  0.0193,                                 !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  15,                                     !- Minimum Value of x
+  23.9;                                   !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {f552c5e9-d8a4-4a4b-9f2d-7a3c19240e29}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatCapFTHi 1, !- Name
+  2.5859872368,                           !- Coefficient1 Constant
+  -0.0953227101,                          !- Coefficient2 x
+  0.0009553288,                           !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  21.1,                                   !- Minimum Value of x
+  27.2,                                   !- Maximum Value of x
+  -9.44,                                  !- Minimum Value of y
+  15;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {4de95c81-70ce-4996-9174-c087269fa634}, !- Handle
+  Curve Biquadratic 9,                    !- Name
+  0.756830029796909,                      !- Coefficient1 Constant
+  0.0457499799042671,                     !- Coefficient2 x
+  -0.00136357240431388,                   !- Coefficient3 x**2
+  0.0554884599902023,                     !- Coefficient4 y
+  -0.00120700875497686,                   !- Coefficient5 y**2
+  -0.00303329271420931,                   !- Coefficient6 x*y
+  16.1,                                   !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  -25,                                    !- Minimum Value of y
+  13.3,                                   !- Maximum Value of y
+  0.7,                                    !- Minimum Curve Output
+  1.184;                                  !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {ecf9db5f-8d93-45d2-b135-7db01ab1f8d9}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatEIRFTBoundary 1, !- Name
+  58.577,                                 !- Coefficient1 Constant
+  -3.0255,                                !- Coefficient2 x
+  0.0193,                                 !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  15,                                     !- Minimum Value of x
+  23.9;                                   !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {779df64c-c0a1-47dd-b91a-8272a7aba3fd}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFHeatEIRFTHi 1, !- Name
+  1.3885703646,                           !- Coefficient1 Constant
+  -0.0229771462,                          !- Coefficient2 x
+  0.000537274,                            !- Coefficient3 x**2
+  -0.0273936962,                          !- Coefficient4 y
+  0.0004030426,                           !- Coefficient5 y**2
+  -5.9786e-05,                            !- Coefficient6 x*y
+  21.1,                                   !- Minimum Value of x
+  27.2,                                   !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1;                                      !- Maximum Value of y
+
+OS:Curve:Cubic,
+  {8548c9ca-3237-43a3-ac73-7fcbd0ba0c43}, !- Handle
+  Curve Cubic 7,                          !- Name
+  0.0724906507105475,                     !- Coefficient1 Constant
+  0.658189977561701,                      !- Coefficient2 x
+  0.269259536275246,                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  0.25,                                   !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Curve Output
+  1;                                      !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {bc5eb09c-d3e0-41c3-933f-89e513ef27ab}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 HeatingEIRHiPLR 1, !- Name
+  1,                                      !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1.5;                                    !- Maximum Value of x
+
+OS:Curve:Cubic,
+  {6311b3df-5595-4cb4-a507-08a7a0feb251}, !- Handle
+  Curve Cubic 8,                          !- Name
+  0.62115,                                !- Coefficient1 Constant
+  -1.55798,                               !- Coefficient2 x
+  3.36817,                                !- Coefficient3 x**2
+  -1.4224,                                !- Coefficient4 x**3
+  0.5,                                    !- Minimum Value of x
+  2,                                      !- Maximum Value of x
+  0.5,                                    !- Minimum Curve Output
+  1.155;                                  !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {3bf4c4cc-71f6-46f0-8995-0757ac21f4b5}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 VRFCPLFFPLR 2, !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {99d150d1-233b-4ba7-8067-481b7adc1828}, !- Handle
+  Air Conditioner Variable Refrigerant Flow 1 CoolingLengthCorrectionFactor 1, !- Name
+  2.0388158625,                           !- Coefficient1 Constant
+  -0.0024260645,                          !- Coefficient2 x
+  3.5512e-06,                             !- Coefficient3 x**2
+  -1.6858129772,                          !- Coefficient4 y
+  0.668703358,                            !- Coefficient5 y**2
+  -4.5706e-05,                            !- Coefficient6 x*y
+  7.62,                                   !- Minimum Value of x
+  182.88,                                 !- Maximum Value of x
+  0.8,                                    !- Minimum Value of y
+  1.5;                                    !- Maximum Value of y
+
+OS:ComponentData,
+  {a90d6e18-d5ea-4b0d-9814-0e978f1a99aa}, !- Handle
+  Component Data 1,                       !- Name
+  {c9eefe20-dbba-420f-affd-93a58ffc786e}, !- UUID
+  {429878ea-c902-4524-b0da-c29b371b2f6f}, !- Version UUID
+  1463085387,                             !- Creation Timestamp
+  1463085387,                             !- Version Timestamp
+  {571d3ea0-bcaa-4e2e-92d7-8e74fe7c8488}, !- Name of Object 1
+  {dd5c5aa4-9923-4014-912e-033f9e4264d2}, !- Name of Object 2
+  {45fd42f9-b5a1-4b61-a771-682b0568dd55}, !- Name of Object 3
+  {9397d794-c8c2-4f43-8496-0a9a1dd06726}, !- Name of Object 4
+  {0270dd0e-2388-415e-bbf8-893c59bdf566}, !- Name of Object 5
+  {0489467a-df0b-454a-a9cd-f13b77f3d04c}, !- Name of Object 6
+  {a5c5ee8a-d59f-4c13-bd42-a2804bde8f20}, !- Name of Object 7
+  {7ddca597-7070-4547-9b8c-8ce482ff1878}, !- Name of Object 8
+  {ce54d82d-b01b-43d8-9568-8158b0cafc8f}, !- Name of Object 9
+  {bbe2723c-0b20-4cbb-b9bf-993040ebd21b}, !- Name of Object 10
+  {47ce58d0-25a1-4709-827a-99c0921e9ca0}, !- Name of Object 11
+  {c3f5238a-5a31-4147-9324-10639f0caf38}, !- Name of Object 12
+  {ba2ef6e7-b62a-4e8f-abe3-5b3d9bf8f579}, !- Name of Object 13
+  {ce267c40-b1be-465b-803a-447c5c93fd99}, !- Name of Object 14
+  {2611002a-fbe1-4155-a3dc-67042d6e80bf}, !- Name of Object 15
+  {c3b1cb27-2fa4-4188-b4d3-938d13abbb49}, !- Name of Object 16
+  {61a11f81-d3c0-46ff-9723-23e0cdd37df7}, !- Name of Object 17
+  {57a24470-5b44-43d1-acb0-16f1a580bbb6}, !- Name of Object 18
+  {3e648283-b757-49e6-83f5-f1af80488baf}, !- Name of Object 19
+  {bef73f4a-61e9-4b20-931b-968389f52df5}, !- Name of Object 20
+  {12ac6921-ccb8-45c2-8260-430117de10b3}, !- Name of Object 21
+  {2ce59d4d-8126-4bb0-86b0-069fcb2b7168}, !- Name of Object 22
+  {125ffe2e-398a-488b-8ec6-98a424787d74}, !- Name of Object 23
+  {46589378-ea9a-46eb-94a3-89cd806d5194}, !- Name of Object 24
+  {921d4a09-e0da-486f-a92f-c7e7fcca94d5}, !- Name of Object 25
+  {78593f88-964f-4a0f-b776-f55f97c26d07}, !- Name of Object 26
+  {5119941d-3e68-4ccd-a111-0e3ec2541911}, !- Name of Object 27
+  {2d53d726-74c9-469c-9421-9d96f45ebacc}, !- Name of Object 28
+  {1a2f07d5-4ee1-4d1d-a3b2-4ce0a0faf3ac}, !- Name of Object 29
+  {9a8dcf9f-808e-4e87-86d1-f1ba3a9a2f4d}, !- Name of Object 30
+  {5c4575aa-f665-435b-acac-7953ac7b5599}, !- Name of Object 31
+  {533eb4a1-f783-483f-8f87-5a4379b76dbe}, !- Name of Object 32
+  {9c6e8351-7d9e-43b8-bdd6-662e7bc6f475}, !- Name of Object 33
+  {2d357f34-7a49-4c83-9059-c75106829276}, !- Name of Object 34
+  {fd3d5463-3c46-4b55-a7cb-d6b5d6fd139b}, !- Name of Object 35
+  {1ce878b8-b73d-48b0-a2c8-247cfe534165}, !- Name of Object 36
+  {4a37c183-7300-46b2-9cc9-073dea5666bc}, !- Name of Object 37
+  {f552c5e9-d8a4-4a4b-9f2d-7a3c19240e29}, !- Name of Object 38
+  {4de95c81-70ce-4996-9174-c087269fa634}, !- Name of Object 39
+  {ecf9db5f-8d93-45d2-b135-7db01ab1f8d9}, !- Name of Object 40
+  {779df64c-c0a1-47dd-b91a-8272a7aba3fd}, !- Name of Object 41
+  {8548c9ca-3237-43a3-ac73-7fcbd0ba0c43}, !- Name of Object 42
+  {bc5eb09c-d3e0-41c3-933f-89e513ef27ab}, !- Name of Object 43
+  {6311b3df-5595-4cb4-a507-08a7a0feb251}, !- Name of Object 44
+  {3bf4c4cc-71f6-46f0-8995-0757ac21f4b5}, !- Name of Object 45
+  {99d150d1-233b-4ba7-8067-481b7adc1828}; !- Name of Object 46
+

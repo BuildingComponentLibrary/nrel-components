@@ -1,0 +1,73 @@
+
+OS:Version,
+  {5b706ec6-4d87-4757-95ea-39c656ef2a82}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {4d8a73f7-0fc8-4e10-9ec9-a4fccaff5e19}, ! Handle
+  Wood Shingles,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0178,                                 ! Thickness {m}
+  0.115,                                  ! Conductivity {W/m-K}
+  513,                                    ! Density {kg/m3}
+  1255,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {bcd17dc8-010d-40e5-ab24-f28dbbcbf5bc}, ! Handle
+  1IN Wood Decking,                       ! Name
+  MediumSmooth,                           ! Roughness
+  0.0254,                                 ! Thickness {m}
+  0.1211,                                 ! Conductivity {W/m-K}
+  593,                                    ! Density {kg/m3}
+  2510,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {f5aef365-6e75-43a7-814e-e7a625a1c32a}, ! Handle
+  Roof Insulation [5],                    ! Name
+  MediumRough,                            ! Roughness
+  0.286906,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {bf7ba2bd-578e-47ed-acd8-13c45ea45a29}, ! Handle
+  90.1-2007 Nonres 5B Roof Attic and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {4d8a73f7-0fc8-4e10-9ec9-a4fccaff5e19}, ! Layer 1
+  {bcd17dc8-010d-40e5-ab24-f28dbbcbf5bc}, ! Layer 2
+  {f5aef365-6e75-43a7-814e-e7a625a1c32a}, ! Layer 3
+  {4cfe387e-a709-4e4b-bcf2-4cf04ad372d9}; ! Layer 4
+
+OS:Material,
+  {4cfe387e-a709-4e4b-bcf2-4cf04ad372d9}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {d25e2b80-a3c3-48ae-9c68-4798eec42860}, ! Handle
+  90.1-2007 Nonres 5B Roof Attic and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 5B Roof Attic and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  34.757,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

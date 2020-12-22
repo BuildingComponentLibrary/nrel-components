@@ -1,0 +1,60 @@
+
+OS:Version,
+  {8c093785-7e79-4f62-91af-d7013e72e76b}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {d3f6ab61-b263-4a59-b0dd-2039cfc5f9db}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {5486d720-2ce1-4146-993b-8f65d95b22c7}, ! Handle
+  90.1-2001 Res B19 Roof IEAD,            ! Name
+  ,                                       ! Surface Rendering Name
+  {d3f6ab61-b263-4a59-b0dd-2039cfc5f9db}, ! Layer 1
+  {07fe6b0a-ea59-405f-95db-21e0aef1a374}, ! Layer 2
+  {1882cbd2-4736-49dc-8351-b96ff6f21984}; ! Layer 3
+
+OS:Material,
+  {07fe6b0a-ea59-405f-95db-21e0aef1a374}, ! Handle
+  Roof Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.124958,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {1882cbd2-4736-49dc-8351-b96ff6f21984}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {6ebfe932-5525-40d7-b890-5750ce1e4b86}, ! Handle
+  90.1-2001 Res B19 Roof IEAD,            ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B19 Roof IEAD,            ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  49.208,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

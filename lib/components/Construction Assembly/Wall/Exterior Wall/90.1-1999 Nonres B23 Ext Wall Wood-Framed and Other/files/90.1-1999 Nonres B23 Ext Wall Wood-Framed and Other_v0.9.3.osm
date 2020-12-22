@@ -1,0 +1,60 @@
+
+OS:Version,
+  {28ed0924-cb37-4d45-a572-aa673e88cf11}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {89edc810-cf25-4027-a344-69c85a9e857f}, ! Handle
+  90.1-1999 Nonres B23 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Nonres B23 Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  77.608,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {a2548c7b-ab4b-4026-b5a8-b87e0a16b7c4}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {71e3e2ec-3862-4af6-b1d1-476c151489f6}, ! Handle
+  Wall Insulation [11],                   ! Name
+  MediumRough,                            ! Roughness
+  0.109279,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {69cb3fc7-284f-47d6-aea3-eaa2f5a20e56}, ! Handle
+  90.1-1999 Nonres B23 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {a2548c7b-ab4b-4026-b5a8-b87e0a16b7c4}, ! Layer 1
+  {71e3e2ec-3862-4af6-b1d1-476c151489f6}, ! Layer 2
+  {79059da6-12be-4988-a9d2-17c93d030396}; ! Layer 3
+
+OS:Material,
+  {79059da6-12be-4988-a9d2-17c93d030396}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+

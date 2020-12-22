@@ -1,0 +1,39 @@
+
+OS:Version,
+  {a0ac86c3-e20d-4e25-b450-838ac1496882}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {31f5b6ba-595f-4a10-a22f-9dae3dc7de9a}, ! Handle
+  90.1-2007 Nonres 5B Window Metal framing entrance door, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 5B Window Metal framing entrance door, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  512.02,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {60e0e5a2-49b5-4ed9-83c9-d7c24d7ce6d9}, ! Handle
+  Theoretical Glass [185],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.39034,                                ! Solar Transmittance at Normal Incidence
+  0.55966,                                ! Front Side Solar Reflectance at Normal Incidence
+  0.55966,                                ! Back Side Solar Reflectance at Normal Incidence
+  0.507883,                               ! Visible Transmittance at Normal Incidence
+  0.442117,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.442117,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0457051;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {63bf2a37-82fc-4eda-a42f-b63cd6e44f12}, ! Handle
+  90.1-2007 Nonres 5B Window Metal framing entrance door, ! Name
+  ,                                       ! Surface Rendering Name
+  {60e0e5a2-49b5-4ed9-83c9-d7c24d7ce6d9}; ! Layer 1
+

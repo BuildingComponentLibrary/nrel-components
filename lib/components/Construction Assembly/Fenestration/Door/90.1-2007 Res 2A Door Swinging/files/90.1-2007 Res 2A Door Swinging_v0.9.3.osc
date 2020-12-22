@@ -1,0 +1,70 @@
+
+OS:Version,
+  {47647a25-8c16-4bd6-b35d-c3172e0028ee}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {c67a4057-26d5-4be0-ba52-6d574466d765}, ! Handle
+  90.1-2007 Res 2A Door Swinging,         ! Name
+  ,                                       ! Surface Rendering Name
+  {4bd6ed9d-f2b5-43e7-a2b3-25cd153d969f}, ! Layer 1
+  {3e17ae6f-ef88-4150-b547-f6c125617a8a}, ! Layer 2
+  {ca586228-898e-45ba-a5fd-32848c57c6a4}; ! Layer 3
+
+OS:Material,
+  {4bd6ed9d-f2b5-43e7-a2b3-25cd153d969f}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {3e17ae6f-ef88-4150-b547-f6c125617a8a}, ! Handle
+  AIR,                                    ! Name
+  Smooth,                                 ! Roughness
+  0.251489,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {ca586228-898e-45ba-a5fd-32848c57c6a4}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {4d958f3b-3e88-4fb3-8da4-cf1df2042bd7}, ! Handle
+  90.1-2007 Res 2A Door Swinging,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 2A Door Swinging,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {f0db8e39-d9e8-4563-aa96-42b4a6ff7d98}, ! Handle
+  Component Data 1,                       ! Name
+  {92160852-f116-472d-ad4f-5cb97774315a}, ! UUID
+  {a9da6cc0-a1c5-4837-aa49-c782d822bf99}, ! Version UUID
+  1363981841,                             ! Creation Timestamp
+  1363981841,                             ! Version Timestamp
+  {c67a4057-26d5-4be0-ba52-6d574466d765}, ! Name of Object 1
+  {4bd6ed9d-f2b5-43e7-a2b3-25cd153d969f}, ! Name of Object 2
+  {3e17ae6f-ef88-4150-b547-f6c125617a8a}, ! Name of Object 3
+  {ca586228-898e-45ba-a5fd-32848c57c6a4}, ! Name of Object 4
+  {4d958f3b-3e88-4fb3-8da4-cf1df2042bd7}; ! Name of Object 5
+

@@ -1,0 +1,57 @@
+
+OS:Version,
+  {02bd19d0-ef29-44a3-9a68-d969b7e2881b}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {8e708b56-9a45-411b-abcf-707b15de3a40}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {7ec248ed-a352-43f1-bd1b-f4c15a524484}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {09a1adae-468c-411c-a532-74beb86e9806}, ! Handle
+  90.1-2007 Res 5B Door Swinging,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 5B Door Swinging,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {6f0b5b7d-815e-4ccf-9913-ab95cede5bff}, ! Handle
+  90.1-2007 Res 5B Door Swinging,         ! Name
+  ,                                       ! Surface Rendering Name
+  {7ec248ed-a352-43f1-bd1b-f4c15a524484}, ! Layer 1
+  {d9e5aad6-de7f-454e-9fb0-c9e957392018}, ! Layer 2
+  {8e708b56-9a45-411b-abcf-707b15de3a40}; ! Layer 3
+
+OS:Material:NoMass,
+  {d9e5aad6-de7f-454e-9fb0-c9e957392018}, ! Handle
+  AIR [2],                                ! Name
+  Smooth,                                 ! Roughness
+  0.352085,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+

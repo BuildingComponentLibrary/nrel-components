@@ -1,0 +1,73 @@
+
+OS:Version,
+  {3d32f86d-bdef-4303-85c7-a3759f78e7d9}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {a0bee762-1a67-4140-bb70-1d2be5913bb5}, ! Handle
+  AEDG-SmOffice 4B Ext Wall Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {83a43333-fb16-41fa-b9fd-d909d304d988}, ! Layer 1
+  {88d4533b-84f9-464b-b896-526b53ff71cf}, ! Layer 2
+  {c53cc7b9-cc2c-4aa4-92c0-217eae9b096d}; ! Layer 3
+
+OS:Material,
+  {83a43333-fb16-41fa-b9fd-d909d304d988}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+
+OS:Material,
+  {88d4533b-84f9-464b-b896-526b53ff71cf}, ! Handle
+  Wall Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.0598725,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {c53cc7b9-cc2c-4aa4-92c0-217eae9b096d}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {bcff0ab5-ab2e-4d8c-bac5-4bf6229db003}, ! Handle
+  AEDG-SmOffice 4B Ext Wall Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 4B Ext Wall Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  98.78,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {ddbbe156-22b9-4da1-9f60-d564ac6ab598}, ! Handle
+  Component Data 1,                       ! Name
+  {783b74ab-ac77-43eb-9268-652359cf545d}, ! UUID
+  {88f1bea0-1f80-457c-b5b3-2dbb60da7604}, ! Version UUID
+  1363981950,                             ! Creation Timestamp
+  1363981950,                             ! Version Timestamp
+  {a0bee762-1a67-4140-bb70-1d2be5913bb5}, ! Name of Object 1
+  {83a43333-fb16-41fa-b9fd-d909d304d988}, ! Name of Object 2
+  {88d4533b-84f9-464b-b896-526b53ff71cf}, ! Name of Object 3
+  {c53cc7b9-cc2c-4aa4-92c0-217eae9b096d}, ! Name of Object 4
+  {bcff0ab5-ab2e-4d8c-bac5-4bf6229db003}; ! Name of Object 5
+

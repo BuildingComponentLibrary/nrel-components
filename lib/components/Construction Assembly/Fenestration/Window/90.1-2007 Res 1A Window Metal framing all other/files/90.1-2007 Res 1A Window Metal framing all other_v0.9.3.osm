@@ -1,0 +1,39 @@
+
+OS:Version,
+  {d5dc0b24-3c7c-4cf9-a2f7-f9d862c1815a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {30bdcce9-912d-4651-afac-cf39ac0fdd67}, ! Handle
+  90.1-2007 Res 1A Window Metal framing all other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 1A Window Metal framing all other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  534.616,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {691a5685-c8b6-4272-b9c0-6d425a52bd16}, ! Handle
+  Theoretical Glass [167],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.237362,                               ! Solar Transmittance at Normal Incidence
+  0.712638,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.712638,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.251212,                               ! Visible Transmittance at Normal Incidence
+  0.698788,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.698788,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.985,                                  ! Front Side Infrared Hemispherical Emissivity
+  0.985,                                  ! Back Side Infrared Hemispherical Emissivity
+  2.10728;                                ! Conductivity {W/m-K}
+
+OS:Construction,
+  {45dc09d3-15df-461a-beee-fc5ad9fc160e}, ! Handle
+  90.1-2007 Res 1A Window Metal framing all other, ! Name
+  ,                                       ! Surface Rendering Name
+  {691a5685-c8b6-4272-b9c0-6d425a52bd16}; ! Layer 1
+

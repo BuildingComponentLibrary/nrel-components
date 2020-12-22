@@ -1,0 +1,39 @@
+
+OS:Version,
+  {cfd63f20-c520-44cb-8053-f99789d0d4d2}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {7ea9b89b-44fd-41b6-aab9-98cee5beb81e}, ! Handle
+  Theoretical Glass [255],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.472234,                               ! Solar Transmittance at Normal Incidence
+  0.477766,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.477766,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.621562,                               ! Visible Transmittance at Normal Incidence
+  0.328438,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.328438,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0324872;                              ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {4388d0ad-4e97-4a74-9d8b-934ec969aa87}, ! Handle
+  AEDG K12 Nonres 4B Skylight without Curb, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 4B Skylight without Curb, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  508.47,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {ef08282a-654c-4f9f-a6b8-47e9a1981bf2}, ! Handle
+  AEDG K12 Nonres 4B Skylight without Curb, ! Name
+  ,                                       ! Surface Rendering Name
+  {7ea9b89b-44fd-41b6-aab9-98cee5beb81e}; ! Layer 1
+

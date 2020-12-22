@@ -1,0 +1,57 @@
+
+OS:Version,
+  {a46a6c0e-3349-4f59-a939-bcb5629e7657}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {3e76397b-cf57-45b8-b76f-a0e46e548fac}, ! Handle
+  90.1 Constructions Ext Wall Steel-Framed R-13.0 + R-28.1 ci, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Ext Wall Steel-Framed R-13.0 + R-28.1 ci, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  110.38,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {e0ae06e1-2c65-48eb-a53d-53d114f6d316}, ! Handle
+  90.1 Constructions Ext Wall Steel-Framed R-13.0 + R-28.1 ci, ! Name
+  ,                                       ! Surface Rendering Name
+  {a4d57139-15bc-46b7-a311-5a9ff1d9dece}, ! Layer 1
+  {43662221-13ad-49ed-9cf4-bcd3ccc3f834}, ! Layer 2
+  {20e33b09-1839-4bc6-b1ea-87945af9d09b}; ! Layer 3
+
+OS:Material:NoMass,
+  {a4d57139-15bc-46b7-a311-5a9ff1d9dece}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {43662221-13ad-49ed-9cf4-bcd3ccc3f834}, ! Handle
+  Wall Insulation [117],                  ! Name
+  MediumRough,                            ! Roughness
+  0.260337,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {20e33b09-1839-4bc6-b1ea-87945af9d09b}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+

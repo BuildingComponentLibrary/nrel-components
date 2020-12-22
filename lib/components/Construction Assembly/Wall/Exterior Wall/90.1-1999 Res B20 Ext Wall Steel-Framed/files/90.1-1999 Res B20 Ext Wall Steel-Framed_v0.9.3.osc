@@ -1,0 +1,70 @@
+
+OS:Version,
+  {94d28db6-5b29-4746-becd-c5611911dfc0}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {401f045e-7f79-40eb-8e5f-493d11dfa88b}, ! Handle
+  90.1-1999 Res B20 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {8d3ad7cb-95f3-4b35-9984-46ebecca2d98}, ! Layer 1
+  {cb9d0a36-9fa2-46b5-b79e-31fca6d46326}, ! Layer 2
+  {6066a0b8-c4cc-48c1-a5f2-aeccaa35dec9}; ! Layer 3
+
+OS:Material:NoMass,
+  {8d3ad7cb-95f3-4b35-9984-46ebecca2d98}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {cb9d0a36-9fa2-46b5-b79e-31fca6d46326}, ! Handle
+  Wall Insulation [10],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0971136,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {6066a0b8-c4cc-48c1-a5f2-aeccaa35dec9}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {e1fee852-d79d-412a-9ee4-1ec64aec24d1}, ! Handle
+  90.1-1999 Res B20 Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B20 Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  94.657,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {20c8498b-3ff2-4574-bac4-7a5ff5ea29a6}, ! Handle
+  Component Data 1,                       ! Name
+  {4c547418-355f-4010-9519-39d417d9c537}, ! UUID
+  {ed6c0118-8897-4489-a8b1-787ac533c057}, ! Version UUID
+  1363981251,                             ! Creation Timestamp
+  1363981251,                             ! Version Timestamp
+  {401f045e-7f79-40eb-8e5f-493d11dfa88b}, ! Name of Object 1
+  {8d3ad7cb-95f3-4b35-9984-46ebecca2d98}, ! Name of Object 2
+  {cb9d0a36-9fa2-46b5-b79e-31fca6d46326}, ! Name of Object 3
+  {6066a0b8-c4cc-48c1-a5f2-aeccaa35dec9}, ! Name of Object 4
+  {e1fee852-d79d-412a-9ee4-1ec64aec24d1}; ! Name of Object 5
+

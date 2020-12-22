@@ -1,0 +1,57 @@
+
+OS:Version,
+  {c9fcfb31-89ef-402f-8e47-a2a92f0b4b8f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {e52f8df5-8813-4d35-bdfd-7f9d93286391}, ! Handle
+  Wall Insulation [10],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0971136,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {aadd6371-93ff-4fbe-88ce-8f352d399b9b}, ! Handle
+  AEDG-SmOffice 4B Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 4B Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  94.657,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {bf2c9916-6992-48dd-a64d-b6d078b4e6fe}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material:NoMass,
+  {12771792-6e4f-480b-a626-b0e1ce8ad220}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {59b7843f-6a44-4ca1-9d39-35235f540b06}, ! Handle
+  AEDG-SmOffice 4B Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {12771792-6e4f-480b-a626-b0e1ce8ad220}, ! Layer 1
+  {e52f8df5-8813-4d35-bdfd-7f9d93286391}, ! Layer 2
+  {bf2c9916-6992-48dd-a64d-b6d078b4e6fe}; ! Layer 3
+

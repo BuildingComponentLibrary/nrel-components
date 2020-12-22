@@ -1,0 +1,39 @@
+
+OS:Version,
+  {0dd163ec-bd66-4d39-b86e-9f734b3f85ce}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {ef7a1910-6bf9-43a0-9d92-39bf19519572}, ! Handle
+  90.1 Windows Window Fixed 2121 Mtl-Clr-Std-ClrPye, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2121 Mtl-Clr-Std-ClrPye, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {73b149ac-90dd-40b1-beea-d0108cfd1a7b}, ! Handle
+  Theoretical Glass [264],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.672257,                               ! Solar Transmittance at Normal Incidence
+  0.277743,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.277743,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.659809,                               ! Visible Transmittance at Normal Incidence
+  0.290191,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.290191,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0220475;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {97d6fce4-ffda-4d75-9fc6-7b3aa6679423}, ! Handle
+  90.1 Windows Window Fixed 2121 Mtl-Clr-Std-ClrPye, ! Name
+  ,                                       ! Surface Rendering Name
+  {73b149ac-90dd-40b1-beea-d0108cfd1a7b}; ! Layer 1
+

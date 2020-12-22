@@ -1,0 +1,57 @@
+
+OS:Version,
+  {d896fa0e-8fd5-4313-986d-f2141b65ab89}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {b3668e85-ec29-44e9-aa18-9fbf298944c8}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {79ae6b65-357a-4bd7-86ea-93d08a3bd493}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {a6e7fbaa-86a8-4466-99ca-ac437add9e4e}, ! Handle
+  Wall Insulation [1],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0373223,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {d3d6bfb1-68be-429e-85d0-42bc81f72fad}, ! Handle
+  90.1-2007 Nonres 1A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 1A Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  87.08,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {2f5045d0-57b3-4d1b-978c-cf1f4f675ae8}, ! Handle
+  90.1-2007 Nonres 1A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {b3668e85-ec29-44e9-aa18-9fbf298944c8}, ! Layer 1
+  {a6e7fbaa-86a8-4466-99ca-ac437add9e4e}, ! Layer 2
+  {79ae6b65-357a-4bd7-86ea-93d08a3bd493}; ! Layer 3
+

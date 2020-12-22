@@ -1,0 +1,70 @@
+
+OS:Version,
+  {d114a84c-d369-46f8-b99a-c3c7716fec39}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {39ad05be-5d53-42e1-bb61-88dbe8aefc54}, ! Handle
+  AEDG K12 Nonres 5B Exposed Floor Mass,  ! Name
+  ,                                       ! Surface Rendering Name
+  {16a8cd28-1e32-4900-b24d-2a46da28b564}, ! Layer 1
+  {e0ca34b1-fbfc-48ed-9c99-978c3fcbc57e}, ! Layer 2
+  {fd5b4b7a-8deb-4d7b-a9d8-35563313d9a6}; ! Layer 3
+
+OS:Material,
+  {16a8cd28-1e32-4900-b24d-2a46da28b564}, ! Handle
+  Floor Insulation [2],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0635689,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {e0ca34b1-fbfc-48ed-9c99-978c3fcbc57e}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {fd5b4b7a-8deb-4d7b-a9d8-35563313d9a6}, ! Handle
+  CP02 CARPET PAD EF,                     ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {c1ba3117-d7d0-4042-a1ad-52a2672b44d2}, ! Handle
+  AEDG K12 Nonres 5B Exposed Floor Mass,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 5B Exposed Floor Mass,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  49.612,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {b2fcb537-aa3b-437b-a145-9b08c0632585}, ! Handle
+  Component Data 1,                       ! Name
+  {29e35669-9b75-4249-b1c8-1e9dd2415617}, ! UUID
+  {e8c04c88-86b9-47f8-823e-fa3bb2faf8ef}, ! Version UUID
+  1363981897,                             ! Creation Timestamp
+  1363981897,                             ! Version Timestamp
+  {39ad05be-5d53-42e1-bb61-88dbe8aefc54}, ! Name of Object 1
+  {16a8cd28-1e32-4900-b24d-2a46da28b564}, ! Name of Object 2
+  {e0ca34b1-fbfc-48ed-9c99-978c3fcbc57e}, ! Name of Object 3
+  {fd5b4b7a-8deb-4d7b-a9d8-35563313d9a6}, ! Name of Object 4
+  {c1ba3117-d7d0-4042-a1ad-52a2672b44d2}; ! Name of Object 5
+

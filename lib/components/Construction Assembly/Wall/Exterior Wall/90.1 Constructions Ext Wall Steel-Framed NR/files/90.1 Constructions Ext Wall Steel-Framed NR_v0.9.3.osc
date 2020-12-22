@@ -1,0 +1,56 @@
+
+OS:Version,
+  {3949ceaa-dc5a-456e-81b1-2a8903973f7e}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {a4eee547-0181-4125-95ff-9de7eb65bf8b}, ! Handle
+  90.1 Constructions Ext Wall Steel-Framed NR, ! Name
+  ,                                       ! Surface Rendering Name
+  {bf69a571-c154-4fd4-b5b9-a0356aadf3f6}, ! Layer 1
+  {4d733509-ed76-47e0-81f4-c175f2c2f9c2}; ! Layer 2
+
+OS:Material:NoMass,
+  {bf69a571-c154-4fd4-b5b9-a0356aadf3f6}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {4d733509-ed76-47e0-81f4-c175f2c2f9c2}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {d728ba4d-3fd9-4fd2-8cb2-37fd92f21bbc}, ! Handle
+  90.1 Constructions Ext Wall Steel-Framed NR, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Ext Wall Steel-Framed NR, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  83.689,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {14f9f4e0-4eef-4365-9d8d-ede45e1cbc41}, ! Handle
+  Component Data 1,                       ! Name
+  {738945c0-7a96-4f3d-b703-7a05770fe72f}, ! UUID
+  {b5589cfc-3c64-46c6-8267-9ba9969a1b05}, ! Version UUID
+  1363980992,                             ! Creation Timestamp
+  1363980992,                             ! Version Timestamp
+  {a4eee547-0181-4125-95ff-9de7eb65bf8b}, ! Name of Object 1
+  {bf69a571-c154-4fd4-b5b9-a0356aadf3f6}, ! Name of Object 2
+  {4d733509-ed76-47e0-81f4-c175f2c2f9c2}, ! Name of Object 3
+  {d728ba4d-3fd9-4fd2-8cb2-37fd92f21bbc}; ! Name of Object 4
+

@@ -1,0 +1,57 @@
+
+OS:Version,
+  {2fde9f6a-6180-4df3-8606-17389361ce8a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {13fc4120-0aeb-44b8-aa41-18df1064963f}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {7a7a00ee-53e1-4616-91d9-899ddc438a58}, ! Handle
+  Wall Insulation [10],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0971136,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {7760d752-df69-43fb-a4ef-262c4d8ba562}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {ff729707-04d3-4874-9077-afa2c000da29}, ! Handle
+  90.1-2004 Res 6B Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Res 6B Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  94.657,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {32cb6765-7a4b-4ae9-8fe1-b6c05dccebae}, ! Handle
+  90.1-2004 Res 6B Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {7760d752-df69-43fb-a4ef-262c4d8ba562}, ! Layer 1
+  {7a7a00ee-53e1-4616-91d9-899ddc438a58}, ! Layer 2
+  {13fc4120-0aeb-44b8-aa41-18df1064963f}; ! Layer 3
+

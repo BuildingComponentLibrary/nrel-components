@@ -1,0 +1,73 @@
+
+OS:Version,
+  {af98dba0-9f9d-4352-91ef-f16d92ebb43c}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {6b8c2149-6ea9-4807-851c-08b722b7ae90}, ! Handle
+  AEDG-SmOffice 6B Roof IEAD,             ! Name
+  ,                                       ! Surface Rendering Name
+  {621c05f5-cb03-4702-8260-2d895205109b}, ! Layer 1
+  {c36a78e7-4409-4dea-ae89-163e6bc2c774}, ! Layer 2
+  {5ce99f6d-e04a-46a8-8e38-10437c25f160}; ! Layer 3
+
+OS:Material,
+  {621c05f5-cb03-4702-8260-2d895205109b}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {c36a78e7-4409-4dea-ae89-163e6bc2c774}, ! Handle
+  Roof Insulation [7],                    ! Name
+  MediumRough,                            ! Roughness
+  0.167563,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {5ce99f6d-e04a-46a8-8e38-10437c25f160}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {bf9b1870-3cb6-4052-a6e1-94467f2c181b}, ! Handle
+  AEDG-SmOffice 6B Roof IEAD,             ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 6B Roof IEAD,             ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  52.896,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {2638b2c0-1882-4b27-8eac-51c046700b6e}, ! Handle
+  Component Data 1,                       ! Name
+  {9cb32a93-d8fa-47b4-a85c-6fd37918e3d5}, ! UUID
+  {59fd6848-1bef-4757-9b00-cde0562f936d}, ! Version UUID
+  1363981957,                             ! Creation Timestamp
+  1363981957,                             ! Version Timestamp
+  {6b8c2149-6ea9-4807-851c-08b722b7ae90}, ! Name of Object 1
+  {621c05f5-cb03-4702-8260-2d895205109b}, ! Name of Object 2
+  {c36a78e7-4409-4dea-ae89-163e6bc2c774}, ! Name of Object 3
+  {5ce99f6d-e04a-46a8-8e38-10437c25f160}, ! Name of Object 4
+  {bf9b1870-3cb6-4052-a6e1-94467f2c181b}; ! Name of Object 5
+

@@ -1,0 +1,60 @@
+
+OS:Version,
+  {ebafd41b-d100-4b1a-9e76-ba68d2d42c38}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {bc247ec3-a80c-4c8b-9291-3c3f48d93eac}, ! Handle
+  AEDG-SmOffice 8A Roof IEAD,             ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 8A Roof IEAD,             ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  60.869,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {4e0b37ec-3151-46d4-b548-08a776b367ba}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {83f8adba-9c9d-43ea-b1eb-62e3d6fe1231}, ! Handle
+  Roof Insulation [29],                   ! Name
+  MediumRough,                            ! Roughness
+  0.25753,                                ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {e16b4b9a-2f96-4ba6-a66e-8bfc9b769ced}, ! Handle
+  AEDG-SmOffice 8A Roof IEAD,             ! Name
+  ,                                       ! Surface Rendering Name
+  {4e0b37ec-3151-46d4-b548-08a776b367ba}, ! Layer 1
+  {83f8adba-9c9d-43ea-b1eb-62e3d6fe1231}, ! Layer 2
+  {46255654-d499-40f7-addf-dc98abd00fe0}; ! Layer 3
+
+OS:Material,
+  {46255654-d499-40f7-addf-dc98abd00fe0}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+

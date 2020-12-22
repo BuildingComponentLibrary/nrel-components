@@ -1,0 +1,39 @@
+
+OS:Version,
+  {4dcd4ccf-209b-44e4-a0d2-d86eb76ad075}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {ca84556a-3104-4453-8270-b27dbf8d2b56}, ! Handle
+  90.1-2001 Nonres B8 Window Fixed,       ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B8 Window Fixed,       ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  473.607,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {1128fde0-0ebd-4887-a18d-ec7ac6dd7ec2}, ! Handle
+  Theoretical Glass [20],                 ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.36668,                                ! Solar Transmittance at Normal Incidence
+  0.58332,                                ! Front Side Solar Reflectance at Normal Incidence
+  0.58332,                                ! Back Side Solar Reflectance at Normal Incidence
+  0.399469,                               ! Visible Transmittance at Normal Incidence
+  0.550531,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.550531,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.999,                                  ! Front Side Infrared Hemispherical Emissivity
+  0.999,                                  ! Back Side Infrared Hemispherical Emissivity
+  3.36874;                                ! Conductivity {W/m-K}
+
+OS:Construction,
+  {d1b87520-532d-4a86-9630-c18a79472de0}, ! Handle
+  90.1-2001 Nonres B8 Window Fixed,       ! Name
+  ,                                       ! Surface Rendering Name
+  {1128fde0-0ebd-4887-a18d-ec7ac6dd7ec2}; ! Layer 1
+

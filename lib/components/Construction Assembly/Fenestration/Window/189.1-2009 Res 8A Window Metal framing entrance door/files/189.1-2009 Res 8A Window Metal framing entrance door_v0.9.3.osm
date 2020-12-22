@@ -1,0 +1,39 @@
+
+OS:Version,
+  {addf75b0-d05b-4f4b-be21-104e4d5bccdd}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {9d6eb0e7-ec57-4134-9b54-492d20d708ff}, ! Handle
+  189.1-2009 Res 8A Window Metal framing entrance door, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 8A Window Metal framing entrance door, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  508.362,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {8b2edc0f-4af1-4903-b650-5e41c1cbecbc}, ! Handle
+  Theoretical Glass [220],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.432524,                               ! Solar Transmittance at Normal Incidence
+  0.517476,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.517476,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.450308,                               ! Visible Transmittance at Normal Incidence
+  0.499692,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.499692,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0336861;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {7c664b24-f743-4d02-9f28-d7077e69bcb5}, ! Handle
+  189.1-2009 Res 8A Window Metal framing entrance door, ! Name
+  ,                                       ! Surface Rendering Name
+  {8b2edc0f-4af1-4903-b650-5e41c1cbecbc}; ! Layer 1
+

@@ -1,0 +1,59 @@
+
+OS:Version,
+  {3ee66238-69cd-4474-87a5-80c317cc12ed}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {a7c2efcf-1d44-4f02-a39c-a36325b57e67}, ! Handle
+  90.1 Constructions Attic Floor NR,      ! Name
+  ,                                       ! Surface Rendering Name
+  {2287e893-9be9-4664-8b5c-51e393993f06}, ! Layer 1
+  {b84d06b3-f343-44c2-9869-b26ff835a1ea}; ! Layer 2
+
+OS:Material,
+  {2287e893-9be9-4664-8b5c-51e393993f06}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {b84d06b3-f343-44c2-9869-b26ff835a1ea}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {03058ed6-cc6a-410d-81df-1001223156c0}, ! Handle
+  90.1 Constructions Attic Floor NR,      ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Attic Floor NR,      ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  29.327,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {240a44f1-fee2-4d82-ac47-dcd47d2c0555}, ! Handle
+  Component Data 1,                       ! Name
+  {24461e04-8d31-4bf7-8ef2-2c1297282921}, ! UUID
+  {20d00179-9f3c-4738-8299-07d221c268e3}, ! Version UUID
+  1363980991,                             ! Creation Timestamp
+  1363980991,                             ! Version Timestamp
+  {a7c2efcf-1d44-4f02-a39c-a36325b57e67}, ! Name of Object 1
+  {2287e893-9be9-4664-8b5c-51e393993f06}, ! Name of Object 2
+  {b84d06b3-f343-44c2-9869-b26ff835a1ea}, ! Name of Object 3
+  {03058ed6-cc6a-410d-81df-1001223156c0}; ! Name of Object 4
+

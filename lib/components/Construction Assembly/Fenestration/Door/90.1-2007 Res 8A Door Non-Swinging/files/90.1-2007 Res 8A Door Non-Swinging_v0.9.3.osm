@@ -1,0 +1,57 @@
+
+OS:Version,
+  {296b3647-cfe5-47ae-8446-0ad6e677513d}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {127f422d-e009-4324-81e5-505c500be902}, ! Handle
+  AIR [2],                                ! Name
+  Smooth,                                 ! Roughness
+  0.352085,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {6e691465-9fe9-4f33-87e4-eeea0a07e1de}, ! Handle
+  90.1-2007 Res 8A Door Non-Swinging,     ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 8A Door Non-Swinging,     ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {6704c3d5-b721-4d95-9fc7-a6a1c743bbd5}, ! Handle
+  90.1-2007 Res 8A Door Non-Swinging,     ! Name
+  ,                                       ! Surface Rendering Name
+  {0b88198c-e7d7-4b83-be8c-810a1867eb7a}, ! Layer 1
+  {127f422d-e009-4324-81e5-505c500be902}, ! Layer 2
+  {f4adf1b9-a726-41bf-9a43-fb03618ef5cb}; ! Layer 3
+
+OS:Material,
+  {0b88198c-e7d7-4b83-be8c-810a1867eb7a}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {f4adf1b9-a726-41bf-9a43-fb03618ef5cb}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+

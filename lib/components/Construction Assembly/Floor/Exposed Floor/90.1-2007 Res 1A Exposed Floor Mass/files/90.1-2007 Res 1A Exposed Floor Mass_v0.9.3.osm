@@ -1,0 +1,44 @@
+
+OS:Version,
+  {1758846d-cb83-4a15-8f9b-b239f192812f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {3e8c6e77-0e30-4352-bdcf-9c9622f678b6}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {2d67ad5c-9400-4edb-9bda-a3e25aa88d04}, ! Handle
+  90.1-2007 Res 1A Exposed Floor Mass,    ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 1A Exposed Floor Mass,    ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  39.18,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {2fad946e-187d-40cb-add5-3c0aaad4fcb5}, ! Handle
+  90.1-2007 Res 1A Exposed Floor Mass,    ! Name
+  ,                                       ! Surface Rendering Name
+  {3e8c6e77-0e30-4352-bdcf-9c9622f678b6}, ! Layer 1
+  {c845f651-d6cf-4ee0-9b89-a6552387fe02}; ! Layer 2
+
+OS:Material:NoMass,
+  {c845f651-d6cf-4ee0-9b89-a6552387fe02}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+

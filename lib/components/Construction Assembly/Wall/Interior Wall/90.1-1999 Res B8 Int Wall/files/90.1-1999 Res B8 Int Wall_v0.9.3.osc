@@ -1,0 +1,46 @@
+
+OS:Version,
+  {46a18567-a039-42df-876a-901ea43da6cb}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {488e6dda-76ba-46a0-981a-9ba645414d9b}, ! Handle
+  90.1-1999 Res B8 Int Wall,              ! Name
+  ,                                       ! Surface Rendering Name
+  {7b22c70a-3136-4bdb-b9f0-8073948f8dfe}, ! Layer 1
+  {7b22c70a-3136-4bdb-b9f0-8073948f8dfe}; ! Layer 2
+
+OS:Material,
+  {7b22c70a-3136-4bdb-b9f0-8073948f8dfe}, ! Handle
+  GP01 1/2 GYPSUM,                        ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  800,                                    ! Density {kg/m3}
+  1090,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {0ebc2196-601b-44b5-a0a3-af0545dde894}, ! Handle
+  90.1-1999 Res B8 Int Wall,              ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B8 Int Wall,              ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {9839dca4-4e40-49c4-9000-1864dc23825e}, ! Handle
+  Component Data 1,                       ! Name
+  {2152f4c7-d72e-4f9c-a61e-9ef6926c2d0a}, ! UUID
+  {ce55024c-7678-4115-b3a4-10014bdb2564}, ! Version UUID
+  1363981195,                             ! Creation Timestamp
+  1363981195,                             ! Version Timestamp
+  {488e6dda-76ba-46a0-981a-9ba645414d9b}, ! Name of Object 1
+  {7b22c70a-3136-4bdb-b9f0-8073948f8dfe}, ! Name of Object 2
+  {0ebc2196-601b-44b5-a0a3-af0545dde894}; ! Name of Object 3
+

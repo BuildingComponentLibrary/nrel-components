@@ -1,0 +1,60 @@
+
+OS:Version,
+  {3d6dec70-a1aa-4ad9-977c-b333d18014cf}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {ba4b854a-5601-44ec-87a7-71a87ad9e4ba}, ! Handle
+  Title 24-2008 Nonres 4 Attic Floor,     ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 4 Attic Floor,     ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  33.117,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {c369501c-eb41-4c27-938f-1a238ad312b4}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {d867a02d-3019-4a76-8c4d-da4b7a865952}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {227f9a2b-0048-4d85-a119-e95d709b4bb6}, ! Handle
+  Title 24-2008 Nonres 4 Attic Floor,     ! Name
+  ,                                       ! Surface Rendering Name
+  {c369501c-eb41-4c27-938f-1a238ad312b4}, ! Layer 1
+  {5202a4ee-d098-4347-b69b-bfbdc94854bd}, ! Layer 2
+  {d867a02d-3019-4a76-8c4d-da4b7a865952}; ! Layer 3
+
+OS:Material,
+  {5202a4ee-d098-4347-b69b-bfbdc94854bd}, ! Handle
+  AtticFloor Insulation [49],             ! Name
+  MediumRough,                            ! Roughness
+  0.205862,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

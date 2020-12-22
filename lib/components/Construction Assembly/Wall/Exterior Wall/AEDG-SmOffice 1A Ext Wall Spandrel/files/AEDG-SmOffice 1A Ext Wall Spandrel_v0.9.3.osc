@@ -1,0 +1,73 @@
+
+OS:Version,
+  {06180064-caea-4d35-a00c-4b3ef9bf30bc}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {284360b9-41f7-4d1e-bc77-892a45762671}, ! Handle
+  AEDG-SmOffice 1A Ext Wall Spandrel,     ! Name
+  ,                                       ! Surface Rendering Name
+  {95733f80-b84e-4ae2-89e2-7453fb0b3c64}, ! Layer 1
+  {59110f15-5491-4469-b2bf-d1246dab5244}, ! Layer 2
+  {4c8c23bd-bb4f-43ca-a996-b2bc6d17ae43}; ! Layer 3
+
+OS:Material,
+  {95733f80-b84e-4ae2-89e2-7453fb0b3c64}, ! Handle
+  SpandrelGlass,                          ! Name
+  Smooth,                                 ! Roughness
+  0.007,                                  ! Thickness {m}
+  45.31,                                  ! Conductivity {W/m-K}
+  7833.02,                                ! Density {kg/m3}
+  500,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.23,                                   ! Solar Absorptance
+  0.23;                                   ! Visible Absorptance
+
+OS:Material,
+  {59110f15-5491-4469-b2bf-d1246dab5244}, ! Handle
+  Wall Insulation [50],                   ! Name
+  MediumRough,                            ! Roughness
+  0.078829,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {4c8c23bd-bb4f-43ca-a996-b2bc6d17ae43}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {090969d9-a49b-43ac-9c60-ebe6d343575a}, ! Handle
+  AEDG-SmOffice 1A Ext Wall Spandrel,     ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 1A Ext Wall Spandrel,     ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  74.63,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {268a1516-61ea-4bec-b02c-c5923a1cbb9e}, ! Handle
+  Component Data 1,                       ! Name
+  {6a79afbf-367a-4088-83fd-27be507297b5}, ! UUID
+  {37615b4b-1c46-460b-a8ca-ee44d61c5480}, ! Version UUID
+  1363981938,                             ! Creation Timestamp
+  1363981938,                             ! Version Timestamp
+  {284360b9-41f7-4d1e-bc77-892a45762671}, ! Name of Object 1
+  {95733f80-b84e-4ae2-89e2-7453fb0b3c64}, ! Name of Object 2
+  {59110f15-5491-4469-b2bf-d1246dab5244}, ! Name of Object 3
+  {4c8c23bd-bb4f-43ca-a996-b2bc6d17ae43}, ! Name of Object 4
+  {090969d9-a49b-43ac-9c60-ebe6d343575a}; ! Name of Object 5
+
