@@ -1,0 +1,39 @@
+
+OS:Version,
+  {c0fbf883-aca6-43ef-995d-7f484d625ac4}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {8c650443-cfe6-43fd-81b7-76b6f2bdb5f5}, ! Handle
+  90.1 Windows Window Fixed 3641 Vnl-Clr-Ins-V44-Ins-Clr, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 3641 Vnl-Clr-Ins-V44-Ins-Clr, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {c81a8c34-c016-461c-a2ba-e3c734b52286}, ! Handle
+  Theoretical Glass [536],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.218202,                               ! Solar Transmittance at Normal Incidence
+  0.731798,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.731798,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.320998,                               ! Visible Transmittance at Normal Incidence
+  0.629002,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.629002,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0052951;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {38384cef-d537-4746-8c54-6ac1456bc536}, ! Handle
+  90.1 Windows Window Fixed 3641 Vnl-Clr-Ins-V44-Ins-Clr, ! Name
+  ,                                       ! Surface Rendering Name
+  {c81a8c34-c016-461c-a2ba-e3c734b52286}; ! Layer 1
+

@@ -1,0 +1,39 @@
+
+OS:Version,
+  {3ac89245-18f4-468c-9ada-7984117a00ad}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {8fbf74db-8f73-497c-8308-a148ae6c6b59}, ! Handle
+  Theoretical Glass [492],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.255355,                               ! Solar Transmittance at Normal Incidence
+  0.694645,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.694645,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.34081,                                ! Visible Transmittance at Normal Incidence
+  0.60919,                                ! Front Side Visible Reflectance at Normal Incidence
+  0.60919,                                ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0144823;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {1001633a-921d-4e87-b69a-b2cc9f56daf0}, ! Handle
+  90.1 Windows Window Fixed 2319 Brk-HptSbe-Std-Clr, ! Name
+  ,                                       ! Surface Rendering Name
+  {8fbf74db-8f73-497c-8308-a148ae6c6b59}; ! Layer 1
+
+OS:ComponentCost:LineItem,
+  {4480bca0-b061-4b76-8c95-698cbae7cb7e}, ! Handle
+  90.1 Windows Window Fixed 2319 Brk-HptSbe-Std-Clr, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2319 Brk-HptSbe-Std-Clr, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

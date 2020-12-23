@@ -1,0 +1,60 @@
+
+OS:Version,
+  {8d878333-e956-463a-8037-be067dc6bdaa}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {c98b2b45-6fd3-490d-92e8-5947bece3662}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {3e2b2b11-b4e3-4f70-9421-16976702644c}, ! Handle
+  189.1-2009 Nonres 7A Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 7A Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  82.923,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {b5945a11-dd7e-4db4-a816-b2fd8b9308b9}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Construction,
+  {acba2944-aede-410b-9fb2-05ca58bba8e9}, ! Handle
+  189.1-2009 Nonres 7A Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {b5945a11-dd7e-4db4-a816-b2fd8b9308b9}, ! Layer 1
+  {0fbf2c33-1157-4374-9b85-c7637d03e736}, ! Layer 2
+  {c98b2b45-6fd3-490d-92e8-5947bece3662}; ! Layer 3
+
+OS:Material,
+  {0fbf2c33-1157-4374-9b85-c7637d03e736}, ! Handle
+  Wall Insulation [43],                   ! Name
+  MediumRough,                            ! Roughness
+  0.15833,                                ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

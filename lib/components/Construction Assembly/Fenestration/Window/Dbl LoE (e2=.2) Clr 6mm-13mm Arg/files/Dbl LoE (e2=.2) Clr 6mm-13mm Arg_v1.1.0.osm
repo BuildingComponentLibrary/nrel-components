@@ -1,0 +1,53 @@
+
+OS:Version,
+  {4979a1f8-9ff3-4f64-8666-8b795c5de123}, !- Handle
+  1.1.0;                                  !- Version Identifier
+
+OS:Construction,
+  {afba1233-cc62-44ff-9083-4ec062507709}, !- Handle
+  Dbl LoE (e2=.2) Clr 6mm/13mm Arg,       !- Name
+  ,                                       !- Surface Rendering Name
+  {1b533d44-6189-4ef5-98e0-9698d16cebf5}, !- Layer 1
+  {fb0eee0b-39ef-4751-aa66-3cd6e812ae09}, !- Layer 2
+  {629bbb0a-64bb-41df-bc09-e3f9a315a002}; !- Layer 3
+
+OS:WindowMaterial:Glazing,
+  {1b533d44-6189-4ef5-98e0-9698d16cebf5}, !- Handle
+  PYR B CLEAR 6MM,                        !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.006,                                  !- Thickness {m}
+  0.68,                                   !- Solar Transmittance at Normal Incidence
+  0.09,                                   !- Front Side Solar Reflectance at Normal Incidence
+  0.1,                                    !- Back Side Solar Reflectance at Normal Incidence
+  0.81,                                   !- Visible Transmittance at Normal Incidence
+  0.11,                                   !- Front Side Visible Reflectance at Normal Incidence
+  0.12,                                   !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.2,                                    !- Back Side Infrared Hemispherical Emissivity
+  0.9;                                    !- Conductivity {W/m-K}
+
+OS:WindowMaterial:Gas,
+  {fb0eee0b-39ef-4751-aa66-3cd6e812ae09}, !- Handle
+  ARGON 13MM,                             !- Name
+  Argon,                                  !- Gas Type
+  0.0127;                                 !- Thickness {m}
+
+OS:WindowMaterial:Glazing,
+  {629bbb0a-64bb-41df-bc09-e3f9a315a002}, !- Handle
+  CLEAR 6MM,                              !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.006,                                  !- Thickness {m}
+  0.775,                                  !- Solar Transmittance at Normal Incidence
+  0.071,                                  !- Front Side Solar Reflectance at Normal Incidence
+  0.071,                                  !- Back Side Solar Reflectance at Normal Incidence
+  0.881,                                  !- Visible Transmittance at Normal Incidence
+  0.08,                                   !- Front Side Visible Reflectance at Normal Incidence
+  0.08,                                   !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.84,                                   !- Back Side Infrared Hemispherical Emissivity
+  0.9;                                    !- Conductivity {W/m-K}
+

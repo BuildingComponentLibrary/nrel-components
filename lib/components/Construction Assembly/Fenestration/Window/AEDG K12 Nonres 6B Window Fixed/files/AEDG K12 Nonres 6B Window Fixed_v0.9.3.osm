@@ -1,0 +1,39 @@
+
+OS:Version,
+  {be1d8042-6b84-4c8c-9b2d-cffcfdd565b6}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {ca8da088-407a-403b-b678-ae73b405f470}, ! Handle
+  Theoretical Glass [258],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.469989,                               ! Solar Transmittance at Normal Incidence
+  0.480011,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.480011,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.621562,                               ! Visible Transmittance at Normal Incidence
+  0.328438,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.328438,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0137862;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {da9993da-899f-48b4-a7ae-6afa0feea788}, ! Handle
+  AEDG K12 Nonres 6B Window Fixed,        ! Name
+  ,                                       ! Surface Rendering Name
+  {ca8da088-407a-403b-b678-ae73b405f470}; ! Layer 1
+
+OS:ComponentCost:LineItem,
+  {7b2efa88-a488-4390-b253-27765c4f5c99}, ! Handle
+  AEDG K12 Nonres 6B Window Fixed,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 6B Window Fixed,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  444.232,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

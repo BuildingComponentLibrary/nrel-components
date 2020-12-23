@@ -1,0 +1,60 @@
+
+OS:Version,
+  {f59e0192-770b-498f-bcb1-e022cf8a12bf}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {846ff150-7339-4576-bd4c-97b618c727c5}, ! Handle
+  90.1-2007 Nonres 8A Ext Wall Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 8A Ext Wall Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  107.681,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {09899244-f687-4364-8b52-0b425e388071}, ! Handle
+  Wall Insulation [25],                   ! Name
+  MediumRough,                            ! Roughness
+  0.128503,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {40dcc607-fa47-4a74-bde1-f0abb3d16671}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {706206b0-62fa-46c3-8c3e-f377749b61e3}, ! Handle
+  90.1-2007 Nonres 8A Ext Wall Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {ac184cec-eb67-41e1-9238-3efa156dc938}, ! Layer 1
+  {09899244-f687-4364-8b52-0b425e388071}, ! Layer 2
+  {40dcc607-fa47-4a74-bde1-f0abb3d16671}; ! Layer 3
+
+OS:Material,
+  {ac184cec-eb67-41e1-9238-3efa156dc938}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+

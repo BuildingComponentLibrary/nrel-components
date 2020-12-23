@@ -1,0 +1,73 @@
+
+OS:Version,
+  {369e6eef-ac92-4a78-8f50-5723a1e67dfa}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {c8e322f7-a110-4300-b33e-057a2771e02f}, ! Handle
+  AEDG SHC Nonres 3A Attic Floor,         ! Name
+  ,                                       ! Surface Rendering Name
+  {da1ef3e6-5f0f-4315-b163-1c86311a511c}, ! Layer 1
+  {ea25916e-1757-4851-9da4-a39d1eb47a08}, ! Layer 2
+  {b8289568-c8dd-4a7c-a3d6-f6670c2cafa6}; ! Layer 3
+
+OS:Material,
+  {da1ef3e6-5f0f-4315-b163-1c86311a511c}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {ea25916e-1757-4851-9da4-a39d1eb47a08}, ! Handle
+  AtticFloor Insulation [7],              ! Name
+  MediumRough,                            ! Roughness
+  0.210976,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {b8289568-c8dd-4a7c-a3d6-f6670c2cafa6}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {3ae9b139-5a27-4153-b6bf-b79f6fbbe9b1}, ! Handle
+  AEDG SHC Nonres 3A Attic Floor,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 3A Attic Floor,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {136db29c-d942-4b11-813c-c2c0e6b8eae9}, ! Handle
+  Component Data 1,                       ! Name
+  {39669099-dab4-40b2-90bb-f37401913f2c}, ! UUID
+  {90d87a0c-8d29-4c82-837d-46110935ce8b}, ! Version UUID
+  1363981917,                             ! Creation Timestamp
+  1363981917,                             ! Version Timestamp
+  {c8e322f7-a110-4300-b33e-057a2771e02f}, ! Name of Object 1
+  {da1ef3e6-5f0f-4315-b163-1c86311a511c}, ! Name of Object 2
+  {ea25916e-1757-4851-9da4-a39d1eb47a08}, ! Name of Object 3
+  {b8289568-c8dd-4a7c-a3d6-f6670c2cafa6}, ! Name of Object 4
+  {3ae9b139-5a27-4153-b6bf-b79f6fbbe9b1}; ! Name of Object 5
+

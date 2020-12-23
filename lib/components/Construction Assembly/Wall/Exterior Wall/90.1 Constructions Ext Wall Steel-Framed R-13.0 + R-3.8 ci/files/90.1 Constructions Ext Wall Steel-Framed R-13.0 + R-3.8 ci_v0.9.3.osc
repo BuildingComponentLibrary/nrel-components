@@ -1,0 +1,70 @@
+
+OS:Version,
+  {ee3b9723-8a80-4f36-ab3a-ddf46b9fc5dd}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {7ee02380-dcb5-4668-85e7-668b7822a269}, ! Handle
+  90.1 Constructions Ext Wall Steel-Framed R-13.0 + R-3.8 ci, ! Name
+  ,                                       ! Surface Rendering Name
+  {6ea5d8a3-3f6c-42ca-904d-eeb76735ab1a}, ! Layer 1
+  {0e4cbebd-9121-4884-b3e2-afe5fb720bb2}, ! Layer 2
+  {8384608f-bd8f-4654-8234-2fb5c62ddcab}; ! Layer 3
+
+OS:Material:NoMass,
+  {6ea5d8a3-3f6c-42ca-904d-eeb76735ab1a}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {0e4cbebd-9121-4884-b3e2-afe5fb720bb2}, ! Handle
+  Wall Insulation [102],                  ! Name
+  MediumRough,                            ! Roughness
+  0.0674139,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {8384608f-bd8f-4654-8234-2fb5c62ddcab}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {27e39157-fda3-4aea-a104-9129d8f64864}, ! Handle
+  90.1 Constructions Ext Wall Steel-Framed R-13.0 + R-3.8 ci, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Ext Wall Steel-Framed R-13.0 + R-3.8 ci, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  91.694,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {be8d742e-0429-4459-be5f-be5ea96cb20f}, ! Handle
+  Component Data 1,                       ! Name
+  {f69fe00a-98ec-4d38-8c62-e2697351c738}, ! UUID
+  {04bcfe7c-ac63-46b0-b3af-8d3531ba83aa}, ! Version UUID
+  1363980994,                             ! Creation Timestamp
+  1363980994,                             ! Version Timestamp
+  {7ee02380-dcb5-4668-85e7-668b7822a269}, ! Name of Object 1
+  {6ea5d8a3-3f6c-42ca-904d-eeb76735ab1a}, ! Name of Object 2
+  {0e4cbebd-9121-4884-b3e2-afe5fb720bb2}, ! Name of Object 3
+  {8384608f-bd8f-4654-8234-2fb5c62ddcab}, ! Name of Object 4
+  {27e39157-fda3-4aea-a104-9129d8f64864}; ! Name of Object 5
+

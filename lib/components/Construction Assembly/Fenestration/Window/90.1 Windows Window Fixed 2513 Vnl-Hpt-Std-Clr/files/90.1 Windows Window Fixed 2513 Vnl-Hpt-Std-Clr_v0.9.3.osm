@@ -1,0 +1,39 @@
+
+OS:Version,
+  {60a349de-70ed-44f6-9c3d-cfbf0e54b696}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {fc23085a-cf8f-4970-9736-ae0fe1f9e513}, ! Handle
+  90.1 Windows Window Fixed 2513 Vnl-Hpt-Std-Clr, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2513 Vnl-Hpt-Std-Clr, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {2bbd4fc6-f2fe-470c-bcf0-a162dba231bf}, ! Handle
+  Theoretical Glass [396],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.354147,                               ! Solar Transmittance at Normal Incidence
+  0.595853,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.595853,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.50965,                                ! Visible Transmittance at Normal Incidence
+  0.44035,                                ! Front Side Visible Reflectance at Normal Incidence
+  0.44035,                                ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0161129;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {a2df3e8f-8990-4f5b-ad33-3ced16fb6f48}, ! Handle
+  90.1 Windows Window Fixed 2513 Vnl-Hpt-Std-Clr, ! Name
+  ,                                       ! Surface Rendering Name
+  {2bbd4fc6-f2fe-470c-bcf0-a162dba231bf}; ! Layer 1
+

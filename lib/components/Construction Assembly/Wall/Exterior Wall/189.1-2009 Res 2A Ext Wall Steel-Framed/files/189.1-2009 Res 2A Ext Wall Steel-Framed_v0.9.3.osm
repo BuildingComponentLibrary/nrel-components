@@ -1,0 +1,57 @@
+
+OS:Version,
+  {bd9ed4e6-836f-4ca5-a0f2-fdc04a90e008}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {1b2ea212-a262-4dad-b177-5efaf27dec60}, ! Handle
+  189.1-2009 Res 2A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 2A Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  97.51,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {8d35b796-63c9-4790-94e2-c0b027ab0fe9}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {8d22697a-5067-45ab-8f91-82feb01839e7}, ! Handle
+  Wall Insulation [39],                   ! Name
+  MediumRough,                            ! Roughness
+  0.118387,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {31760a10-1dec-46d2-b3af-0cb4a8fb3022}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {c3dccd13-c748-42c9-9e27-6f51cb564d36}, ! Handle
+  189.1-2009 Res 2A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {31760a10-1dec-46d2-b3af-0cb4a8fb3022}, ! Layer 1
+  {8d22697a-5067-45ab-8f91-82feb01839e7}, ! Layer 2
+  {8d35b796-63c9-4790-94e2-c0b027ab0fe9}; ! Layer 3
+

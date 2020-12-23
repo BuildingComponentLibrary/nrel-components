@@ -1,0 +1,61 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: AtticFloor:Attic Floor
+! Description: R-137.0
+! Effective R-Value (SI): 22.6
+! Layer 1: 1/2IN Gypsum Top
+! Layer 2: AtticFloor Insulation [43]
+! Layer 3: AtticFloor Insulation 2
+! Layer 4: 1/2IN Gypsum Bottom
+Material,
+  1/2IN Gypsum Top,                       !- Name
+  Smooth,                                 !- Roughness
+  0.01271,                                !- Thickness
+  0.16,                                   !- Conductivity
+  784.9,                                  !- Density
+  830,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.92,                                   !- Abs Solar
+  0.92;                                   !- Abs Visible
+
+Material,
+  AtticFloor Insulation [43],             !- Name
+  MediumRough,                            !- Roughness
+  0.599516,                               !- Thickness
+  0.049,                                  !- Conductivity
+  265,                                    !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  AtticFloor Insulation 2,                !- Name
+  MediumRough,                            !- Roughness
+  0.5,                                    !- Thickness
+  0.049,                                  !- Conductivity
+  265,                                    !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  1/2IN Gypsum Bottom,                    !- Name
+  Smooth,                                 !- Roughness
+  0.01271,                                !- Thickness
+  0.16,                                   !- Conductivity
+  784.9,                                  !- Density
+  830,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.92,                                   !- Abs Solar
+  0.92;                                   !- Abs Visible
+
+Construction,
+  90.1 Constructions Attic Floor R-137.0, !- Name
+  1/2IN Gypsum Top,                       !- Layer 1
+  AtticFloor Insulation [43],             !- Layer 2
+  AtticFloor Insulation 2,                !- Layer 3
+  1/2IN Gypsum Bottom;                    !- Layer 4
+

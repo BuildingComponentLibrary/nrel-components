@@ -1,0 +1,57 @@
+
+OS:Version,
+  {3edd49a5-9101-4ca8-9433-73d51c11edc3}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {392a6580-db2c-47fd-8793-b015d46dab88}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {a655cffa-3dd0-493d-bdd3-80a63713ab3f}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {afdbfbbe-fd01-4ad5-a145-fd1d6af81cea}, ! Handle
+  90.1-2004 Nonres 3C Door Non-Swinging,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 3C Door Non-Swinging,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {a23709f7-c610-4195-a360-525a6eb17e18}, ! Handle
+  90.1-2004 Nonres 3C Door Non-Swinging,  ! Name
+  ,                                       ! Surface Rendering Name
+  {392a6580-db2c-47fd-8793-b015d46dab88}, ! Layer 1
+  {39a1744a-ead1-4324-9b60-997126fb5784}, ! Layer 2
+  {a655cffa-3dd0-493d-bdd3-80a63713ab3f}; ! Layer 3
+
+OS:Material:NoMass,
+  {39a1744a-ead1-4324-9b60-997126fb5784}, ! Handle
+  AIR [1],                                ! Name
+  Smooth,                                 ! Roughness
+  0.121409,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+

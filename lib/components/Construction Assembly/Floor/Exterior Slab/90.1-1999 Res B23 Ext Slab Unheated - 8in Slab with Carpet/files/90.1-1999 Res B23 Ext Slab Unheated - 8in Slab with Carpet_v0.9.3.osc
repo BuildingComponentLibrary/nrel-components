@@ -1,0 +1,56 @@
+
+OS:Version,
+  {cd61254d-1474-4304-9d5a-b91dc3dfcaf9}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {7b9ca6bd-0858-4d59-8dbf-b1281e8a8bcd}, ! Handle
+  90.1-1999 Res B23 Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {0a7ab292-b803-419f-8437-4fa3abe7b15b}, ! Layer 1
+  {4d39cd3e-78d1-4a59-b07b-0189bf1075c9}; ! Layer 2
+
+OS:Material,
+  {0a7ab292-b803-419f-8437-4fa3abe7b15b}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {4d39cd3e-78d1-4a59-b07b-0189bf1075c9}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {df763e1c-2a25-4254-b77f-817ff4a50370}, ! Handle
+  90.1-1999 Res B23 Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B23 Ext Slab Unheated - 8in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {86c13698-3b3b-4afc-94c1-fdceae8234f9}, ! Handle
+  Component Data 1,                       ! Name
+  {eaf83951-4fe6-4ae3-817f-384ba7abf41f}, ! UUID
+  {72bcc30c-b87d-458f-a478-3669642e5f7e}, ! Version UUID
+  1363981266,                             ! Creation Timestamp
+  1363981266,                             ! Version Timestamp
+  {7b9ca6bd-0858-4d59-8dbf-b1281e8a8bcd}, ! Name of Object 1
+  {0a7ab292-b803-419f-8437-4fa3abe7b15b}, ! Name of Object 2
+  {4d39cd3e-78d1-4a59-b07b-0189bf1075c9}, ! Name of Object 3
+  {df763e1c-2a25-4254-b77f-817ff4a50370}; ! Name of Object 4
+

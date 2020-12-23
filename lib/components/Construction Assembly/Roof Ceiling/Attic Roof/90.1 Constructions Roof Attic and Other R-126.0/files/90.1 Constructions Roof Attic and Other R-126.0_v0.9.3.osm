@@ -1,0 +1,86 @@
+
+OS:Version,
+  {64395aee-dbe8-4462-9793-25bb1c8cd6d8}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {408fe75f-9625-46fc-b5b9-f659867666ab}, ! Handle
+  Roof Insulation 2,                      ! Name
+  MediumRough,                            ! Roughness
+  0.1295,                                 ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {dc8536b5-0d40-4fc1-8532-badbd3d950b9}, ! Handle
+  Roof Insulation [91],                   ! Name
+  MediumRough,                            ! Roughness
+  0.872947,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {feaebddf-cfef-4e00-8ec7-d213059bdf66}, ! Handle
+  1IN Wood Decking,                       ! Name
+  MediumSmooth,                           ! Roughness
+  0.0254,                                 ! Thickness {m}
+  0.1211,                                 ! Conductivity {W/m-K}
+  593,                                    ! Density {kg/m3}
+  2510,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {8b7d43a6-1ac6-4b0e-b164-bae05270affb}, ! Handle
+  90.1 Constructions Roof Attic and Other R-126.0, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Roof Attic and Other R-126.0, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  48.671,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {16381acc-23e7-4518-a701-b7eb8604a714}, ! Handle
+  Wood Shingles,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0178,                                 ! Thickness {m}
+  0.115,                                  ! Conductivity {W/m-K}
+  513,                                    ! Density {kg/m3}
+  1255,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Construction,
+  {0c363840-85b3-4c62-b1ae-0c651adf1555}, ! Handle
+  90.1 Constructions Roof Attic and Other R-126.0, ! Name
+  ,                                       ! Surface Rendering Name
+  {16381acc-23e7-4518-a701-b7eb8604a714}, ! Layer 1
+  {feaebddf-cfef-4e00-8ec7-d213059bdf66}, ! Layer 2
+  {dc8536b5-0d40-4fc1-8532-badbd3d950b9}, ! Layer 3
+  {408fe75f-9625-46fc-b5b9-f659867666ab}, ! Layer 4
+  {8cb48970-1fa2-412e-bfa4-aac097ac720a}; ! Layer 5
+
+OS:Material,
+  {8cb48970-1fa2-412e-bfa4-aac097ac720a}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+

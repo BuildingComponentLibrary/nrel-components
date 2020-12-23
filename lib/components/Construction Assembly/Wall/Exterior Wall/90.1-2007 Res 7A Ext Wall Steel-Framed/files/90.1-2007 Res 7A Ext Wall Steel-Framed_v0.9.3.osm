@@ -1,0 +1,57 @@
+
+OS:Version,
+  {bdafa0f4-25f8-42dd-ad6c-9cdb0cd8075a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {65f245a9-3405-493b-8563-f1c7480fcd7c}, ! Handle
+  90.1-2007 Res 7A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {8ed50ca9-d533-400f-9408-36f6d61518b7}, ! Layer 1
+  {ef402f6f-53dc-482a-887d-3de1f4123fd7}, ! Layer 2
+  {f2eed5e2-58cb-4df9-b2c8-4fbe0dc3a651}; ! Layer 3
+
+OS:Material:NoMass,
+  {8ed50ca9-d533-400f-9408-36f6d61518b7}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {ef402f6f-53dc-482a-887d-3de1f4123fd7}, ! Handle
+  Wall Insulation [28],                   ! Name
+  MediumRough,                            ! Roughness
+  0.162212,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {f2eed5e2-58cb-4df9-b2c8-4fbe0dc3a651}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {fe716dc7-ed9e-4e18-81e0-f98dd632f016}, ! Handle
+  90.1-2007 Res 7A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Res 7A Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  101.677,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

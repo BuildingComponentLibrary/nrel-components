@@ -1,0 +1,70 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: ExtWall:Steel-Framed
+! Description: R-13 + R-3.8 ci
+! Effective R-Value (SI): 1.95
+! Layer 1: MAT-SHEATH
+! Layer 2: Wall Insulation [6]
+! Layer 3: 1/2IN Gypsum
+Material:NoMass,
+  MAT-SHEATH,                             !- Name
+  Rough,                                  !- Roughness
+  0.36256,                                !- Thermal Resistance
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  Wall Insulation [6],                    !- Name
+  MediumRough,                            !- Roughness
+  0.0678449,                              !- Thickness
+  0.045,                                  !- Conductivity
+  265,                                    !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  1/2IN Gypsum,                           !- Name
+  Smooth,                                 !- Roughness
+  0.01271,                                !- Thickness
+  0.16,                                   !- Conductivity
+  784.9,                                  !- Density
+  830,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.92,                                   !- Abs Solar
+  0.92;                                   !- Abs Visible
+
+Construction,
+  90.1-1999 Res B15 Ext Wall Steel-Framed, !- Name
+  MAT-SHEATH,                             !- Layer 1
+  Wall Insulation [6],                    !- Layer 2
+  1/2IN Gypsum;                           !- Layer 3
+
+! CostSource: Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)
+! InstallCost {$/m2}: 51.489
+! MaterialCost {$/m2}: 40.260
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  90.1-1999 Res B15 Ext Wall Steel-Framed, !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  90.1-1999 Res B15 Ext Wall Steel-Framed, !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  91.749,                                 !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

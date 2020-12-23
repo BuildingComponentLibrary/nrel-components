@@ -1,0 +1,39 @@
+
+OS:Version,
+  {f9b1fafc-31a5-464b-a5f1-8fb7265a0a30}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {ffbcd05a-4c1f-4efd-a094-f0efad7b7ee2}, ! Handle
+  Theoretical Glass [546],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.186579,                               ! Solar Transmittance at Normal Incidence
+  0.763421,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.763421,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.301356,                               ! Visible Transmittance at Normal Incidence
+  0.648644,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.648644,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00956575;                             ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {3c9a345d-5306-4d8c-ad7c-b49925ed7956}, ! Handle
+  90.1 Windows Window Fixed 2536 Vnl-HptMpr-Std-ClrSpe, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2536 Vnl-HptMpr-Std-ClrSpe, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {f1c21242-6ac9-41ee-acd7-da84a5bcce8f}, ! Handle
+  90.1 Windows Window Fixed 2536 Vnl-HptMpr-Std-ClrSpe, ! Name
+  ,                                       ! Surface Rendering Name
+  {ffbcd05a-4c1f-4efd-a094-f0efad7b7ee2}; ! Layer 1
+

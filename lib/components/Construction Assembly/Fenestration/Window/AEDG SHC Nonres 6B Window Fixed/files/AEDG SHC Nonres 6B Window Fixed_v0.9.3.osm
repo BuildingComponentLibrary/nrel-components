@@ -1,0 +1,39 @@
+
+OS:Version,
+  {1b8f5bd8-f7cf-4eab-87e1-9227e7d38870}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {95b1e5e3-b5b8-49fe-8c70-8a89a04fe926}, ! Handle
+  AEDG SHC Nonres 6B Window Fixed,        ! Name
+  ,                                       ! Surface Rendering Name
+  {3e705dba-0e11-4983-9338-c31a567c3b03}; ! Layer 1
+
+OS:WindowMaterial:Glazing,
+  {3e705dba-0e11-4983-9338-c31a567c3b03}, ! Handle
+  Theoretical Glass [240],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.319571,                               ! Solar Transmittance at Normal Incidence
+  0.630429,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.630429,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.689609,                               ! Visible Transmittance at Normal Incidence
+  0.260391,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.260391,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00683479;                             ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {1e7990c2-1f74-4b91-90e9-b0f22dc3f18c}, ! Handle
+  AEDG SHC Nonres 6B Window Fixed,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 6B Window Fixed,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

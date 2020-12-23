@@ -1,0 +1,44 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Door:Non-Swinging
+! Description: U-1.45
+! Effective R-Value (SI): 0.3522
+! Layer 1: DoorMaterial [2]
+Material:NoMass,
+  DoorMaterial [2],                       !- Name
+  MediumRough,                            !- Roughness
+  0.352225,                               !- Thermal Resistance
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Construction,
+  AEDG-SmOffice 6B Door Non-Swinging,     !- Name
+  DoorMaterial [2];                       !- Layer 1
+
+! CostSource: 
+! InstallCost {$/m2}: 0.000
+! MaterialCost {$/m2}: 0.000
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  AEDG-SmOffice 6B Door Non-Swinging,     !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  AEDG-SmOffice 6B Door Non-Swinging,     !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  0.000,                                  !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

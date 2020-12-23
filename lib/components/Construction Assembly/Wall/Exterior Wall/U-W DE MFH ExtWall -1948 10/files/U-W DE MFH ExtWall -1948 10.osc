@@ -1,0 +1,72 @@
+
+OS:Version,
+  {960f03c3-7f4b-4d05-9daf-914b1e62691a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {dc7e00ce-bcc8-4b08-b70c-4cbf02c24d7a}, ! Handle
+  U-W DE MFH ExtWall -1948 10,		  ! Name
+  ,                                       ! Surface Rendering Name
+  {7325e9a0-6477-4ac0-8938-6474701d05f7}, ! Layer 1
+  {c975312f-30cb-4684-b874-537a19349346}, ! Layer 2
+  {f3addd31-ba64-4bd3-a878-878cec816b24}; ! Layer 3
+
+OS:Material,
+  {7325e9a0-6477-4ac0-8938-6474701d05f7}, ! Handle	
+  Gips-Kalk Innenputz 1.5cm,              ! Name
+  Smooth,                                 ! Roughness
+  0.015,                                  ! Thickness {m}
+  0.7,                                    ! Conductivity {W/m-K}
+  1100,                                   ! Density {kg/m3}
+  1010,                                   ! Specific Heat {J/kg-K}
+  0.3,                                    ! Thermal Absorptance
+  0.3,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:Material,
+  {c975312f-30cb-4684-b874-537a19349346}, ! Handle		
+  Vollziegel 25cm,                        ! Name
+  Smooth,                                 ! Roughness
+  0.25,                                   ! Thickness {m}
+  0.81,                                   ! Conductivity {W/m-K}
+  1800,                                   ! Density {kg/m3}
+  1000,                                   ! Specific Heat {J/kg-K}
+  0.7,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {f3addd31-ba64-4bd3-a878-878cec816b24}, ! Handle		
+  Klinker 12.5cm,                         ! Name
+  Smooth,                                 ! Roughness
+  0.125,                                  ! Thickness {m}
+  0.81,                                   ! Conductivity {W/m-K}
+  1400,                                   ! Density {kg/m3}
+  0.3,                                    ! Thermal Absorptance
+  0.3,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {5f58b5ea-5372-4b5f-9d53-7521da71654a}, ! Handle
+  U-W DE MFH ExtWall -1948 10,            ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  U-W DE MFH ExtWall -1948 10,            ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0.0,                                    ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {67381968-cef4-11e7-abc4-cec278b6b50a}, ! Handle
+  Component Data 1,                       ! Name
+  {67381a26-cef4-11e7-abc4-cec278b6b50a}, ! UUID
+  {67381ae4-cef4-11e7-abc4-cec278b6b50a}, ! Version UUID
+  1363981182,                             ! Creation Timestamp
+  1363981182,                             ! Version Timestamp
+  {dc7e00ce-bcc8-4b08-b70c-4cbf02c24d7a}, ! Name of Object 1
+  {7325e9a0-6477-4ac0-8938-6474701d05f7}, ! Name of Object 2
+  {c975312f-30cb-4684-b874-537a19349346}, ! Name of Object 3
+  {f3addd31-ba64-4bd3-a878-878cec816b24}, ! Name of Object 4
+  {5f58b5ea-5372-4b5f-9d53-7521da71654a}; ! Name of Object 5
+

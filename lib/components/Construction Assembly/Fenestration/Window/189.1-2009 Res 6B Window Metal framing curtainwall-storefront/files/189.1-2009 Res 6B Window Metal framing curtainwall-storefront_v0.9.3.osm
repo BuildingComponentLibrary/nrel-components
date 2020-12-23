@@ -1,0 +1,39 @@
+
+OS:Version,
+  {ee86a87b-e271-470a-bfff-2d5194e20064}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {191e994b-0478-49ed-99a8-a34bca1af662}, ! Handle
+  189.1-2009 Res 6B Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 6B Window Metal framing curtainwall-storefront, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  512.02,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {943eec68-202f-4619-bcd1-b15f55e07358}, ! Handle
+  Theoretical Glass [214],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.379437,                               ! Solar Transmittance at Normal Incidence
+  0.570563,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.570563,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.507883,                               ! Visible Transmittance at Normal Incidence
+  0.442117,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.442117,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00893994;                             ! Conductivity {W/m-K}
+
+OS:Construction,
+  {ffe588f8-43eb-4f94-8388-d99c5c0205da}, ! Handle
+  189.1-2009 Res 6B Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Surface Rendering Name
+  {943eec68-202f-4619-bcd1-b15f55e07358}; ! Layer 1
+

@@ -1,0 +1,39 @@
+
+OS:Version,
+  {9a69f817-abe4-4729-b8f1-d64cc216a470}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {d9f2ca2e-30a6-42d1-9b6b-ce4d6f1a9814}, ! Handle
+  Theoretical Glass [233],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.454257,                               ! Solar Transmittance at Normal Incidence
+  0.495743,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.495743,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.493419,                               ! Visible Transmittance at Normal Incidence
+  0.456581,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.456581,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0116221;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {565d8479-037a-4a7d-b68f-c339251abb5f}, ! Handle
+  AEDG-SmOffice 4B Window Fixed,          ! Name
+  ,                                       ! Surface Rendering Name
+  {d9f2ca2e-30a6-42d1-9b6b-ce4d6f1a9814}; ! Layer 1
+
+OS:ComponentCost:LineItem,
+  {2395eed7-781d-40dd-a5dd-7e3cc98f30e9}, ! Handle
+  AEDG-SmOffice 4B Window Fixed,          ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 4B Window Fixed,          ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  546.13,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

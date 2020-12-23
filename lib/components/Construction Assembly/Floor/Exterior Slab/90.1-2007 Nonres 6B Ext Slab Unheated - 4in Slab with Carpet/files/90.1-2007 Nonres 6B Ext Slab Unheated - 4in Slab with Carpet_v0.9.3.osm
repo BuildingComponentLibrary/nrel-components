@@ -1,0 +1,44 @@
+
+OS:Version,
+  {265fb641-a3a8-46f2-8e5d-a5ea65a88fa8}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {f8cbe005-daa3-4bad-8713-681c3ddc22dc}, ! Handle
+  MAT-CC05 4 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.1016,                                 ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {a108f8ff-0416-458f-ab3d-0f540123789d}, ! Handle
+  90.1-2007 Nonres 6B Ext Slab Unheated - 4in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 6B Ext Slab Unheated - 4in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {3a8780c3-5ae9-47a4-bfe0-39fad5a710e7}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Construction,
+  {410229a5-72b7-46b3-a70c-910df1010680}, ! Handle
+  90.1-2007 Nonres 6B Ext Slab Unheated - 4in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {f8cbe005-daa3-4bad-8713-681c3ddc22dc}, ! Layer 1
+  {3a8780c3-5ae9-47a4-bfe0-39fad5a710e7}; ! Layer 2
+

@@ -1,0 +1,32 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Skylight:Plastic Skylight with Curb
+! Description: 
+! Glazing Facade: Skylight
+! Glazing Range Min: 0
+! Glazing Range Max: 1
+! Effective U-Value (SI): 3.408
+! SHGC: 0.4
+! VLT: 0.55
+! Layer 1: Theoretical Glass [242]
+WindowMaterial:Glazing,
+  Theoretical Glass [242],                !- Name
+  SpectralAverage,                        !-
+  ,                                       !-
+  0.003,                                  !- Thickness
+  0.381632,                               !- Solar Transmittance
+  0.568368,                               !- Solar Reflectance Front
+  0.568368,                               !- Solar Reflectance Back
+  0.549983,                               !- Visible Transmittance
+  0.400017,                               !- Visible Reflectance Front
+  0.400017,                               !- Visible Reflectance Back
+  0,                                      !- IR Transmittance
+  0.9,                                    !- IR Emmissivity Front
+  0.9,                                    !- IR Emmissivity Back
+  0.0230964;                              !- Conductivity
+
+Construction,
+  AEDG SHC Nonres 8A Skylight Plastic Skylight with Curb, !- Name
+  Theoretical Glass [242];                !- Layer 1
+

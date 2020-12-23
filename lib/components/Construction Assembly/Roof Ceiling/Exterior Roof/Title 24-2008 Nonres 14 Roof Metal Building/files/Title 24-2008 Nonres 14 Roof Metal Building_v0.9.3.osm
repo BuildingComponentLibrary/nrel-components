@@ -1,0 +1,47 @@
+
+OS:Version,
+  {38ddc634-c28b-467a-b818-496479290c22}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {fb27ae39-b116-4b7e-a3bb-5ba611495253}, ! Handle
+  Roof Insulation [15],                   ! Name
+  MediumRough,                            ! Roughness
+  0.123565,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {22d4e6b5-c86f-489d-9133-fafc4bcf38a7}, ! Handle
+  Title 24-2008 Nonres 14 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 14 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.21,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {d4c27070-4394-4441-a8e1-75927e6d682f}, ! Handle
+  Metal Roofing [1],                      ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.85;                                   ! Visible Absorptance
+
+OS:Construction,
+  {5b361de3-de6a-4b85-88de-228d217a1fd2}, ! Handle
+  Title 24-2008 Nonres 14 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {d4c27070-4394-4441-a8e1-75927e6d682f}, ! Layer 1
+  {fb27ae39-b116-4b7e-a3bb-5ba611495253}; ! Layer 2
+

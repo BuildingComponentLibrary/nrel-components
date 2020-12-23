@@ -1,0 +1,57 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Skylight:Glass Skylight with Curb
+! Description: 
+! Glazing Facade: Skylight
+! Glazing Range Min: 0.02
+! Glazing Range Max: 1
+! Effective U-Value (SI): 6.301
+! SHGC: 0.4
+! VLT: 0.4
+! Layer 1: Theoretical Glass [679]
+WindowMaterial:Glazing,
+  Theoretical Glass [679],                !- Name
+  SpectralAverage,                        !-
+  ,                                       !-
+  0.003,                                  !- Thickness
+  0.387604,                               !- Solar Transmittance
+  0.562396,                               !- Solar Reflectance Front
+  0.562396,                               !- Solar Reflectance Back
+  0.400004,                               !- Visible Transmittance
+  0.549996,                               !- Visible Reflectance Front
+  0.549996,                               !- Visible Reflectance Back
+  0,                                      !- IR Transmittance
+  0.91,                                   !- IR Emmissivity Front
+  0.91,                                   !- IR Emmissivity Back
+  0.387053;                               !- Conductivity
+
+Construction,
+  Title 24-2008 Nonres 4 Skylight Glass Skylight with Curb, !- Name
+  Theoretical Glass [679];                !- Layer 1
+
+! CostSource: Closest match from 90.1 database (1999)
+! InstallCost {$/m2}: 292.500
+! MaterialCost {$/m2}: 209.298
+! AnnualOM {$/m2}: 2.340
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 15
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  Title 24-2008 Nonres 4 Skylight Glass Skylight with Curb, !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  Title 24-2008 Nonres 4 Skylight Glass Skylight with Curb, !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  501.798,                                !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

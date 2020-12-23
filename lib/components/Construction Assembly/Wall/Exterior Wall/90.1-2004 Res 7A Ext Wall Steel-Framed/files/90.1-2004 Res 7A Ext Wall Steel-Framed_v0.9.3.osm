@@ -1,0 +1,57 @@
+
+OS:Version,
+  {e365e51a-dc46-42b0-91ce-ce540936e7e1}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {f9396c05-c39c-442c-a748-f58bf49dcb7d}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {0a2057e0-92c8-40b1-bdb2-367907689adf}, ! Handle
+  Wall Insulation [10],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0971136,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {a5820a35-afe5-4fc8-8055-d65e89b97834}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {a216e6ca-eede-4889-9efe-21275c0c3e60}, ! Handle
+  90.1-2004 Res 7A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {f9396c05-c39c-442c-a748-f58bf49dcb7d}, ! Layer 1
+  {0a2057e0-92c8-40b1-bdb2-367907689adf}, ! Layer 2
+  {a5820a35-afe5-4fc8-8055-d65e89b97834}; ! Layer 3
+
+OS:ComponentCost:LineItem,
+  {7fc92ffe-2db0-4b34-b74a-3889d2a33788}, ! Handle
+  90.1-2004 Res 7A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Res 7A Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  94.657,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

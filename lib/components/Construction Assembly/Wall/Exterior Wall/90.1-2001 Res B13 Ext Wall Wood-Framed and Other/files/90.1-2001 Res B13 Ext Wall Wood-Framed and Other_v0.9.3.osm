@@ -1,0 +1,60 @@
+
+OS:Version,
+  {2a551b9c-b7b6-4d74-8f0e-fcb700d965c1}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {2a62f306-e7c2-4964-9105-f9e76b1b0d11}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {48391e22-7441-4631-aa15-5bdbc21bc68d}, ! Handle
+  Wall Insulation [2],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0746874,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {42ee76c7-2843-42bb-bce1-f9fd14bbe5f8}, ! Handle
+  90.1-2001 Res B13 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B13 Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  73.056,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {eb5b5e6a-7cb9-4bed-b54c-58556ee49230}, ! Handle
+  90.1-2001 Res B13 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {22170f76-7fc6-4c81-a77f-eacb602b8814}, ! Layer 1
+  {48391e22-7441-4631-aa15-5bdbc21bc68d}, ! Layer 2
+  {2a62f306-e7c2-4964-9105-f9e76b1b0d11}; ! Layer 3
+
+OS:Material,
+  {22170f76-7fc6-4c81-a77f-eacb602b8814}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+

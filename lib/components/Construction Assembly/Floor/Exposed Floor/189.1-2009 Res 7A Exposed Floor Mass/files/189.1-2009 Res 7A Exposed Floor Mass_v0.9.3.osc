@@ -1,0 +1,70 @@
+
+OS:Version,
+  {6227aa20-ee01-4e7f-beca-f2dfe83065d4}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {5b6676e0-7ed2-4366-b0c9-ada076853bd9}, ! Handle
+  189.1-2009 Res 7A Exposed Floor Mass,   ! Name
+  ,                                       ! Surface Rendering Name
+  {8b6d0f82-5958-4d94-8552-f0d5a9fe0f3e}, ! Layer 1
+  {8343ca25-e71a-4ba3-9c21-e136bc55453c}, ! Layer 2
+  {e2b85ea7-07d3-4500-aa06-c6da14ddc3df}; ! Layer 3
+
+OS:Material,
+  {8b6d0f82-5958-4d94-8552-f0d5a9fe0f3e}, ! Handle
+  Floor Insulation [11],                  ! Name
+  MediumRough,                            ! Roughness
+  0.152225,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {8343ca25-e71a-4ba3-9c21-e136bc55453c}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {e2b85ea7-07d3-4500-aa06-c6da14ddc3df}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {ce56a90f-0281-44e8-a015-05119853a7ae}, ! Handle
+  189.1-2009 Res 7A Exposed Floor Mass,   ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 7A Exposed Floor Mass,   ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  66.669,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {3b58423a-0a63-4048-acfd-6905757ba6f3}, ! Handle
+  Component Data 1,                       ! Name
+  {068d4ebf-d82d-4667-865a-2d6af01d105f}, ! UUID
+  {956ee9db-518b-4b7b-8023-7a0a6051935b}, ! Version UUID
+  1363980985,                             ! Creation Timestamp
+  1363980985,                             ! Version Timestamp
+  {5b6676e0-7ed2-4366-b0c9-ada076853bd9}, ! Name of Object 1
+  {8b6d0f82-5958-4d94-8552-f0d5a9fe0f3e}, ! Name of Object 2
+  {8343ca25-e71a-4ba3-9c21-e136bc55453c}, ! Name of Object 3
+  {e2b85ea7-07d3-4500-aa06-c6da14ddc3df}, ! Name of Object 4
+  {ce56a90f-0281-44e8-a015-05119853a7ae}; ! Name of Object 5
+

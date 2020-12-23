@@ -1,0 +1,57 @@
+
+OS:Version,
+  {5e7baefc-2f86-4936-84dd-dd3984020860}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {72130a2b-a2ac-4707-9c4e-dc30f546f8f1}, ! Handle
+  90.1-2004 Nonres 4B Door Swinging,      ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 4B Door Swinging,      ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {80fb19e2-a27d-4e45-9826-a222808b43f3}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {da7f2e8e-016d-42bc-982a-9c3ce14df58f}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {a92224c3-3bc9-4258-a2b1-4f46a26c01cf}, ! Handle
+  AIR,                                    ! Name
+  Smooth,                                 ! Roughness
+  0.251489,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {883084b1-ded2-402c-a970-1f22e56b2b5b}, ! Handle
+  90.1-2004 Nonres 4B Door Swinging,      ! Name
+  ,                                       ! Surface Rendering Name
+  {80fb19e2-a27d-4e45-9826-a222808b43f3}, ! Layer 1
+  {a92224c3-3bc9-4258-a2b1-4f46a26c01cf}, ! Layer 2
+  {da7f2e8e-016d-42bc-982a-9c3ce14df58f}; ! Layer 3
+

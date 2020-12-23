@@ -1,0 +1,57 @@
+
+OS:Version,
+  {5f11cc4f-10e6-4973-aa9e-4a3ceaa23685}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {7a2f02e9-45ff-4791-b722-517915faf57f}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {5c75b5f5-9a03-4e2e-ac62-50fbfeea4f22}, ! Handle
+  Title 24-2008 Nonres 6 Exposed Floor Mass, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 6 Exposed Floor Mass, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  40.432,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {7bfc6658-3667-4d2a-8087-57c251f3d4ee}, ! Handle
+  Title 24-2008 Nonres 6 Exposed Floor Mass, ! Name
+  ,                                       ! Surface Rendering Name
+  {7a8c4fe0-32b0-4c5a-adf8-d41c5c851a7e}, ! Layer 1
+  {efa0b88b-5bec-4235-9a95-01da47156300}, ! Layer 2
+  {7a2f02e9-45ff-4791-b722-517915faf57f}; ! Layer 3
+
+OS:Material,
+  {7a8c4fe0-32b0-4c5a-adf8-d41c5c851a7e}, ! Handle
+  Floor Insulation [56],                  ! Name
+  MediumRough,                            ! Roughness
+  0.0018265,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {efa0b88b-5bec-4235-9a95-01da47156300}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

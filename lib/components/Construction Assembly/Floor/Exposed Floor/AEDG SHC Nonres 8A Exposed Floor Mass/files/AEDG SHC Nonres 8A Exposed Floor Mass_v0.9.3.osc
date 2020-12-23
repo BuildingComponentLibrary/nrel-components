@@ -1,0 +1,70 @@
+
+OS:Version,
+  {51ed8a40-bc8a-451a-88de-f0fe44ccdb94}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {13fd5845-f94b-4416-83bb-110df0d62d19}, ! Handle
+  AEDG SHC Nonres 8A Exposed Floor Mass,  ! Name
+  ,                                       ! Surface Rendering Name
+  {969da148-7072-4c50-b3cd-4b88a37f2bc0}, ! Layer 1
+  {1052d3fe-dae3-4dd4-a4c0-d471f5868131}, ! Layer 2
+  {0f3362b5-22c6-4d64-b684-d04e46c5a4a8}; ! Layer 3
+
+OS:Material,
+  {969da148-7072-4c50-b3cd-4b88a37f2bc0}, ! Handle
+  Floor Insulation [18],                  ! Name
+  MediumRough,                            ! Roughness
+  0.180537,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {1052d3fe-dae3-4dd4-a4c0-d471f5868131}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {0f3362b5-22c6-4d64-b684-d04e46c5a4a8}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {ce3cd7dc-b115-408c-a278-98f49a0b6a2d}, ! Handle
+  AEDG SHC Nonres 8A Exposed Floor Mass,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 8A Exposed Floor Mass,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {7be6ebd6-bf5f-4762-8bc6-442803f6b774}, ! Handle
+  Component Data 1,                       ! Name
+  {158554db-099b-4407-b9dd-3264f161cb13}, ! UUID
+  {5c1e0def-e942-4d2c-8222-2e01cced595b}, ! Version UUID
+  1363981934,                             ! Creation Timestamp
+  1363981934,                             ! Version Timestamp
+  {13fd5845-f94b-4416-83bb-110df0d62d19}, ! Name of Object 1
+  {969da148-7072-4c50-b3cd-4b88a37f2bc0}, ! Name of Object 2
+  {1052d3fe-dae3-4dd4-a4c0-d471f5868131}, ! Name of Object 3
+  {0f3362b5-22c6-4d64-b684-d04e46c5a4a8}, ! Name of Object 4
+  {ce3cd7dc-b115-408c-a278-98f49a0b6a2d}; ! Name of Object 5
+

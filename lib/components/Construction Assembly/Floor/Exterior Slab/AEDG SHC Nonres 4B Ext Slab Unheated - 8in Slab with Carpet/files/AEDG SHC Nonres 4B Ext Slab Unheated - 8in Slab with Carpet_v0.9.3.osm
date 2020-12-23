@@ -1,0 +1,57 @@
+
+OS:Version,
+  {e0925173-3a16-4b94-bf93-8dc28f564214}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {63ea7989-b152-4d2e-bb16-80792641d96c}, ! Handle
+  Floor Insulation [13],                  ! Name
+  MediumRough,                            ! Roughness
+  0.00242656,                             ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {d1a2133d-a070-4278-b66d-d02350b24953}, ! Handle
+  AEDG SHC Nonres 4B Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {63ea7989-b152-4d2e-bb16-80792641d96c}, ! Layer 1
+  {aeeb9f3e-aef9-48e8-8f48-65a24ea622a5}, ! Layer 2
+  {3016cb2e-1f71-4a63-8539-195d91455768}; ! Layer 3
+
+OS:Material,
+  {aeeb9f3e-aef9-48e8-8f48-65a24ea622a5}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {3016cb2e-1f71-4a63-8539-195d91455768}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {814fb862-333e-4e37-9257-af97e9e1d0cb}, ! Handle
+  AEDG SHC Nonres 4B Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 4B Ext Slab Unheated - 8in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

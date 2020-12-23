@@ -1,0 +1,70 @@
+
+OS:Version,
+  {57ac84ab-344a-4429-9357-081902879970}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {b23fbe47-965d-4663-b82c-771bdc7efdfd}, ! Handle
+  Title 24-2008 Nonres 13 Door Non-Swinging, ! Name
+  ,                                       ! Surface Rendering Name
+  {3facad76-8623-4bd0-bebf-bbb7ceeeed51}, ! Layer 1
+  {2d167d4e-1bf2-4cb5-b842-80a23a160d45}, ! Layer 2
+  {17dc7a44-f4de-4e98-bb3d-c6c425e2ffab}; ! Layer 3
+
+OS:Material,
+  {3facad76-8623-4bd0-bebf-bbb7ceeeed51}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {2d167d4e-1bf2-4cb5-b842-80a23a160d45}, ! Handle
+  AIR [16],                               ! Name
+  Smooth,                                 ! Roughness
+  0.121454,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {17dc7a44-f4de-4e98-bb3d-c6c425e2ffab}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {07ff0c9a-e2a2-4d45-9033-1704d108c763}, ! Handle
+  Title 24-2008 Nonres 13 Door Non-Swinging, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 13 Door Non-Swinging, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {f651b0b7-9658-4136-94f1-9d1ce21f57c9}, ! Handle
+  Component Data 1,                       ! Name
+  {19197764-266e-4f33-a126-dcf467b05844}, ! UUID
+  {4a29e68e-271d-4529-95e7-88787cba477f}, ! Version UUID
+  1363982092,                             ! Creation Timestamp
+  1363982092,                             ! Version Timestamp
+  {b23fbe47-965d-4663-b82c-771bdc7efdfd}, ! Name of Object 1
+  {3facad76-8623-4bd0-bebf-bbb7ceeeed51}, ! Name of Object 2
+  {2d167d4e-1bf2-4cb5-b842-80a23a160d45}, ! Name of Object 3
+  {17dc7a44-f4de-4e98-bb3d-c6c425e2ffab}, ! Name of Object 4
+  {07ff0c9a-e2a2-4d45-9033-1704d108c763}; ! Name of Object 5
+

@@ -1,0 +1,73 @@
+
+OS:Version,
+  {768239d6-3565-460f-b90e-86b6facf6ff4}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {a5230916-bf7f-4a99-b133-0a4784449535}, ! Handle
+  90.1-2001 Res B5 Roof Attic and Other,  ! Name
+  ,                                       ! Surface Rendering Name
+  {278a4c4a-007b-4de3-9167-5abe3d203bc7}, ! Layer 1
+  {edc0a908-3655-4b74-b7cc-b9274b35aaeb}, ! Layer 2
+  {5eaaf06b-fd1d-4661-bbc0-ab25b3dafbd1}, ! Layer 3
+  {b0e13b80-378e-49c4-8570-f090ce1e3aff}; ! Layer 4
+
+OS:Material,
+  {278a4c4a-007b-4de3-9167-5abe3d203bc7}, ! Handle
+  Wood Shingles,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0178,                                 ! Thickness {m}
+  0.115,                                  ! Conductivity {W/m-K}
+  513,                                    ! Density {kg/m3}
+  1255,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {edc0a908-3655-4b74-b7cc-b9274b35aaeb}, ! Handle
+  1IN Wood Decking,                       ! Name
+  MediumSmooth,                           ! Roughness
+  0.0254,                                 ! Thickness {m}
+  0.1211,                                 ! Conductivity {W/m-K}
+  593,                                    ! Density {kg/m3}
+  2510,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {5eaaf06b-fd1d-4661-bbc0-ab25b3dafbd1}, ! Handle
+  Roof Insulation [5],                    ! Name
+  MediumRough,                            ! Roughness
+  0.286906,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {b0e13b80-378e-49c4-8570-f090ce1e3aff}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {efd56269-00d6-43cc-954c-1df57685fc4a}, ! Handle
+  90.1-2001 Res B5 Roof Attic and Other,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B5 Roof Attic and Other,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  34.757,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

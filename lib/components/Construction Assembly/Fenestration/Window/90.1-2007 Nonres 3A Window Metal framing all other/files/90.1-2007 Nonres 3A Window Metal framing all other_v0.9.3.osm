@@ -1,0 +1,39 @@
+
+OS:Version,
+  {ead6309e-5a9a-406b-841a-be8ed25c31fe}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {253dbc64-1fe4-4ec1-80fb-275703412d7a}, ! Handle
+  90.1-2007 Nonres 3A Window Metal framing all other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 3A Window Metal framing all other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  563.991,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {57037e0a-32ec-49b1-9fb7-5cc19dee6037}, ! Handle
+  Theoretical Glass [174],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.242714,                               ! Solar Transmittance at Normal Incidence
+  0.707286,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.707286,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.319199,                               ! Visible Transmittance at Normal Incidence
+  0.630801,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.630801,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.026242;                               ! Conductivity {W/m-K}
+
+OS:Construction,
+  {1e2d49a8-a489-4e80-ab56-35e8f7096923}, ! Handle
+  90.1-2007 Nonres 3A Window Metal framing all other, ! Name
+  ,                                       ! Surface Rendering Name
+  {57037e0a-32ec-49b1-9fb7-5cc19dee6037}; ! Layer 1
+

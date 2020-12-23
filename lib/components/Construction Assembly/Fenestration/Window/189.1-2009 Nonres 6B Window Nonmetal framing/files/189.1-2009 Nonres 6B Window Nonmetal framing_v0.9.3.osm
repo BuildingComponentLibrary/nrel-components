@@ -1,0 +1,39 @@
+
+OS:Version,
+  {2821df51-15d5-4d74-be29-363bf8829bce}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {a8dfcc25-749b-444c-b039-11f1b6e33b26}, ! Handle
+  189.1-2009 Nonres 6B Window Nonmetal framing, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 6B Window Nonmetal framing, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  512.02,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {fe997592-1ad6-4ab7-9aa8-433b71a61af9}, ! Handle
+  Theoretical Glass [213],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.378238,                               ! Solar Transmittance at Normal Incidence
+  0.571762,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.571762,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.507883,                               ! Visible Transmittance at Normal Incidence
+  0.442117,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.442117,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00560984;                             ! Conductivity {W/m-K}
+
+OS:Construction,
+  {c40cd1d3-5a41-4c9a-afac-d2ba811b3095}, ! Handle
+  189.1-2009 Nonres 6B Window Nonmetal framing, ! Name
+  ,                                       ! Surface Rendering Name
+  {fe997592-1ad6-4ab7-9aa8-433b71a61af9}; ! Layer 1
+

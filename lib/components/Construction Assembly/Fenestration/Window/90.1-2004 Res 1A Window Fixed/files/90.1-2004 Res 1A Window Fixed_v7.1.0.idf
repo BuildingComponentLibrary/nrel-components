@@ -1,0 +1,57 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Window:fixed
+! Description: 
+! Glazing Facade: North
+! Glazing Range Min: 0.4
+! Glazing Range Max: 1
+! Effective U-Value (SI): 6.878
+! SHGC: 0.33
+! VLT: 0.33
+! Layer 1: Theoretical Glass [127]
+WindowMaterial:Glazing,
+  Theoretical Glass [127],                !- Name
+  SpectralAverage,                        !-
+  ,                                       !-
+  0.003,                                  !- Thickness
+  0.31664,                                !- Solar Transmittance
+  0.63336,                                !- Solar Reflectance Front
+  0.63336,                                !- Solar Reflectance Back
+  0.330719,                               !- Visible Transmittance
+  0.619281,                               !- Visible Reflectance Front
+  0.619281,                               !- Visible Reflectance Back
+  0,                                      !- IR Transmittance
+  0.999,                                  !- IR Emmissivity Front
+  0.999,                                  !- IR Emmissivity Back
+  3.36874;                                !- Conductivity
+
+Construction,
+  90.1-2004 Res 1A Window Fixed,          !- Name
+  Theoretical Glass [127];                !- Layer 1
+
+! CostSource: Closest match from 90.1 database (1999)
+! InstallCost {$/m2}: 292.500
+! MaterialCost {$/m2}: 181.107
+! AnnualOM {$/m2}: 2.340
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 15
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  90.1-2004 Res 1A Window Fixed,          !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  90.1-2004 Res 1A Window Fixed,          !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  473.607,                                !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

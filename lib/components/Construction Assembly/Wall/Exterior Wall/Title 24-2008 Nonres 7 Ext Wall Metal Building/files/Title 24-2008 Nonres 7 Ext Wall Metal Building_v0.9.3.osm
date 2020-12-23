@@ -1,0 +1,60 @@
+
+OS:Version,
+  {0ffc0550-5043-4081-bc7b-d353225869fb}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {ee9f1f91-554b-48bb-be59-c9428df2ba09}, ! Handle
+  Wall Insulation [159],                  ! Name
+  MediumRough,                            ! Roughness
+  0.0812,                                 ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {696dc3a7-0a9c-438a-bda9-ad1a113abe6e}, ! Handle
+  Title 24-2008 Nonres 7 Ext Wall Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {53bbe5a2-bc53-47ad-8295-9bb02faabd96}, ! Layer 1
+  {ee9f1f91-554b-48bb-be59-c9428df2ba09}, ! Layer 2
+  {ea086155-b3ce-40c6-b844-afa8d1260951}; ! Layer 3
+
+OS:Material,
+  {53bbe5a2-bc53-47ad-8295-9bb02faabd96}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+
+OS:Material,
+  {ea086155-b3ce-40c6-b844-afa8d1260951}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {806901ec-f607-4146-916e-a88719c92466}, ! Handle
+  Title 24-2008 Nonres 7 Ext Wall Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  Title 24-2008 Nonres 7 Ext Wall Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  184.211,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

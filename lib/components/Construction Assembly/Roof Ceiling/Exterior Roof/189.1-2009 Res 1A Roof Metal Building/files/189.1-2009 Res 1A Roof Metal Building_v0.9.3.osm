@@ -1,0 +1,47 @@
+
+OS:Version,
+  {0a1b2b98-c6eb-45aa-a15b-43bdb5e766ab}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {53191283-bc94-4d03-9084-ad7f829a388d}, ! Handle
+  189.1-2009 Res 1A Roof Metal Building,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 1A Roof Metal Building,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  47.657,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {a7d51d77-82fd-4b86-b296-5606f5c33d0f}, ! Handle
+  Roof Insulation [22],                   ! Name
+  MediumRough,                            ! Roughness
+  0.23578,                                ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {462d7d64-3d15-485c-a81e-f9f46e381baf}, ! Handle
+  Metal Roofing,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:Construction,
+  {c65972b8-3e1f-4e32-91fc-408472db9196}, ! Handle
+  189.1-2009 Res 1A Roof Metal Building,  ! Name
+  ,                                       ! Surface Rendering Name
+  {462d7d64-3d15-485c-a81e-f9f46e381baf}, ! Layer 1
+  {a7d51d77-82fd-4b86-b296-5606f5c33d0f}; ! Layer 2
+

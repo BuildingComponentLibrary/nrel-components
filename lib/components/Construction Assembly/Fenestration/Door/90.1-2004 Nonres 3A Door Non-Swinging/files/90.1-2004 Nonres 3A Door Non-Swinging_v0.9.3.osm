@@ -1,0 +1,57 @@
+
+OS:Version,
+  {df25ab22-9831-476f-85e3-9c0769e494f6}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {891c99cb-043c-41e4-b7d9-89b79eeb2d74}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {b11fb475-08a0-4e76-812c-cf4da07d0489}, ! Handle
+  90.1-2004 Nonres 3A Door Non-Swinging,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 3A Door Non-Swinging,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {0d45c73b-9334-432b-b286-5e7a1e78472b}, ! Handle
+  AIR [1],                                ! Name
+  Smooth,                                 ! Roughness
+  0.121409,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {3ba42344-8209-4765-9e64-d6ae798c4a63}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {97ca4c42-6274-4d86-aee2-7719c041cf08}, ! Handle
+  90.1-2004 Nonres 3A Door Non-Swinging,  ! Name
+  ,                                       ! Surface Rendering Name
+  {3ba42344-8209-4765-9e64-d6ae798c4a63}, ! Layer 1
+  {0d45c73b-9334-432b-b286-5e7a1e78472b}, ! Layer 2
+  {891c99cb-043c-41e4-b7d9-89b79eeb2d74}; ! Layer 3
+

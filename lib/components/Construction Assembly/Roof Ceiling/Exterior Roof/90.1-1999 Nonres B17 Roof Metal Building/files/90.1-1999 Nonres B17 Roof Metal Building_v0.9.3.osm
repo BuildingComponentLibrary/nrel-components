@@ -1,0 +1,47 @@
+
+OS:Version,
+  {67847e22-79fb-428c-bdde-4161237c725a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {bc0982eb-6ed9-4e6f-8b34-5165ecd80668}, ! Handle
+  90.1-1999 Nonres B17 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Nonres B17 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.206,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {ad8b965d-b5d0-4c4a-a055-c14f63255071}, ! Handle
+  Roof Insulation [1],                    ! Name
+  MediumRough,                            ! Roughness
+  0.123533,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {1dc5957b-62f7-477e-a398-554ff3f465dc}, ! Handle
+  90.1-1999 Nonres B17 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {cc6da1dd-ec3c-4e4a-8f04-66b0e7cacc0c}, ! Layer 1
+  {ad8b965d-b5d0-4c4a-a055-c14f63255071}; ! Layer 2
+
+OS:Material,
+  {cc6da1dd-ec3c-4e4a-8f04-66b0e7cacc0c}, ! Handle
+  Metal Roofing,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+

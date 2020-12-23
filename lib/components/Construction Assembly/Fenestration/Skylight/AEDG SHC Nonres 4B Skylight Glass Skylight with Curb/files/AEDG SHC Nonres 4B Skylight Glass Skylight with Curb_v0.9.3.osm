@@ -1,0 +1,39 @@
+
+OS:Version,
+  {77a09794-7e61-4766-807e-d047c17758e5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {0dc84c83-1235-4c77-8ec9-7293e8427f79}, ! Handle
+  AEDG SHC Nonres 4B Skylight Glass Skylight with Curb, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 4B Skylight Glass Skylight with Curb, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {715e5253-e71a-44ba-a404-46240279f8f2}, ! Handle
+  Theoretical Glass [241],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.381632,                               ! Solar Transmittance at Normal Incidence
+  0.568368,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.568368,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.330719,                               ! Visible Transmittance at Normal Incidence
+  0.619281,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.619281,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0230964;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {599f6b6f-595c-40ff-ae3e-ee7bb4fbd8d6}, ! Handle
+  AEDG SHC Nonres 4B Skylight Glass Skylight with Curb, ! Name
+  ,                                       ! Surface Rendering Name
+  {715e5253-e71a-44ba-a404-46240279f8f2}; ! Layer 1
+

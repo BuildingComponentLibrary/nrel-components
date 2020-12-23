@@ -1,0 +1,39 @@
+
+OS:Version,
+  {9ff3c60e-07c2-4ce0-b6f0-28d44bc54c28}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {3aaadd51-7f6d-41ff-9bc3-bfd7650255ca}, ! Handle
+  Theoretical Glass [45],                 ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.482092,                               ! Solar Transmittance at Normal Incidence
+  0.467908,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.467908,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.529698,                               ! Visible Transmittance at Normal Incidence
+  0.420302,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.420302,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0205762;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {cfd5c31d-779d-480d-b2e5-5183738f2641}, ! Handle
+  90.1-2001 Nonres B21 Skylight without Curb, ! Name
+  ,                                       ! Surface Rendering Name
+  {3aaadd51-7f6d-41ff-9bc3-bfd7650255ca}; ! Layer 1
+
+OS:ComponentCost:LineItem,
+  {e61b9ae8-be0b-47ce-9e23-098b16ccd94c}, ! Handle
+  90.1-2001 Nonres B21 Skylight without Curb, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B21 Skylight without Curb, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  524.932,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

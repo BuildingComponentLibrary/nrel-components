@@ -1,0 +1,60 @@
+
+OS:Version,
+  {d1e5cee8-b509-4625-b497-18a27cabf00f}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {83afa7e4-edd0-4e55-9a8f-4b9b3f398704}, ! Handle
+  90.1-2007 Nonres 3A Roof IEAD,          ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 3A Roof IEAD,          ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  52.87,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {5117da4b-aebe-43c6-92d8-97cdf7f09aa4}, ! Handle
+  90.1-2007 Nonres 3A Roof IEAD,          ! Name
+  ,                                       ! Surface Rendering Name
+  {7f39e5e7-de89-423b-9807-d5801ceb51a9}, ! Layer 1
+  {d469a435-eba3-4624-853f-13416ecd6af0}, ! Layer 2
+  {a0fccbbe-c59f-4bdc-ade3-e292ff6010a3}; ! Layer 3
+
+OS:Material,
+  {7f39e5e7-de89-423b-9807-d5801ceb51a9}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {d469a435-eba3-4624-853f-13416ecd6af0}, ! Handle
+  Roof Insulation [14],                   ! Name
+  MediumRough,                            ! Roughness
+  0.167335,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {a0fccbbe-c59f-4bdc-ade3-e292ff6010a3}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+

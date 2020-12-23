@@ -1,0 +1,70 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Door:Non-Swinging
+! Description: NR
+! Effective R-Value (SI): 0.3521
+! Layer 1: METAL Door Medium 18Ga
+! Layer 2: AIR [2]
+! Layer 3: METAL Door Medium 18Ga_2
+Material,
+  METAL Door Medium 18Ga,                 !- Name
+  Smooth,                                 !- Roughness
+  0.0013106,                              !- Thickness
+  45.3149,                                !- Conductivity
+  7833.03,                                !- Density
+  502.08,                                 !- Specific Heat
+  0.8,                                    !- Abs Thermal
+  0.5,                                    !- Abs Solar
+  0.5;                                    !- Abs Visible
+
+Material:NoMass,
+  AIR [2],                                !- Name
+  Smooth,                                 !- Roughness
+  0.352085,                               !- Thermal Resistance
+  0.8,                                    !- Abs Thermal
+  0.5,                                    !- Abs Solar
+  0.5;                                    !- Abs Visible
+
+Material,
+  METAL Door Medium 18Ga_2,               !- Name
+  Smooth,                                 !- Roughness
+  0.0013106,                              !- Thickness
+  45.3149,                                !- Conductivity
+  7833.03,                                !- Density
+  502.08,                                 !- Specific Heat
+  0.8,                                    !- Abs Thermal
+  0.5,                                    !- Abs Solar
+  0.5;                                    !- Abs Visible
+
+Construction,
+  90.1-2007 Nonres 5B Door Non-Swinging,  !- Name
+  METAL Door Medium 18Ga,                 !- Layer 1
+  AIR [2],                                !- Layer 2
+  METAL Door Medium 18Ga_2;               !- Layer 3
+
+! CostSource: 
+! InstallCost {$/m2}: 0.000
+! MaterialCost {$/m2}: 0.000
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  90.1-2007 Nonres 5B Door Non-Swinging,  !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  90.1-2007 Nonres 5B Door Non-Swinging,  !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  0.000,                                  !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

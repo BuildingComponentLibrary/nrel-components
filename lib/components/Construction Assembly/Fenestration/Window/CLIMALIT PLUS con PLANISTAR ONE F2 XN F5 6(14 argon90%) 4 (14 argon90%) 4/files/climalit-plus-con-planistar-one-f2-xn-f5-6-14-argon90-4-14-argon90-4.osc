@@ -1,0 +1,49 @@
+
+OS:Version,
+  {2a1ec191-d3fa-4339-8ec2-6035364be7d5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {957b0dd8-c668-4e5a-bc66-986ba94f8feb}, !- Handle
+  CLIMALIT PLUS con PLANISTAR ONE F2 XN F5 6(14 argon90%) 4 (14 argon90%) 4,                         !- Name
+  ,                                       !- Surface Rendering Name
+  {0fdd1c69-7622-472d-8eb0-950f625691f0}; !- Layer 1  
+  
+
+
+
+        
+OS:WindowMaterial:SimpleGlazingSystem,
+  {0fdd1c69-7622-472d-8eb0-950f625691f0}, !- Handle
+  CLIMALIT PLUS con PLANISTAR ONE F2 XN F5 6(14 argon90%) 4 (14 argon90%) 4, !- Name
+  0.6,                                    !- U-Factor {W/m2-K}
+  0.33,                                    !- Solar Heat Gain Coefficient
+  0.49;                                    !- Visible Transmittance     
+
+
+OS:ComponentCost:LineItem,
+  {d28979eb-353f-4a19-95bd-644881cd7597}, ! Handle
+  CLIMALIT PLUS con PLANISTAR ONE F2 XN F5 6(14 argon90%) 4 (14 argon90%) 4,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  CLIMALIT PLUS con PLANISTAR ONE F2 XN F5 6(14 argon90%) 4 (14 argon90%) 4,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  600.0,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+
+
+OS:ComponentData,
+  {291a2e9d-aa7c-4d8f-9517-d9209eee4027}, ! Handle
+  Component Data 1,                       ! Name
+  {796deeaa-fd9b-4ac9-880f-b72b234cdc13}, ! UUID
+  {6ae3b890-2444-4ed8-91b0-c2244e3f19cb}, ! Version UUID
+  1487924014,                             ! Creation Timestamp
+  1487924014,                             ! Version Timestamp
+  {957b0dd8-c668-4e5a-bc66-986ba94f8feb}, ! Name of Object 1
+  {0fdd1c69-7622-472d-8eb0-950f625691f0}, ! Name of Object 2
+  {d28979eb-353f-4a19-95bd-644881cd7597}; ! Name of Object 3
+
+  
+

@@ -1,0 +1,57 @@
+
+OS:Version,
+  {764ffbe2-642d-4d78-88dc-843496cfaed6}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {ca6f993a-4c82-45cd-9d07-37d8b4e003fc}, ! Handle
+  AIR [1],                                ! Name
+  Smooth,                                 ! Roughness
+  0.121409,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {ff5738be-8799-45ba-9196-005952c09f9c}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {685bb22e-a8bd-478c-9553-4c6f13f3b029}, ! Handle
+  AEDG K12 Nonres 2A Door Non-Swinging,   ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 2A Door Non-Swinging,   ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {2be7e0da-880c-4b56-8438-f9b48ce91822}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {659eed98-564e-4c37-966c-5474ca9e5036}, ! Handle
+  AEDG K12 Nonres 2A Door Non-Swinging,   ! Name
+  ,                                       ! Surface Rendering Name
+  {ff5738be-8799-45ba-9196-005952c09f9c}, ! Layer 1
+  {ca6f993a-4c82-45cd-9d07-37d8b4e003fc}, ! Layer 2
+  {2be7e0da-880c-4b56-8438-f9b48ce91822}; ! Layer 3
+

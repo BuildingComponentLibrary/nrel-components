@@ -1,0 +1,60 @@
+
+OS:Version,
+  {ac82c2c3-0d07-4387-a2bc-cdc599f1f3dc}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {22ea4084-84eb-4261-a011-ddc803c25b6e}, ! Handle
+  Roof Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.124958,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {32d1fab9-1d80-49dc-a546-3367efd0db8c}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:Material,
+  {d46ad964-27e9-46f2-978d-735d21c56637}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {49cdb83f-e0bb-4b2f-afb7-9e178ca329ad}, ! Handle
+  90.1-1999 Res B5 Roof IEAD,             ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B5 Roof IEAD,             ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  49.208,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {4bbbcb44-b723-4efd-a6b2-130c3616ab0b}, ! Handle
+  90.1-1999 Res B5 Roof IEAD,             ! Name
+  ,                                       ! Surface Rendering Name
+  {d46ad964-27e9-46f2-978d-735d21c56637}, ! Layer 1
+  {22ea4084-84eb-4261-a011-ddc803c25b6e}, ! Layer 2
+  {32d1fab9-1d80-49dc-a546-3367efd0db8c}; ! Layer 3
+

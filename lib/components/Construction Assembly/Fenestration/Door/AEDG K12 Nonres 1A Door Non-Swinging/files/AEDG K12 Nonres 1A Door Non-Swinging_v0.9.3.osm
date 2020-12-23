@@ -1,0 +1,57 @@
+
+OS:Version,
+  {261094c9-01ee-4af7-b19f-58495a0c6205}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {b287d709-e550-4691-a68c-d006eddcc30e}, ! Handle
+  AEDG K12 Nonres 1A Door Non-Swinging,   ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG K12 Nonres 1A Door Non-Swinging,   ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {dc867a45-442b-4326-b73a-b9cd6be7947d}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {9f1bdc9b-fd56-414c-b68f-dcf7a5a0ba99}, ! Handle
+  AEDG K12 Nonres 1A Door Non-Swinging,   ! Name
+  ,                                       ! Surface Rendering Name
+  {28ac6c61-0b48-4c26-b820-c0569a48d79e}, ! Layer 1
+  {608c5bf1-3981-41c9-adbf-7aedfdaeddb5}, ! Layer 2
+  {dc867a45-442b-4326-b73a-b9cd6be7947d}; ! Layer 3
+
+OS:Material,
+  {28ac6c61-0b48-4c26-b820-c0569a48d79e}, ! Handle
+  METAL Door Medium 18Ga,                 ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {608c5bf1-3981-41c9-adbf-7aedfdaeddb5}, ! Handle
+  AIR [1],                                ! Name
+  Smooth,                                 ! Roughness
+  0.121409,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+

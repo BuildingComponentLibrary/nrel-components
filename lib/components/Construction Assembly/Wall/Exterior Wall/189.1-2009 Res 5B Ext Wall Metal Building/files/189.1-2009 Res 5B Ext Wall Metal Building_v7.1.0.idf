@@ -1,0 +1,73 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: ExtWall:Metal Building
+! Description: R-13 + R-13 ci
+! Effective R-Value (SI): 3.182
+! Layer 1: Metal Siding
+! Layer 2: Wall Insulation [38]
+! Layer 3: 1/2IN Gypsum
+Material,
+  Metal Siding,                           !- Name
+  Smooth,                                 !- Roughness
+  0.0015,                                 !- Thickness
+  44.96,                                  !- Conductivity
+  7688.86,                                !- Density
+  410,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.2,                                    !- Abs Solar
+  0.2;                                    !- Abs Visible
+
+Material,
+  Wall Insulation [38],                   !- Name
+  MediumRough,                            !- Roughness
+  0.139618,                               !- Thickness
+  0.045,                                  !- Conductivity
+  265,                                    !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  1/2IN Gypsum,                           !- Name
+  Smooth,                                 !- Roughness
+  0.01271,                                !- Thickness
+  0.16,                                   !- Conductivity
+  784.9,                                  !- Density
+  830,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.92,                                   !- Abs Solar
+  0.92;                                   !- Abs Visible
+
+Construction,
+  189.1-2009 Res 5B Ext Wall Metal Building, !- Name
+  Metal Siding,                           !- Layer 1
+  Wall Insulation [38],                   !- Layer 2
+  1/2IN Gypsum;                           !- Layer 3
+
+! CostSource: Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)
+! InstallCost {$/m2}: 73.179
+! MaterialCost {$/m2}: 37.231
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  189.1-2009 Res 5B Ext Wall Metal Building, !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  189.1-2009 Res 5B Ext Wall Metal Building, !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  110.410,                                !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

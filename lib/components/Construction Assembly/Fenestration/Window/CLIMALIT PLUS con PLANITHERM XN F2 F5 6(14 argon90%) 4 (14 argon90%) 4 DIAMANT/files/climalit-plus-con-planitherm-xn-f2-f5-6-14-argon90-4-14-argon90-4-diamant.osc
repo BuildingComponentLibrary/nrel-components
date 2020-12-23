@@ -1,0 +1,49 @@
+
+OS:Version,
+  {2a1ec191-d3fa-4339-8ec2-6035364be7d5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {baa27cc8-1b95-4fdb-8d9a-54c11229e7c6}, !- Handle
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4 DIAMANT,                         !- Name
+  ,                                       !- Surface Rendering Name
+  {04c3873a-d02b-47c4-a7c2-1aaf4d459c19}; !- Layer 1  
+  
+
+
+
+        
+OS:WindowMaterial:SimpleGlazingSystem,
+  {04c3873a-d02b-47c4-a7c2-1aaf4d459c19}, !- Handle
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4 DIAMANT, !- Name
+  0.6,                                    !- U-Factor {W/m2-K}
+  0.56,                                    !- Solar Heat Gain Coefficient
+  0.76;                                    !- Visible Transmittance     
+
+
+OS:ComponentCost:LineItem,
+  {df2735ea-d505-4983-b51c-57d182904dd0}, ! Handle
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4 DIAMANT,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  CLIMALIT PLUS con PLANITHERM XN F2 F5 6(14 argon90%) 4 (14 argon90%) 4 DIAMANT,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  600.0,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+
+
+OS:ComponentData,
+  {06a724c1-da99-4866-a2ec-91d64d5a18e7}, ! Handle
+  Component Data 1,                       ! Name
+  {388ff248-7214-4f9c-ae3e-9cdc3b1f0a9f}, ! UUID
+  {a2220729-8ae7-46ed-8540-fd1bd3f50be9}, ! Version UUID
+  1487924014,                             ! Creation Timestamp
+  1487924014,                             ! Version Timestamp
+  {baa27cc8-1b95-4fdb-8d9a-54c11229e7c6}, ! Name of Object 1
+  {04c3873a-d02b-47c4-a7c2-1aaf4d459c19}, ! Name of Object 2
+  {df2735ea-d505-4983-b51c-57d182904dd0}; ! Name of Object 3
+
+  
+

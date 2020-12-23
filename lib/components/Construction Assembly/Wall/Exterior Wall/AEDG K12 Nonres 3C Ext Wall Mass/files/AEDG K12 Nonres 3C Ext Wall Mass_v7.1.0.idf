@@ -1,0 +1,73 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: ExtWall:Mass
+! Description: R-5.7 ci
+! Effective R-Value (SI): 1.017
+! Layer 1: MAT-CC05 3.5 HW CONCRETE
+! Layer 2: Wall Insulation [68]
+! Layer 3: MAT-CC05 4 HW CONCRETE
+Material,
+  MAT-CC05 3.5 HW CONCRETE,               !- Name
+  Rough,                                  !- Roughness
+  0.0889,                                 !- Thickness
+  1.311,                                  !- Conductivity
+  2240,                                   !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Material,
+  Wall Insulation [68],                   !- Name
+  MediumRough,                            !- Roughness
+  0.0376692,                              !- Thickness
+  0.0432,                                 !- Conductivity
+  91,                                     !- Density
+  837,                                    !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.5,                                    !- Abs Solar
+  0.5;                                    !- Abs Visible
+
+Material,
+  MAT-CC05 4 HW CONCRETE,                 !- Name
+  Rough,                                  !- Roughness
+  0.1016,                                 !- Thickness
+  1.311,                                  !- Conductivity
+  2240,                                   !- Density
+  836.8,                                  !- Specific Heat
+  0.9,                                    !- Abs Thermal
+  0.7,                                    !- Abs Solar
+  0.7;                                    !- Abs Visible
+
+Construction,
+  AEDG K12 Nonres 3C Ext Wall Mass,       !- Name
+  MAT-CC05 3.5 HW CONCRETE,               !- Layer 1
+  Wall Insulation [68],                   !- Layer 2
+  MAT-CC05 4 HW CONCRETE;                 !- Layer 3
+
+! CostSource: ABO Group 2010
+! InstallCost {$/m2}: 0.000
+! MaterialCost {$/m2}: 223.350
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  AEDG K12 Nonres 3C Ext Wall Mass,       !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  AEDG K12 Nonres 3C Ext Wall Mass,       !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  223.350,                                !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

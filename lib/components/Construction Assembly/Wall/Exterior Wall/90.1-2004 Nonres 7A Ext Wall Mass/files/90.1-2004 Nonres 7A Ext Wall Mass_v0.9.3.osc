@@ -1,0 +1,87 @@
+
+OS:Version,
+  {bfdfbb63-050b-4043-be6b-32b41c1e2f21}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {b4ad06a0-2022-41e8-b222-16b08ae1c4e6}, ! Handle
+  90.1-2004 Nonres 7A Ext Wall Mass,      ! Name
+  ,                                       ! Surface Rendering Name
+  {30c14bb1-ede9-489e-8554-fa12a7b63307}, ! Layer 1
+  {6b8f0954-0acd-46eb-a56f-b3ad6cc1591e}, ! Layer 2
+  {f4df9bbb-7bce-485f-af9c-8e948514274e}, ! Layer 3
+  {f860a7ad-3f6c-453e-963e-3efbad9d099c}; ! Layer 4
+
+OS:Material,
+  {30c14bb1-ede9-489e-8554-fa12a7b63307}, ! Handle
+  1IN Stucco,                             ! Name
+  Smooth,                                 ! Roughness
+  0.0253,                                 ! Thickness {m}
+  0.6918,                                 ! Conductivity {W/m-K}
+  1858,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {6b8f0954-0acd-46eb-a56f-b3ad6cc1591e}, ! Handle
+  8IN Concrete HW,                        ! Name
+  MediumRough,                            ! Roughness
+  0.2033,                                 ! Thickness {m}
+  1.7296,                                 ! Conductivity {W/m-K}
+  2243,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.65,                                   ! Solar Absorptance
+  0.65;                                   ! Visible Absorptance
+
+OS:Material,
+  {f4df9bbb-7bce-485f-af9c-8e948514274e}, ! Handle
+  Wall Insulation [8],                    ! Name
+  MediumRough,                            ! Roughness
+  0.067929,                               ! Thickness {m}
+  0.0432,                                 ! Conductivity {W/m-K}
+  91,                                     ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {f860a7ad-3f6c-453e-963e-3efbad9d099c}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {802c8290-a995-479f-8e27-fd552c29b3b8}, ! Handle
+  90.1-2004 Nonres 7A Ext Wall Mass,      ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 7A Ext Wall Mass,      ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  65.826,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {daff5720-2064-4fe7-91f4-68351eadf096}, ! Handle
+  Component Data 1,                       ! Name
+  {28075dff-7c5a-4950-97d2-d93259d86b88}, ! UUID
+  {48f8999d-6852-47fb-8f77-a6b138253065}, ! Version UUID
+  1363981693,                             ! Creation Timestamp
+  1363981693,                             ! Version Timestamp
+  {b4ad06a0-2022-41e8-b222-16b08ae1c4e6}, ! Name of Object 1
+  {30c14bb1-ede9-489e-8554-fa12a7b63307}, ! Name of Object 2
+  {6b8f0954-0acd-46eb-a56f-b3ad6cc1591e}, ! Name of Object 3
+  {f4df9bbb-7bce-485f-af9c-8e948514274e}, ! Name of Object 4
+  {f860a7ad-3f6c-453e-963e-3efbad9d099c}, ! Name of Object 5
+  {802c8290-a995-479f-8e27-fd552c29b3b8}; ! Name of Object 6
+

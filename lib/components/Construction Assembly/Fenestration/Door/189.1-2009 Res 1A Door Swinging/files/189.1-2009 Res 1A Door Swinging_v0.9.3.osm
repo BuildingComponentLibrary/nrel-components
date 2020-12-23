@@ -1,0 +1,57 @@
+
+OS:Version,
+  {26394d2f-ffb3-49fb-b839-6330ea625df1}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {63b3ed66-92a2-4b73-b3f5-38db738913df}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material:NoMass,
+  {36576ab3-090e-4d87-81f6-cc8a24176c3f}, ! Handle
+  AIR [4],                                ! Name
+  Smooth,                                 ! Roughness
+  0.293129,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {9e169765-2ba8-4c2d-99de-d323ce00205c}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {8a5f302f-e0d5-46d6-95e0-9e802d4f2dbd}, ! Handle
+  189.1-2009 Res 1A Door Swinging,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Res 1A Door Swinging,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {2adc777e-31e7-4d06-9412-9c7e281c4e1e}, ! Handle
+  189.1-2009 Res 1A Door Swinging,        ! Name
+  ,                                       ! Surface Rendering Name
+  {63b3ed66-92a2-4b73-b3f5-38db738913df}, ! Layer 1
+  {36576ab3-090e-4d87-81f6-cc8a24176c3f}, ! Layer 2
+  {9e169765-2ba8-4c2d-99de-d323ce00205c}; ! Layer 3
+

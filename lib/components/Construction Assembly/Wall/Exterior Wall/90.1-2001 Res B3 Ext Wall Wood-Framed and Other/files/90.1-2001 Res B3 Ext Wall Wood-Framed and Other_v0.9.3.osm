@@ -1,0 +1,60 @@
+
+OS:Version,
+  {61ee566b-cea2-4625-93a6-2d8403b29bed}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {4b57d3b6-3c19-496c-a80d-95530ed77242}, ! Handle
+  90.1-2001 Res B3 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {6fd85456-b855-41eb-8ea8-f76b7be12300}, ! Layer 1
+  {74f44b60-fd90-4696-826e-eecabfeff0d3}, ! Layer 2
+  {fcbd7af5-8361-439b-85a0-f5b5993bd233}; ! Layer 3
+
+OS:Material,
+  {6fd85456-b855-41eb-8ea8-f76b7be12300}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {74f44b60-fd90-4696-826e-eecabfeff0d3}, ! Handle
+  Wall Insulation [2],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0746874,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {fcbd7af5-8361-439b-85a0-f5b5993bd233}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {970f93f0-63b8-4305-a6ce-392a482965a2}, ! Handle
+  90.1-2001 Res B3 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B3 Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  73.056,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

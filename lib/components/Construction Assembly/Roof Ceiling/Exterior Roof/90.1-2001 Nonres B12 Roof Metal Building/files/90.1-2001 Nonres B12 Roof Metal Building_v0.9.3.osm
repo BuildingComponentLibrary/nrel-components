@@ -1,0 +1,47 @@
+
+OS:Version,
+  {c2899884-cd40-4b65-bf5c-770ee881b382}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {65c4320c-6d49-4466-846a-9afc564cd531}, ! Handle
+  Roof Insulation [1],                    ! Name
+  MediumRough,                            ! Roughness
+  0.123533,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {ae20df6f-7969-4b86-8871-c146cc240584}, ! Handle
+  90.1-2001 Nonres B12 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {411b9df7-ae75-4d85-86fb-d9f468d13a05}, ! Layer 1
+  {65c4320c-6d49-4466-846a-9afc564cd531}; ! Layer 2
+
+OS:Material,
+  {411b9df7-ae75-4d85-86fb-d9f468d13a05}, ! Handle
+  Metal Roofing,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {bc8df206-ee01-4aae-b734-768913235257}, ! Handle
+  90.1-2001 Nonres B12 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B12 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.206,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

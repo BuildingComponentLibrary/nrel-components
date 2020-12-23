@@ -1,0 +1,43 @@
+
+OS:Version,
+  {5939261c-aeed-4613-bf34-ca4cbf493f5b}, !- Handle
+  1.0.6;                                  !- Version Identifier
+
+OS:Material,
+  {73599fd3-b0fd-43ee-b08b-0f4d745dd85b}, !- Handle
+  M10 200mm concrete block wall,          !- Name
+  MediumRough,                            !- Roughness
+  0.2032,                                 !- Thickness {m}
+  0.72,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  920;                                    !- Specific Heat {J/kg-K}
+
+OS:Material:NoMass,
+  {be6b9969-1156-44c6-9fe9-fc5105ed9469}, !- Handle
+  Continuous Insulation,                  !- Name
+  MediumSmooth,                           !- Roughness
+  0.655001789886127,                      !- Thermal Resistance {m2-K/W}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+OS:Material,
+  {93aae530-0b21-4332-ab14-675cdf724962}, !- Handle
+  G01 13mm gypsum board,                  !- Name
+  Smooth,                                 !- Roughness
+  0.0127,                                 !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  1090,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+OS:Construction,
+  {e82a1646-2b67-4284-af3b-a909316a41e5}, !- Handle
+  189.1-2011 Nonres 1 Ext Wall Mass 8in CMU partially grouted, !- Name
+  ,                                       !- Surface Rendering Name
+  {73599fd3-b0fd-43ee-b08b-0f4d745dd85b}, !- Layer 1
+  {be6b9969-1156-44c6-9fe9-fc5105ed9469}, !- Layer 2
+  {93aae530-0b21-4332-ab14-675cdf724962}; !- Layer 3
+

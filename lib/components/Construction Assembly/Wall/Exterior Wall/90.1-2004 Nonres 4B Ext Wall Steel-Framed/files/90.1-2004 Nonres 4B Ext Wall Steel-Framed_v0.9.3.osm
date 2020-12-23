@@ -1,0 +1,57 @@
+
+OS:Version,
+  {4ce95783-9c24-4b35-82cb-a1b1995744ef}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {7f9087f8-3c2c-4c5a-9b15-e89c3f88210a}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {4e1568ef-77fd-4b18-b563-54cb78068246}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Construction,
+  {2e2cd3b3-93c2-41d9-9b46-dfaa3d24535a}, ! Handle
+  90.1-2004 Nonres 4B Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {7f9087f8-3c2c-4c5a-9b15-e89c3f88210a}, ! Layer 1
+  {3005e581-0da4-41dd-ad6e-5e5db7afb885}, ! Layer 2
+  {4e1568ef-77fd-4b18-b563-54cb78068246}; ! Layer 3
+
+OS:Material,
+  {3005e581-0da4-41dd-ad6e-5e5db7afb885}, ! Handle
+  Wall Insulation [1],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0373223,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {b0bfe3a8-3a80-4260-bf75-5247930ea451}, ! Handle
+  90.1-2004 Nonres 4B Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 4B Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  87.08,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

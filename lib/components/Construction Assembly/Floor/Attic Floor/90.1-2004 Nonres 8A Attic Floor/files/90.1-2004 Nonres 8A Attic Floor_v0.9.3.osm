@@ -1,0 +1,60 @@
+
+OS:Version,
+  {f3d46e14-cc79-4e68-9aaa-103c8e3cdc07}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {1f31d40f-8de9-4b19-a896-80e7377c3ace}, ! Handle
+  90.1-2004 Nonres 8A Attic Floor,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Nonres 8A Attic Floor,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  35.009,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {0ad368e5-2495-48ec-b090-aae7577c0e9e}, ! Handle
+  90.1-2004 Nonres 8A Attic Floor,        ! Name
+  ,                                       ! Surface Rendering Name
+  {05ced8ee-ea55-4a4c-a817-b4560a9cdde9}, ! Layer 1
+  {f64ed90c-8b16-4d6e-95c7-4d2e90a4d174}, ! Layer 2
+  {faafba23-115c-4256-96e1-51a9e4df227f}; ! Layer 3
+
+OS:Material,
+  {05ced8ee-ea55-4a4c-a817-b4560a9cdde9}, ! Handle
+  1/2IN Gypsum Top,                       ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {f64ed90c-8b16-4d6e-95c7-4d2e90a4d174}, ! Handle
+  AtticFloor Insulation [1],              ! Name
+  MediumRough,                            ! Roughness
+  0.303719,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {faafba23-115c-4256-96e1-51a9e4df227f}, ! Handle
+  1/2IN Gypsum Bottom,                    ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+

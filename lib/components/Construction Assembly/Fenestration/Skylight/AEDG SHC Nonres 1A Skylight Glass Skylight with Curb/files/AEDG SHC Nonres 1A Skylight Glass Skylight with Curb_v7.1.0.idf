@@ -1,0 +1,57 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Skylight:Glass Skylight with Curb
+! Description: 
+! Glazing Facade: Skylight
+! Glazing Range Min: 0
+! Glazing Range Max: 1
+! Effective U-Value (SI): 4.26
+! SHGC: 0.35
+! VLT: 0.35
+! Layer 1: Theoretical Glass [238]
+WindowMaterial:Glazing,
+  Theoretical Glass [238],                !- Name
+  SpectralAverage,                        !-
+  ,                                       !-
+  0.003,                                  !- Thickness
+  0.334238,                               !- Solar Transmittance
+  0.615762,                               !- Solar Reflectance Front
+  0.615762,                               !- Solar Reflectance Back
+  0.3507,                                 !- Visible Transmittance
+  0.5993,                                 !- Visible Reflectance Front
+  0.5993,                                 !- Visible Reflectance Back
+  0,                                      !- IR Transmittance
+  0.9,                                    !- IR Emmissivity Front
+  0.9,                                    !- IR Emmissivity Back
+  0.0414918;                              !- Conductivity
+
+Construction,
+  AEDG SHC Nonres 1A Skylight Glass Skylight with Curb, !- Name
+  Theoretical Glass [238];                !- Layer 1
+
+! CostSource: 
+! InstallCost {$/m2}: 0.000
+! MaterialCost {$/m2}: 0.000
+! AnnualOM {$/m2}: 0.000
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 0
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  AEDG SHC Nonres 1A Skylight Glass Skylight with Curb, !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  AEDG SHC Nonres 1A Skylight Glass Skylight with Curb, !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  0.000,                                  !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

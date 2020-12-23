@@ -1,0 +1,47 @@
+
+OS:Version,
+  {f9e361e1-da6b-441a-af54-74dc286a9c55}, !- Handle
+  1.1.0;                                  !- Version Identifier
+
+OS:Construction,
+  {41b458c3-1764-49b0-b6c9-9efd73bbc59f}, !- Handle
+  Dbl Clr Low Iron 5mm/13mm Air,          !- Name
+  ,                                       !- Surface Rendering Name
+  {9cf5babd-e0e3-45c8-8b9e-75ce1e79861f}, !- Layer 1
+  {ed1dc5db-5d3b-45b4-9236-c997d6325128}, !- Layer 2
+  {9cf5babd-e0e3-45c8-8b9e-75ce1e79861f}; !- Layer 3
+
+OS:WindowMaterial:Glazing,
+  {9cf5babd-e0e3-45c8-8b9e-75ce1e79861f}, !- Handle
+  LOW IRON 5MM,                           !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.005,                                  !- Thickness {m}
+  0.889,                                  !- Solar Transmittance at Normal Incidence
+  0.079,                                  !- Front Side Solar Reflectance at Normal Incidence
+  0.079,                                  !- Back Side Solar Reflectance at Normal Incidence
+  0.91,                                   !- Visible Transmittance at Normal Incidence
+  0.082,                                  !- Front Side Visible Reflectance at Normal Incidence
+  0.082,                                  !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.84,                                   !- Back Side Infrared Hemispherical Emissivity
+  0.9;                                    !- Conductivity {W/m-K}
+
+OS:WindowMaterial:Gas,
+  {ed1dc5db-5d3b-45b4-9236-c997d6325128}, !- Handle
+  AIR 13MM,                               !- Name
+  Air,                                    !- Gas Type
+  0.0127;                                 !- Thickness {m}
+
+OS:ComponentData,
+  {d1af8dc6-7a70-43b7-abbf-e7350c6d3c91}, !- Handle
+  Component Data 1,                       !- Name
+  {d8c969b5-b619-4ea0-bbad-e9512cd4b26c}, !- UUID
+  {b8bc4aee-b34b-4d87-8ce3-c8c0c5c07b4d}, !- Version UUID
+  1384380189,                             !- Creation Timestamp
+  1384380189,                             !- Version Timestamp
+  {41b458c3-1764-49b0-b6c9-9efd73bbc59f}, !- Name of Object 1
+  {9cf5babd-e0e3-45c8-8b9e-75ce1e79861f}, !- Name of Object 2
+  {ed1dc5db-5d3b-45b4-9236-c997d6325128}; !- Name of Object 3
+

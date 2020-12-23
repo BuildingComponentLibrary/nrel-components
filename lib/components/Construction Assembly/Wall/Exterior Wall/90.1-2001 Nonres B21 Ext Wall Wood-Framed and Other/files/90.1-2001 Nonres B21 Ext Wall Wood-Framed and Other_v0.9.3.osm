@@ -1,0 +1,60 @@
+
+OS:Version,
+  {88650adb-ec53-4d56-be6e-12ba51165fa2}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {aeb05daf-0509-4c2b-aad6-03a1a73d8577}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {b9471818-2dd7-451e-b242-905c3fe578f4}, ! Handle
+  90.1-2001 Nonres B21 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B21 Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  73.056,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {5f39e107-8cd0-495d-90bf-a9b39c4c6da1}, ! Handle
+  Wall Insulation [2],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0746874,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Construction,
+  {c7288fc2-0664-4ad5-8261-edceaa49854c}, ! Handle
+  90.1-2001 Nonres B21 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {8127de22-5dfd-4128-b83b-8da6ca684316}, ! Layer 1
+  {5f39e107-8cd0-495d-90bf-a9b39c4c6da1}, ! Layer 2
+  {aeb05daf-0509-4c2b-aad6-03a1a73d8577}; ! Layer 3
+
+OS:Material,
+  {8127de22-5dfd-4128-b83b-8da6ca684316}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+

@@ -1,0 +1,47 @@
+
+OS:Version,
+  {b0c34b5f-cb1e-4df6-906f-4e300db76db2}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {0488e019-16c6-4855-9caf-def0d444dfee}, ! Handle
+  Roof Insulation [1],                    ! Name
+  MediumRough,                            ! Roughness
+  0.123533,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {ce1b6f5e-6968-4f05-a52c-04247ba9e7a7}, ! Handle
+  90.1-1999 Nonres B19 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Nonres B19 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.206,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {a07ab772-dd22-47fa-a117-8d825394f4fa}, ! Handle
+  Metal Roofing,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:Construction,
+  {0c8e3fbb-7ae9-4e04-9369-b40b2abd98bd}, ! Handle
+  90.1-1999 Nonres B19 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {a07ab772-dd22-47fa-a117-8d825394f4fa}, ! Layer 1
+  {0488e019-16c6-4855-9caf-def0d444dfee}; ! Layer 2
+

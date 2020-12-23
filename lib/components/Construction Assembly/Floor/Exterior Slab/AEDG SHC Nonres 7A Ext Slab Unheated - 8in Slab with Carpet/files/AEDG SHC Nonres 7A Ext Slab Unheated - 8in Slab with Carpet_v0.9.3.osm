@@ -1,0 +1,57 @@
+
+OS:Version,
+  {dfa69b8a-a1a3-4132-98ea-4874de8c7797}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {ee43ced8-635e-4895-b1b7-b78375db50dc}, ! Handle
+  AEDG SHC Nonres 7A Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 7A Ext Slab Unheated - 8in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {13d467ea-48ff-4737-ab0a-460a57989a99}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Construction,
+  {ad9329da-f8e0-4ca1-b40b-1b4ee5ea80ce}, ! Handle
+  AEDG SHC Nonres 7A Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {30c54892-09bc-455d-9c08-36f59dbfbeb9}, ! Layer 1
+  {2fd3ba86-a4c6-4e74-a11c-560e90ddf748}, ! Layer 2
+  {13d467ea-48ff-4737-ab0a-460a57989a99}; ! Layer 3
+
+OS:Material,
+  {30c54892-09bc-455d-9c08-36f59dbfbeb9}, ! Handle
+  Floor Insulation [16],                  ! Name
+  MediumRough,                            ! Roughness
+  0.00636355,                             ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {2fd3ba86-a4c6-4e74-a11c-560e90ddf748}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

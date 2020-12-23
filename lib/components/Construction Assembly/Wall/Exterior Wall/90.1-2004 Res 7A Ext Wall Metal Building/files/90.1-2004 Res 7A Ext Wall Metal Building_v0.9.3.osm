@@ -1,0 +1,60 @@
+
+OS:Version,
+  {e90567bc-2ac1-47a4-8c08-a9850df782a3}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {fb7c725a-6eb4-44aa-9ae6-05d2568da433}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {25405f6d-3089-48fa-a00a-fb92d3e457d2}, ! Handle
+  90.1-2004 Res 7A Ext Wall Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Res 7A Ext Wall Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  107.702,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {ba0566a6-aa12-4964-b78e-3e1fef4dde95}, ! Handle
+  90.1-2004 Res 7A Ext Wall Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {f4338ddc-ed66-4371-b685-bb9f73b7419e}, ! Layer 1
+  {f2d86c8d-e3e5-4f66-b8de-f9c1d32d0e7f}, ! Layer 2
+  {fb7c725a-6eb4-44aa-9ae6-05d2568da433}; ! Layer 3
+
+OS:Material,
+  {f4338ddc-ed66-4371-b685-bb9f73b7419e}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+
+OS:Material,
+  {f2d86c8d-e3e5-4f66-b8de-f9c1d32d0e7f}, ! Handle
+  Wall Insulation [20],                   ! Name
+  MediumRough,                            ! Roughness
+  0.128688,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+

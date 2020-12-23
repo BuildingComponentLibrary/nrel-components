@@ -1,0 +1,59 @@
+
+OS:Version,
+  {941f996c-ad2e-4782-a7ba-13dd6d39cece}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {08e15c0e-9871-42f6-b07c-f20ae2801e5d}, ! Handle
+  90.1-2001 Res B20 Roof Metal Building,  ! Name
+  ,                                       ! Surface Rendering Name
+  {7ca0a7a8-87e4-477f-b894-73cd6c7369c4}, ! Layer 1
+  {2ccd996f-fe0a-4cae-a66b-e0f5b235ec85}; ! Layer 2
+
+OS:Material,
+  {7ca0a7a8-87e4-477f-b894-73cd6c7369c4}, ! Handle
+  Metal Roofing,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:Material,
+  {2ccd996f-fe0a-4cae-a66b-e0f5b235ec85}, ! Handle
+  Roof Insulation [1],                    ! Name
+  MediumRough,                            ! Roughness
+  0.123533,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {48af52b3-db23-4bf5-a96a-b48ca105f839}, ! Handle
+  90.1-2001 Res B20 Roof Metal Building,  ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Res B20 Roof Metal Building,  ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  38.206,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {f30c9d78-e6ba-4784-bc47-f94265c27bf5}, ! Handle
+  Component Data 1,                       ! Name
+  {671a5bd5-d412-4e5f-ae2d-a32f135c2b03}, ! UUID
+  {a2ed01da-55bd-4901-92fa-5794c514611e}, ! Version UUID
+  1363981572,                             ! Creation Timestamp
+  1363981572,                             ! Version Timestamp
+  {08e15c0e-9871-42f6-b07c-f20ae2801e5d}, ! Name of Object 1
+  {7ca0a7a8-87e4-477f-b894-73cd6c7369c4}, ! Name of Object 2
+  {2ccd996f-fe0a-4cae-a66b-e0f5b235ec85}, ! Name of Object 3
+  {48af52b3-db23-4bf5-a96a-b48ca105f839}; ! Name of Object 4
+

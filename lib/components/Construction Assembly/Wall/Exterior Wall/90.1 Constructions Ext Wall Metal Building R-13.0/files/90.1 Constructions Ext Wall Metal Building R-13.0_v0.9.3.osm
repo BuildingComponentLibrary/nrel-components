@@ -1,0 +1,60 @@
+
+OS:Version,
+  {12307fc7-1862-44a3-b5fb-ab59d77e60c5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {840dd392-6709-4096-9b18-9241a10b6195}, ! Handle
+  Wall Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.0598725,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {9ade2402-6aa8-47a6-82c4-ef129f170699}, ! Handle
+  90.1 Constructions Ext Wall Metal Building R-13.0, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Ext Wall Metal Building R-13.0, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  98.78,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {9f986d1b-114d-4918-bb6d-e498209c524a}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+
+OS:Construction,
+  {affa90d2-452b-4f24-bb45-7ed5a461849f}, ! Handle
+  90.1 Constructions Ext Wall Metal Building R-13.0, ! Name
+  ,                                       ! Surface Rendering Name
+  {9f986d1b-114d-4918-bb6d-e498209c524a}, ! Layer 1
+  {840dd392-6709-4096-9b18-9241a10b6195}, ! Layer 2
+  {f4eaf320-5845-4601-a0d9-6c78211c4657}; ! Layer 3
+
+OS:Material,
+  {f4eaf320-5845-4601-a0d9-6c78211c4657}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+

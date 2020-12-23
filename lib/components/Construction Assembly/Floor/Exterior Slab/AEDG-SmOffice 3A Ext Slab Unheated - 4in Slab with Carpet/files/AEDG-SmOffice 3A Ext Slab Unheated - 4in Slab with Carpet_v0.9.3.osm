@@ -1,0 +1,44 @@
+
+OS:Version,
+  {54d1a059-e764-4566-97fe-41b048dbaf97}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {9d5d8e20-ea5d-40af-9bb8-42c5a866b051}, ! Handle
+  MAT-CC05 4 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.1016,                                 ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {f71ba10b-affc-440e-991a-62ab53487cec}, ! Handle
+  AEDG-SmOffice 3A Ext Slab Unheated - 4in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 3A Ext Slab Unheated - 4in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material:NoMass,
+  {41a7c212-37d0-47a6-bde8-abecae0130f5}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Construction,
+  {f9247ef8-df70-4bac-af08-c94eb3be90f9}, ! Handle
+  AEDG-SmOffice 3A Ext Slab Unheated - 4in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {9d5d8e20-ea5d-40af-9bb8-42c5a866b051}, ! Layer 1
+  {41a7c212-37d0-47a6-bde8-abecae0130f5}; ! Layer 2
+

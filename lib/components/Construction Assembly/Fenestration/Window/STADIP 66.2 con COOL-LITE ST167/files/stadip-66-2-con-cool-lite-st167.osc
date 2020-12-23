@@ -1,0 +1,49 @@
+
+OS:Version,
+  {2a1ec191-d3fa-4339-8ec2-6035364be7d5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {b7b0dac6-f444-4941-818a-621ed5f83b75}, !- Handle
+  STADIP 66.2 con COOL-LITE ST167,                         !- Name
+  ,                                       !- Surface Rendering Name
+  {8c4b3880-07ad-4210-925e-d382f36781e0}; !- Layer 1  
+  
+
+
+
+        
+OS:WindowMaterial:SimpleGlazingSystem,
+  {8c4b3880-07ad-4210-925e-d382f36781e0}, !- Handle
+  STADIP 66.2 con COOL-LITE ST167, !- Name
+  5.5,                                    !- U-Factor {W/m2-K}
+  0.66,                                    !- Solar Heat Gain Coefficient
+  0.71;                                    !- Visible Transmittance     
+
+
+OS:ComponentCost:LineItem,
+  {31b8c5e5-112b-413e-bafc-76f8309f117b}, ! Handle
+  STADIP 66.2 con COOL-LITE ST167,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  STADIP 66.2 con COOL-LITE ST167,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  600.0,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+
+
+OS:ComponentData,
+  {6289c7dc-1a64-48bd-93a0-2a2fde0aeb45}, ! Handle
+  Component Data 1,                       ! Name
+  {8a65408b-352a-4b40-8df9-1fc32a2ef3f2}, ! UUID
+  {8a8f9950-410c-4955-92ac-57f7c285e922}, ! Version UUID
+  1487924012,                             ! Creation Timestamp
+  1487924012,                             ! Version Timestamp
+  {b7b0dac6-f444-4941-818a-621ed5f83b75}, ! Name of Object 1
+  {8c4b3880-07ad-4210-925e-d382f36781e0}, ! Name of Object 2
+  {31b8c5e5-112b-413e-bafc-76f8309f117b}; ! Name of Object 3
+
+  
+

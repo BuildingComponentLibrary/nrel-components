@@ -1,0 +1,39 @@
+
+OS:Version,
+  {8505ffe8-f9d5-4a5a-93e1-ba5f2a2e4b9e}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {dc7a202a-8421-4163-99e4-49ca0fafba67}, ! Handle
+  Theoretical Glass [358],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.393749,                               ! Solar Transmittance at Normal Incidence
+  0.556251,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.556251,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.450308,                               ! Visible Transmittance at Normal Incidence
+  0.499692,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.499692,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0144817;                              ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {1963d5d2-db7e-4da6-965f-298d8b603dbc}, ! Handle
+  90.1 Windows Window Fixed 2317 Brk-ClrSbe-Std-Clr, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2317 Brk-ClrSbe-Std-Clr, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {1b50a667-7acf-479d-a59a-71685aea750e}, ! Handle
+  90.1 Windows Window Fixed 2317 Brk-ClrSbe-Std-Clr, ! Name
+  ,                                       ! Surface Rendering Name
+  {dc7a202a-8421-4163-99e4-49ca0fafba67}; ! Layer 1
+

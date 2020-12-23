@@ -1,0 +1,39 @@
+
+OS:Version,
+  {6f1cd5ec-081c-48c2-a5d1-17e059afd5d9}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {8495080a-ab79-480c-ab8f-b07567dd05fd}, ! Handle
+  90.1 Windows Window Fixed 2370 Brk-ClrSue-Std-ClrSue, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2370 Brk-ClrSue-Std-ClrSue, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {b625b232-5e38-4f8c-b8e5-380c4c2c0800}, ! Handle
+  Theoretical Glass [610],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.364741,                               ! Solar Transmittance at Normal Incidence
+  0.585259,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.585259,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.549983,                               ! Visible Transmittance at Normal Incidence
+  0.400017,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.400017,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.013476;                               ! Conductivity {W/m-K}
+
+OS:Construction,
+  {281c838e-b380-4bf4-beb5-4da766dea04d}, ! Handle
+  90.1 Windows Window Fixed 2370 Brk-ClrSue-Std-ClrSue, ! Name
+  ,                                       ! Surface Rendering Name
+  {b625b232-5e38-4f8c-b8e5-380c4c2c0800}; ! Layer 1
+

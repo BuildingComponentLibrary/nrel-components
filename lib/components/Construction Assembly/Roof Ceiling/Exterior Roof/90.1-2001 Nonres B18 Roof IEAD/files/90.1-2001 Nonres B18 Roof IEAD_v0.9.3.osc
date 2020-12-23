@@ -1,0 +1,73 @@
+
+OS:Version,
+  {3d8cddfc-abdd-4a55-ac55-ef484261dee3}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {1d2f8d75-b051-4fdc-b95d-0301549ee1c3}, ! Handle
+  90.1-2001 Nonres B18 Roof IEAD,         ! Name
+  ,                                       ! Surface Rendering Name
+  {9e7a4cf3-bb2b-42b7-aa5b-cdc74ca0c2bb}, ! Layer 1
+  {8b7c757e-64f5-4617-a019-e78a46c8dc7e}, ! Layer 2
+  {79afba53-5bd7-4b6e-84d4-31a364fbcfbc}; ! Layer 3
+
+OS:Material,
+  {9e7a4cf3-bb2b-42b7-aa5b-cdc74ca0c2bb}, ! Handle
+  Roof Membrane,                          ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {8b7c757e-64f5-4617-a019-e78a46c8dc7e}, ! Handle
+  Roof Insulation,                        ! Name
+  MediumRough,                            ! Roughness
+  0.124958,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {79afba53-5bd7-4b6e-84d4-31a364fbcfbc}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {300ba665-9859-44d5-86bf-e6dfdb1b84f0}, ! Handle
+  90.1-2001 Nonres B18 Roof IEAD,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B18 Roof IEAD,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  49.208,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {31c03798-cf01-4794-bb08-08e9d4f25be1}, ! Handle
+  Component Data 1,                       ! Name
+  {fbae30c2-4028-4a1c-9c14-8319f7e198c9}, ! UUID
+  {b83dded3-7d2f-4a0c-85b4-4be6a16cb38c}, ! Version UUID
+  1363981386,                             ! Creation Timestamp
+  1363981386,                             ! Version Timestamp
+  {1d2f8d75-b051-4fdc-b95d-0301549ee1c3}, ! Name of Object 1
+  {9e7a4cf3-bb2b-42b7-aa5b-cdc74ca0c2bb}, ! Name of Object 2
+  {8b7c757e-64f5-4617-a019-e78a46c8dc7e}, ! Name of Object 3
+  {79afba53-5bd7-4b6e-84d4-31a364fbcfbc}, ! Name of Object 4
+  {300ba665-9859-44d5-86bf-e6dfdb1b84f0}; ! Name of Object 5
+

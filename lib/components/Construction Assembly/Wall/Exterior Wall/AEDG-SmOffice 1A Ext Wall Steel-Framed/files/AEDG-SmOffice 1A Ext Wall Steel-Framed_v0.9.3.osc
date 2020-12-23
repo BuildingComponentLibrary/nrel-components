@@ -1,0 +1,70 @@
+
+OS:Version,
+  {4593ffe5-a7a7-4060-81b5-b04edaea44e1}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {b1cda362-a858-49ff-9b0c-e123a802e869}, ! Handle
+  AEDG-SmOffice 1A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {9e85b25b-0a04-4387-965f-e17209903629}, ! Layer 1
+  {951d4490-7639-4d5d-82c4-98fbe50a8597}, ! Layer 2
+  {373b2a50-53a5-4617-b769-8e348cb69296}; ! Layer 3
+
+OS:Material:NoMass,
+  {9e85b25b-0a04-4387-965f-e17209903629}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {951d4490-7639-4d5d-82c4-98fbe50a8597}, ! Handle
+  Wall Insulation [1],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0373223,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {373b2a50-53a5-4617-b769-8e348cb69296}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {038c1253-5af9-4eb3-b0c0-a4f7946a676e}, ! Handle
+  AEDG-SmOffice 1A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 1A Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  87.08,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {08731aa5-6649-404a-86d2-56cff137fbf7}, ! Handle
+  Component Data 1,                       ! Name
+  {1ee9494d-08d2-4b56-944f-fdd6ae5995d6}, ! UUID
+  {6ae98299-d12a-4713-a3ad-bcd5706d4e6c}, ! Version UUID
+  1363981938,                             ! Creation Timestamp
+  1363981938,                             ! Version Timestamp
+  {b1cda362-a858-49ff-9b0c-e123a802e869}, ! Name of Object 1
+  {9e85b25b-0a04-4387-965f-e17209903629}, ! Name of Object 2
+  {951d4490-7639-4d5d-82c4-98fbe50a8597}, ! Name of Object 3
+  {373b2a50-53a5-4617-b769-8e348cb69296}, ! Name of Object 4
+  {038c1253-5af9-4eb3-b0c0-a4f7946a676e}; ! Name of Object 5
+

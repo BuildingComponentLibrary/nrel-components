@@ -1,0 +1,49 @@
+
+OS:Version,
+  {2a1ec191-d3fa-4339-8ec2-6035364be7d5}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {e4a70cd6-e04c-4748-acc1-b866e46922ac}, !- Handle
+  CLIMALIT PLUS con PLANITHERM 4S  F2 6 (16 argon90%) 4,                         !- Name
+  ,                                       !- Surface Rendering Name
+  {0cc6d82c-9915-4569-a723-625c43ab8bd7}; !- Layer 1  
+  
+
+
+
+        
+OS:WindowMaterial:SimpleGlazingSystem,
+  {0cc6d82c-9915-4569-a723-625c43ab8bd7}, !- Handle
+  CLIMALIT PLUS con PLANITHERM 4S  F2 6 (16 argon90%) 4, !- Name
+  1.0,                                    !- U-Factor {W/m2-K}
+  0.42,                                    !- Solar Heat Gain Coefficient
+  0.65;                                    !- Visible Transmittance     
+
+
+OS:ComponentCost:LineItem,
+  {30892c99-0853-4cf6-b77d-b2e2b8eb013d}, ! Handle
+  CLIMALIT PLUS con PLANITHERM 4S  F2 6 (16 argon90%) 4,        ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  CLIMALIT PLUS con PLANITHERM 4S  F2 6 (16 argon90%) 4,        ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  600.0,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+
+
+OS:ComponentData,
+  {b13e8464-7ec8-4a7f-bafe-035e5e789bfb}, ! Handle
+  Component Data 1,                       ! Name
+  {50ea9fe5-5a24-4840-8f46-7bb768b8c4a0}, ! UUID
+  {c6faa183-0d7f-45a9-8fb0-51a78476b8c1}, ! Version UUID
+  1487924012,                             ! Creation Timestamp
+  1487924012,                             ! Version Timestamp
+  {e4a70cd6-e04c-4748-acc1-b866e46922ac}, ! Name of Object 1
+  {0cc6d82c-9915-4569-a723-625c43ab8bd7}, ! Name of Object 2
+  {30892c99-0853-4cf6-b77d-b2e2b8eb013d}; ! Name of Object 3
+
+  
+

@@ -1,0 +1,60 @@
+
+OS:Version,
+  {23a40935-584a-4fd9-a6e1-1a60e7b24b00}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {7c1509eb-3ab9-44d2-b551-a363572d3384}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {0013998b-4e6c-4929-8a4d-038bfe5f371b}, ! Handle
+  Wall Insulation [2],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0746874,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {d32323d2-180c-455f-86f3-28acc6372643}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {39acc83a-2c60-4654-ac33-d8c4b16e0099}, ! Handle
+  90.1-1999 Res B11 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B11 Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  73.056,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {85eb5a19-0d9e-4ba8-adaf-1e349e1c8f06}, ! Handle
+  90.1-1999 Res B11 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {7c1509eb-3ab9-44d2-b551-a363572d3384}, ! Layer 1
+  {0013998b-4e6c-4929-8a4d-038bfe5f371b}, ! Layer 2
+  {d32323d2-180c-455f-86f3-28acc6372643}; ! Layer 3
+

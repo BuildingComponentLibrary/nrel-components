@@ -1,0 +1,55 @@
+
+OS:Version,
+  {59454af6-165a-4362-bec0-a286b23a12c8}, !- Handle
+  1.1.0;                                  !- Version Identifier
+
+OS:Construction,
+  {b48d3a6d-5e23-4393-a667-9cefafdfb0db}, !- Handle
+  189.1-2011 Nonres 7 Ext Wall Mass 8in Solid Concrete with Steel frame, !- Name
+  ,                                       !- Surface Rendering Name
+  {ae5b56fa-3542-4439-be7e-cefe77cebc4a}, !- Layer 1
+  {60f7f27e-e7aa-46b2-b940-e8bff44d77c5}, !- Layer 2
+  {41ac3acc-4dc3-4a43-8f38-963f2a4e6876}; !- Layer 3
+
+OS:Material,
+  {ae5b56fa-3542-4439-be7e-cefe77cebc4a}, !- Handle
+  200mm Normalweight concrete wall,       !- Name
+  MediumRough,                            !- Roughness
+  0.2032,                                 !- Thickness {m}
+  2.31,                                   !- Conductivity {W/m-K}
+  2322,                                   !- Density {kg/m3}
+  832;                                    !- Specific Heat {J/kg-K}
+
+OS:Material:NoMass,
+  {60f7f27e-e7aa-46b2-b940-e8bff44d77c5}, !- Handle
+  Frame With Cavity Insulation,           !- Name
+  MediumSmooth,                           !- Roughness
+  2.61813587127657,                       !- Thermal Resistance {m2-K/W}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+OS:Material,
+  {41ac3acc-4dc3-4a43-8f38-963f2a4e6876}, !- Handle
+  G01 13mm gypsum board,                  !- Name
+  Smooth,                                 !- Roughness
+  0.0127,                                 !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  1090,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+OS:ComponentData,
+  {884684bd-594e-4900-87c1-9282085efaaa}, !- Handle
+  Component Data 1,                       !- Name
+  {41f0055d-8358-40cc-bfb8-768ac8839c19}, !- UUID
+  {aabbcdd2-644d-4bd8-b182-cb76644e91bc}, !- Version UUID
+  1379980544,                             !- Creation Timestamp
+  1379980544,                             !- Version Timestamp
+  {b48d3a6d-5e23-4393-a667-9cefafdfb0db}, !- Name of Object 1
+  {ae5b56fa-3542-4439-be7e-cefe77cebc4a}, !- Name of Object 2
+  {60f7f27e-e7aa-46b2-b940-e8bff44d77c5}, !- Name of Object 3
+  {41ac3acc-4dc3-4a43-8f38-963f2a4e6876}; !- Name of Object 4
+

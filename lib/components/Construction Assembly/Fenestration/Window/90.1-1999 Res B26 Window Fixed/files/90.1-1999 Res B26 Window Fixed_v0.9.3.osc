@@ -1,0 +1,50 @@
+
+OS:Version,
+  {0de23214-7203-4045-a73f-74467788f1e2}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {49508e60-c8dd-434b-8036-a84536f803d5}, ! Handle
+  90.1-1999 Res B26 Window Fixed,         ! Name
+  ,                                       ! Surface Rendering Name
+  {172e9d08-ff15-485f-a571-9a975bb37861}; ! Layer 1
+
+OS:WindowMaterial:Glazing,
+  {172e9d08-ff15-485f-a571-9a975bb37861}, ! Handle
+  Theoretical Glass [122],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.43834,                                ! Solar Transmittance at Normal Incidence
+  0.51166,                                ! Front Side Solar Reflectance at Normal Incidence
+  0.51166,                                ! Back Side Solar Reflectance at Normal Incidence
+  0.460166,                               ! Visible Transmittance at Normal Incidence
+  0.489834,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.489834,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.00560663;                             ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {e18748bc-6cec-414e-a930-0a123f4211a4}, ! Handle
+  90.1-1999 Res B26 Window Fixed,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-1999 Res B26 Window Fixed,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  660.078,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {12bddb80-e8be-40f0-a5aa-52bc97fa559f}, ! Handle
+  Component Data 1,                       ! Name
+  {dbd1d350-c924-4275-beac-4d14c50d1e20}, ! UUID
+  {584c8b39-a97a-4822-aab6-8ab8c5d5c03f}, ! Version UUID
+  1363981286,                             ! Creation Timestamp
+  1363981286,                             ! Version Timestamp
+  {49508e60-c8dd-434b-8036-a84536f803d5}, ! Name of Object 1
+  {172e9d08-ff15-485f-a571-9a975bb37861}, ! Name of Object 2
+  {e18748bc-6cec-414e-a930-0a123f4211a4}; ! Name of Object 3
+

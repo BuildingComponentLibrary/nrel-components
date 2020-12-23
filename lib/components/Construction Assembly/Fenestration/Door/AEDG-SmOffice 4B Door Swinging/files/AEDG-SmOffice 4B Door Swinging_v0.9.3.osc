@@ -1,0 +1,42 @@
+
+OS:Version,
+  {2c3a7004-6a84-4799-bb39-4dad7e6f865a}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {673ad45b-2dac-4e22-8d6b-c3c23272705a}, ! Handle
+  AEDG-SmOffice 4B Door Swinging,         ! Name
+  ,                                       ! Surface Rendering Name
+  {40b76501-ce0e-4631-821f-2b3aad90fa62}; ! Layer 1
+
+OS:Material:NoMass,
+  {40b76501-ce0e-4631-821f-2b3aad90fa62}, ! Handle
+  DoorMaterial,                           ! Name
+  MediumRough,                            ! Roughness
+  0.251589,                               ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {aeec0d9b-ab89-4ae3-9db6-a24002136c7e}, ! Handle
+  AEDG-SmOffice 4B Door Swinging,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 4B Door Swinging,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {edea4491-009e-4c68-92bb-5237458c36d0}, ! Handle
+  Component Data 1,                       ! Name
+  {f00f88b7-7687-40e3-ae02-2323fd02775f}, ! UUID
+  {e94367e5-ab3c-4c62-9471-915bba0c7479}, ! Version UUID
+  1363981952,                             ! Creation Timestamp
+  1363981952,                             ! Version Timestamp
+  {673ad45b-2dac-4e22-8d6b-c3c23272705a}, ! Name of Object 1
+  {40b76501-ce0e-4631-821f-2b3aad90fa62}, ! Name of Object 2
+  {aeec0d9b-ab89-4ae3-9db6-a24002136c7e}; ! Name of Object 3
+

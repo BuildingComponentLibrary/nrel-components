@@ -1,0 +1,39 @@
+
+OS:Version,
+  {8409bf89-0dc8-4063-8339-657ef96f0749}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:WindowMaterial:Glazing,
+  {b92409bc-9d80-4285-9908-d3fc39388897}, ! Handle
+  Theoretical Glass [198],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.234242,                               ! Solar Transmittance at Normal Incidence
+  0.715758,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.715758,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.251212,                               ! Visible Transmittance at Normal Incidence
+  0.698788,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.698788,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0336861;                              ! Conductivity {W/m-K}
+
+OS:ComponentCost:LineItem,
+  {83b8d29d-91f5-42de-9448-8253d7501b15}, ! Handle
+  189.1-2009 Nonres 2A Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  189.1-2009 Nonres 2A Window Metal framing curtainwall-storefront, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  600.037,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {ac2497fb-6134-443d-ad11-2745f56cec29}, ! Handle
+  189.1-2009 Nonres 2A Window Metal framing curtainwall-storefront, ! Name
+  ,                                       ! Surface Rendering Name
+  {b92409bc-9d80-4285-9908-d3fc39388897}; ! Layer 1
+

@@ -1,0 +1,44 @@
+
+OS:Version,
+  {54e233e0-4315-4eac-9335-4252cdba1c00}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material:NoMass,
+  {ba0cf244-fb0d-4729-af37-1b16aaafb40b}, ! Handle
+  CP02 CARPET PAD,                        ! Name
+  VeryRough,                              ! Roughness
+  0.21648,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.8;                                    ! Visible Absorptance
+
+OS:Construction,
+  {7065779a-b6ac-4284-babe-aecb67380692}, ! Handle
+  90.1-2007 Nonres 1A Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Surface Rendering Name
+  {23a72c38-245a-4782-9c0d-3bf4c167fc34}, ! Layer 1
+  {ba0cf244-fb0d-4729-af37-1b16aaafb40b}; ! Layer 2
+
+OS:Material,
+  {23a72c38-245a-4782-9c0d-3bf4c167fc34}, ! Handle
+  MAT-CC05 8 HW CONCRETE,                 ! Name
+  Rough,                                  ! Roughness
+  0.20321,                                ! Thickness {m}
+  1.311,                                  ! Conductivity {W/m-K}
+  2240,                                   ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {19377e8d-799a-4f0b-b4f2-7a2fc29c6390}, ! Handle
+  90.1-2007 Nonres 1A Ext Slab Unheated - 8in Slab with Carpet, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 1A Ext Slab Unheated - 8in Slab with Carpet, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  45.52,                                  ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

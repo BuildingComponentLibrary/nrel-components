@@ -1,0 +1,39 @@
+
+OS:Version,
+  {5846cd69-8884-4f79-96db-bc58231b4154}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {db3364a2-2f18-4c6b-863a-9788d8b218c5}, ! Handle
+  90.1 Windows Window Fixed 2142 Mtl-Grn-Std-ClrSue, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Windows Window Fixed 2142 Mtl-Grn-Std-ClrSue, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:WindowMaterial:Glazing,
+  {8d6a5644-8b1c-4579-a70d-6aec9a634105}, ! Handle
+  Theoretical Glass [374],                ! Name
+  SpectralAverage,                        ! Optical Data Type
+  ,                                       ! Window Glass Spectral Data Set Name
+  0.003,                                  ! Thickness {m}
+  0.383181,                               ! Solar Transmittance at Normal Incidence
+  0.566819,                               ! Front Side Solar Reflectance at Normal Incidence
+  0.566819,                               ! Back Side Solar Reflectance at Normal Incidence
+  0.519963,                               ! Visible Transmittance at Normal Incidence
+  0.430037,                               ! Front Side Visible Reflectance at Normal Incidence
+  0.430037,                               ! Back Side Visible Reflectance at Normal Incidence
+  0,                                      ! Infrared Transmittance at Normal Incidence
+  0.9,                                    ! Front Side Infrared Hemispherical Emissivity
+  0.9,                                    ! Back Side Infrared Hemispherical Emissivity
+  0.0198691;                              ! Conductivity {W/m-K}
+
+OS:Construction,
+  {e4a96218-9fb8-481e-8d7b-6533c4017af3}, ! Handle
+  90.1 Windows Window Fixed 2142 Mtl-Grn-Std-ClrSue, ! Name
+  ,                                       ! Surface Rendering Name
+  {8d6a5644-8b1c-4579-a70d-6aec9a634105}; ! Layer 1
+

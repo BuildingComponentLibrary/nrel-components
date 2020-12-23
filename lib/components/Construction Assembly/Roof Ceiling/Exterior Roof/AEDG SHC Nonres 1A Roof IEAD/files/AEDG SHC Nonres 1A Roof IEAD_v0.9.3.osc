@@ -1,0 +1,73 @@
+
+OS:Version,
+  {d3624105-aace-456b-9307-a1e233e1cbfd}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {54072268-eeca-42c0-b034-b05de6452122}, ! Handle
+  AEDG SHC Nonres 1A Roof IEAD,           ! Name
+  ,                                       ! Surface Rendering Name
+  {05ed8e14-1ad8-4fae-b97a-a08c8ecd09e6}, ! Layer 1
+  {ac4f31c4-6897-4adb-8380-b7359d28db05}, ! Layer 2
+  {8334b04f-9d91-41a8-8b69-75786277f86a}; ! Layer 3
+
+OS:Material,
+  {05ed8e14-1ad8-4fae-b97a-a08c8ecd09e6}, ! Handle
+  Roof Membrane [1],                      ! Name
+  VeryRough,                              ! Roughness
+  0.0095,                                 ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  1121.29,                                ! Density {kg/m3}
+  1460,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.3,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:Material,
+  {ac4f31c4-6897-4adb-8380-b7359d28db05}, ! Handle
+  Roof Insulation [31],                   ! Name
+  MediumRough,                            ! Roughness
+  0.209546,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {8334b04f-9d91-41a8-8b69-75786277f86a}, ! Handle
+  Metal Decking,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {f07f48d4-26c4-4a2a-a456-7b9412667206}, ! Handle
+  AEDG SHC Nonres 1A Roof IEAD,           ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 1A Roof IEAD,           ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {3040b3b9-46aa-4b07-b9b4-fb3772925d06}, ! Handle
+  Component Data 1,                       ! Name
+  {01de121a-8bb3-4a4e-9087-84ba1d5df195}, ! UUID
+  {8337df5f-670b-4d51-be93-dcda3871b023}, ! Version UUID
+  1363981908,                             ! Creation Timestamp
+  1363981908,                             ! Version Timestamp
+  {54072268-eeca-42c0-b034-b05de6452122}, ! Name of Object 1
+  {05ed8e14-1ad8-4fae-b97a-a08c8ecd09e6}, ! Name of Object 2
+  {ac4f31c4-6897-4adb-8380-b7359d28db05}, ! Name of Object 3
+  {8334b04f-9d91-41a8-8b69-75786277f86a}, ! Name of Object 4
+  {f07f48d4-26c4-4a2a-a456-7b9412667206}; ! Name of Object 5
+

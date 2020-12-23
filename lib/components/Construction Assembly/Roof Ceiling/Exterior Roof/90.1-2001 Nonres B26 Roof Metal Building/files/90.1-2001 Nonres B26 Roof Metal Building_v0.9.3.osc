@@ -1,0 +1,59 @@
+
+OS:Version,
+  {eedf6954-c1e4-4e69-ae14-123640f9b8d7}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {58895df7-2e69-4bfe-b251-d0b3d9454df8}, ! Handle
+  90.1-2001 Nonres B26 Roof Metal Building, ! Name
+  ,                                       ! Surface Rendering Name
+  {8a15fe7f-8752-4833-b400-b85b3f3ceabf}, ! Layer 1
+  {c2b640f6-93c1-4384-9b09-c1bb0fba85bd}; ! Layer 2
+
+OS:Material,
+  {8a15fe7f-8752-4833-b400-b85b3f3ceabf}, ! Handle
+  Metal Roofing,                          ! Name
+  MediumSmooth,                           ! Roughness
+  0.001524,                               ! Thickness {m}
+  45.006,                                 ! Conductivity {W/m-K}
+  7680,                                   ! Density {kg/m3}
+  418.4,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.3;                                    ! Visible Absorptance
+
+OS:Material,
+  {c2b640f6-93c1-4384-9b09-c1bb0fba85bd}, ! Handle
+  Roof Insulation [10],                   ! Name
+  MediumRough,                            ! Roughness
+  0.174366,                               ! Thickness {m}
+  0.049,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {ee8e7a66-6847-4fae-8b15-127897dc533b}, ! Handle
+  90.1-2001 Nonres B26 Roof Metal Building, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B26 Roof Metal Building, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  42.974,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {8009a45d-bf16-42b6-8c8d-77411026763f}, ! Handle
+  Component Data 1,                       ! Name
+  {bb96fb03-304d-4d37-8b3a-2e3d30d5c8a9}, ! UUID
+  {3ccea77f-e97c-42d2-8276-ff32bd39a98b}, ! Version UUID
+  1363981437,                             ! Creation Timestamp
+  1363981437,                             ! Version Timestamp
+  {58895df7-2e69-4bfe-b251-d0b3d9454df8}, ! Name of Object 1
+  {8a15fe7f-8752-4833-b400-b85b3f3ceabf}, ! Name of Object 2
+  {c2b640f6-93c1-4384-9b09-c1bb0fba85bd}, ! Name of Object 3
+  {ee8e7a66-6847-4fae-8b15-127897dc533b}; ! Name of Object 4
+

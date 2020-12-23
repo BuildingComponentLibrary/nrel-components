@@ -1,0 +1,73 @@
+
+OS:Version,
+  {31470361-45d8-474b-9078-06a7086e0f4d}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {3d222a0c-4cf1-4d61-a2ab-36221a96171f}, ! Handle
+  1IN Stucco,                             ! Name
+  Smooth,                                 ! Roughness
+  0.0253,                                 ! Thickness {m}
+  0.6918,                                 ! Conductivity {W/m-K}
+  1858,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {204d61dd-fc14-45b1-af59-5d2f2b772bd7}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {07787650-ab4c-4c07-aa78-a3215b53bc7e}, ! Handle
+  8IN Concrete HW,                        ! Name
+  MediumRough,                            ! Roughness
+  0.2033,                                 ! Thickness {m}
+  1.7296,                                 ! Conductivity {W/m-K}
+  2243,                                   ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.65,                                   ! Solar Absorptance
+  0.65;                                   ! Visible Absorptance
+
+OS:Construction,
+  {c55328e3-14b0-4329-ac80-66a332c632bf}, ! Handle
+  AEDG-SmOffice 6B Ext Wall Mass,         ! Name
+  ,                                       ! Surface Rendering Name
+  {3d222a0c-4cf1-4d61-a2ab-36221a96171f}, ! Layer 1
+  {07787650-ab4c-4c07-aa78-a3215b53bc7e}, ! Layer 2
+  {04789ffd-d288-474e-945c-899bbf215c95}, ! Layer 3
+  {204d61dd-fc14-45b1-af59-5d2f2b772bd7}; ! Layer 4
+
+OS:Material,
+  {04789ffd-d288-474e-945c-899bbf215c95}, ! Handle
+  Wall Insulation [8],                    ! Name
+  MediumRough,                            ! Roughness
+  0.067929,                               ! Thickness {m}
+  0.0432,                                 ! Conductivity {W/m-K}
+  91,                                     ! Density {kg/m3}
+  837,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {db08afb4-4eb4-4dcb-b906-e0c3b4b68be6}, ! Handle
+  AEDG-SmOffice 6B Ext Wall Mass,         ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG-SmOffice 6B Ext Wall Mass,         ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  65.826,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+

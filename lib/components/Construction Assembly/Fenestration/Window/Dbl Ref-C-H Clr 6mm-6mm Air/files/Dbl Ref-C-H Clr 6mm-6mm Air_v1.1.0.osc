@@ -1,0 +1,65 @@
+
+OS:Version,
+  {e5921940-be4b-473f-b497-d6ce75097dc9}, !- Handle
+  1.1.0;                                  !- Version Identifier
+
+OS:Construction,
+  {18f6adcb-41bc-476e-aa9a-f26f5a282004}, !- Handle
+  Dbl Ref-C-H Clr 6mm/6mm Air,            !- Name
+  ,                                       !- Surface Rendering Name
+  {8e6fa07d-1427-47df-bf82-48e4e98974c8}, !- Layer 1
+  {6b9514f6-25f7-4139-8a13-44fb77d4bd62}, !- Layer 2
+  {f72ca2c9-3513-40c6-af11-3aad2267f5c8}; !- Layer 3
+
+OS:WindowMaterial:Glazing,
+  {8e6fa07d-1427-47df-bf82-48e4e98974c8}, !- Handle
+  REF C CLEAR HI 6MM,                     !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.006,                                  !- Thickness {m}
+  0.2,                                    !- Solar Transmittance at Normal Incidence
+  0.16,                                   !- Front Side Solar Reflectance at Normal Incidence
+  0.39,                                   !- Back Side Solar Reflectance at Normal Incidence
+  0.22,                                   !- Visible Transmittance at Normal Incidence
+  0.17,                                   !- Front Side Visible Reflectance at Normal Incidence
+  0.35,                                   !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.55,                                   !- Back Side Infrared Hemispherical Emissivity
+  0.9;                                    !- Conductivity {W/m-K}
+
+OS:WindowMaterial:Gas,
+  {6b9514f6-25f7-4139-8a13-44fb77d4bd62}, !- Handle
+  AIR 6MM,                                !- Name
+  Air,                                    !- Gas Type
+  0.0063;                                 !- Thickness {m}
+
+OS:WindowMaterial:Glazing,
+  {f72ca2c9-3513-40c6-af11-3aad2267f5c8}, !- Handle
+  CLEAR 6MM,                              !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.006,                                  !- Thickness {m}
+  0.775,                                  !- Solar Transmittance at Normal Incidence
+  0.071,                                  !- Front Side Solar Reflectance at Normal Incidence
+  0.071,                                  !- Back Side Solar Reflectance at Normal Incidence
+  0.881,                                  !- Visible Transmittance at Normal Incidence
+  0.08,                                   !- Front Side Visible Reflectance at Normal Incidence
+  0.08,                                   !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.84,                                   !- Back Side Infrared Hemispherical Emissivity
+  0.9;                                    !- Conductivity {W/m-K}
+
+OS:ComponentData,
+  {b85ae3de-84ca-42e6-8c9f-6f6fa59e6961}, !- Handle
+  Component Data 1,                       !- Name
+  {d1ede1f6-3832-4c7d-bf78-55788c1e22c1}, !- UUID
+  {31705720-49f6-4d34-b8e9-a9fd19a70654}, !- Version UUID
+  1384380191,                             !- Creation Timestamp
+  1384380191,                             !- Version Timestamp
+  {18f6adcb-41bc-476e-aa9a-f26f5a282004}, !- Name of Object 1
+  {8e6fa07d-1427-47df-bf82-48e4e98974c8}, !- Name of Object 2
+  {6b9514f6-25f7-4139-8a13-44fb77d4bd62}, !- Name of Object 3
+  {f72ca2c9-3513-40c6-af11-3aad2267f5c8}; !- Name of Object 4
+

@@ -1,0 +1,73 @@
+
+OS:Version,
+  {93c1c880-cf62-413b-a561-bb97e5196393}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {a4415400-b053-42ce-a06e-2a3cda1faa47}, ! Handle
+  90.1-2001 Nonres B9 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {f869476f-91a8-42ea-ac60-e44b43d75a8c}, ! Layer 1
+  {2046ef90-e03a-43ad-93a3-cb0890604e1a}, ! Layer 2
+  {37d3b9c1-d089-4c90-8ea2-d4b59aeb4c47}; ! Layer 3
+
+OS:Material,
+  {f869476f-91a8-42ea-ac60-e44b43d75a8c}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {2046ef90-e03a-43ad-93a3-cb0890604e1a}, ! Handle
+  Wall Insulation [2],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0746874,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {37d3b9c1-d089-4c90-8ea2-d4b59aeb4c47}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {a9db4a3a-3edd-487e-8327-a2e0bfc9f753}, ! Handle
+  90.1-2001 Nonres B9 Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2001 Nonres B9 Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  73.056,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {e5271694-4b7a-4bae-aba9-ad2831ecc662}, ! Handle
+  Component Data 1,                       ! Name
+  {24f6de70-7b12-4250-9da0-139ce4eb7867}, ! UUID
+  {230191e7-a39b-4683-b1dd-f278b9f2779c}, ! Version UUID
+  1363981333,                             ! Creation Timestamp
+  1363981333,                             ! Version Timestamp
+  {a4415400-b053-42ce-a06e-2a3cda1faa47}, ! Name of Object 1
+  {f869476f-91a8-42ea-ac60-e44b43d75a8c}, ! Name of Object 2
+  {2046ef90-e03a-43ad-93a3-cb0890604e1a}, ! Name of Object 3
+  {37d3b9c1-d089-4c90-8ea2-d4b59aeb4c47}, ! Name of Object 4
+  {a9db4a3a-3edd-487e-8327-a2e0bfc9f753}; ! Name of Object 5
+

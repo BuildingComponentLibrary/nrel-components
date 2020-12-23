@@ -1,0 +1,60 @@
+Version,
+  7.1.0;                                  ! Version Identifier
+
+! Type: Window:Metal framing (curtainwall/storefront)
+! Description: 
+! Glazing Facade: East
+! Glazing Facade: South
+! Glazing Facade: West
+! Glazing Facade: North
+! Glazing Range Min: 0
+! Glazing Range Max: 0.4
+! Effective U-Value (SI): 1.7
+! SHGC: 0.45
+! VLT: 0.45
+! Layer 1: Theoretical Glass [219]
+WindowMaterial:Glazing,
+  Theoretical Glass [219],                !- Name
+  SpectralAverage,                        !-
+  ,                                       !-
+  0.003,                                  !- Thickness
+  0.428764,                               !- Solar Transmittance
+  0.521236,                               !- Solar Reflectance Front
+  0.521236,                               !- Solar Reflectance Back
+  0.450308,                               !- Visible Transmittance
+  0.499692,                               !- Visible Reflectance Front
+  0.499692,                               !- Visible Reflectance Back
+  0,                                      !- IR Transmittance
+  0.9,                                    !- IR Emmissivity Front
+  0.9,                                    !- IR Emmissivity Back
+  0.0071399;                              !- Conductivity
+
+Construction,
+  189.1-2009 Res 7A Window Metal framing curtainwall-storefront, !- Name
+  Theoretical Glass [219];                !- Layer 1
+
+! CostSource: Closest match from 90.1 database (1999)
+! InstallCost {$/m2}: 292.500
+! MaterialCost {$/m2}: 215.862
+! AnnualOM {$/m2}: 2.340
+! MinorOM {$/m2}: 0.000
+! MinorOMInt {years}: 1
+! MajorOM {$/m2}: 0
+! MajorOMInt {years}: 1
+! ExpectedLife {years}: 15
+! ResidualValue {$/m2}: 0.000
+ComponentCost:LineItem,
+  189.1-2009 Res 7A Window Metal framing curtainwall-storefront, !- Name
+  ,                                       !- Type
+  Construction,                           !- Line Item Type
+  189.1-2009 Res 7A Window Metal framing curtainwall-storefront, !- Item Name
+  ,                                       !- Object End Use Key
+  ,                                       !- Cost per Each {$}
+  508.362,                                !- Cost per Area {$/m2}
+  ,                                       !- Cost per Unit of Output Capacity {$/kW}
+  ,                                       !- Cost per Unit of Output Capacity per COP {$/kW}
+  ,                                       !- Cost per Volume {$/m3}
+  ,                                       !- Cost per Volume Rate {$/(m3/s)}
+  ,                                       !- Cost per Energy per Temperature Difference {$/(W/K)}
+  ;                                       !- Quantity
+

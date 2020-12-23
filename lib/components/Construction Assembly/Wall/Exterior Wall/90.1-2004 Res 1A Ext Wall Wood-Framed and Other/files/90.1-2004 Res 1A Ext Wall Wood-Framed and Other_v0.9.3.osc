@@ -1,0 +1,73 @@
+
+OS:Version,
+  {846324e6-48fb-4497-be2e-48d9f6efd872}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {df4670aa-bb13-4fb2-9c23-93002b704951}, ! Handle
+  90.1-2004 Res 1A Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Surface Rendering Name
+  {3325cb77-436c-45be-a9e3-1203336eb229}, ! Layer 1
+  {af076beb-32a6-4b00-8b13-130c0252a08b}, ! Layer 2
+  {51e3bc1b-8a73-46f5-a108-b8be0fbbc805}; ! Layer 3
+
+OS:Material,
+  {3325cb77-436c-45be-a9e3-1203336eb229}, ! Handle
+  Wood Siding,                            ! Name
+  MediumSmooth,                           ! Roughness
+  0.01,                                   ! Thickness {m}
+  0.11,                                   ! Conductivity {W/m-K}
+  544.62,                                 ! Density {kg/m3}
+  1210,                                   ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.78,                                   ! Solar Absorptance
+  0.78;                                   ! Visible Absorptance
+
+OS:Material,
+  {af076beb-32a6-4b00-8b13-130c0252a08b}, ! Handle
+  Wall Insulation [2],                    ! Name
+  MediumRough,                            ! Roughness
+  0.0746874,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {51e3bc1b-8a73-46f5-a108-b8be0fbbc805}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {0391dc7c-c70a-4559-a884-1779b23559f8}, ! Handle
+  90.1-2004 Res 1A Ext Wall Wood-Framed and Other, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2004 Res 1A Ext Wall Wood-Framed and Other, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  73.056,                                 ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {b1d90f49-84e1-42f4-b300-ec827432462b}, ! Handle
+  Component Data 1,                       ! Name
+  {7c9c4392-c4ad-4a85-ba46-9d760d9cb531}, ! UUID
+  {27dd5562-5782-44a8-90fe-7266de472faa}, ! Version UUID
+  1363981711,                             ! Creation Timestamp
+  1363981711,                             ! Version Timestamp
+  {df4670aa-bb13-4fb2-9c23-93002b704951}, ! Name of Object 1
+  {3325cb77-436c-45be-a9e3-1203336eb229}, ! Name of Object 2
+  {af076beb-32a6-4b00-8b13-130c0252a08b}, ! Name of Object 3
+  {51e3bc1b-8a73-46f5-a108-b8be0fbbc805}, ! Name of Object 4
+  {0391dc7c-c70a-4559-a884-1779b23559f8}; ! Name of Object 5
+

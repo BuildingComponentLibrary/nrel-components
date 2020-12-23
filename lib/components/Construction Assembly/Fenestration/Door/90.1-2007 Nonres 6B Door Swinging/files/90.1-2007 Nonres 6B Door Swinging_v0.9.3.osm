@@ -1,0 +1,57 @@
+
+OS:Version,
+  {cdfb6a7a-c589-4c98-accd-6a3d01a06321}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:ComponentCost:LineItem,
+  {ded8fa8f-81e4-40da-ba81-23fc5befb408}, ! Handle
+  90.1-2007 Nonres 6B Door Swinging,      ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1-2007 Nonres 6B Door Swinging,      ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Material,
+  {4c3622f9-9eb7-4106-a0f6-5f5230b5696b}, ! Handle
+  METAL Door Medium 18Ga_2,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Material,
+  {b09313b4-f26b-41ac-b680-f0c5aef31855}, ! Handle
+  METAL Door Medium 18Ga_1,               ! Name
+  Smooth,                                 ! Roughness
+  0.0013106,                              ! Thickness {m}
+  45.3149,                                ! Conductivity {W/m-K}
+  7833.03,                                ! Density {kg/m3}
+  502.08,                                 ! Specific Heat {J/kg-K}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+
+OS:Construction,
+  {46477002-82c9-4421-97d4-1a68978c1980}, ! Handle
+  90.1-2007 Nonres 6B Door Swinging,      ! Name
+  ,                                       ! Surface Rendering Name
+  {b09313b4-f26b-41ac-b680-f0c5aef31855}, ! Layer 1
+  {a2439451-d7fe-42b7-81b7-ad4013d8b7c7}, ! Layer 2
+  {4c3622f9-9eb7-4106-a0f6-5f5230b5696b}; ! Layer 3
+
+OS:Material:NoMass,
+  {a2439451-d7fe-42b7-81b7-ad4013d8b7c7}, ! Handle
+  AIR,                                    ! Name
+  Smooth,                                 ! Roughness
+  0.251489,                               ! Thermal Resistance {m2-K/W}
+  0.8,                                    ! Thermal Absorptance
+  0.5,                                    ! Solar Absorptance
+  0.5;                                    ! Visible Absorptance
+

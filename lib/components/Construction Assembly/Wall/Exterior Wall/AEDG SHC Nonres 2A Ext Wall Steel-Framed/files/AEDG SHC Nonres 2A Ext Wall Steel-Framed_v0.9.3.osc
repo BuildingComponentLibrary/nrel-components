@@ -1,0 +1,70 @@
+
+OS:Version,
+  {5bde10bd-5072-4269-ac5d-be6178deac46}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Construction,
+  {b19c99b2-4226-4705-9643-cf0e68e1bb7c}, ! Handle
+  AEDG SHC Nonres 2A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Surface Rendering Name
+  {7094f1cd-7fcc-4f07-861d-62582a044d51}, ! Layer 1
+  {efb25018-600e-4707-a70c-f7a24ca5a13c}, ! Layer 2
+  {376a1214-9a31-4a99-acc6-53ecb7b7d0ac}; ! Layer 3
+
+OS:Material:NoMass,
+  {7094f1cd-7fcc-4f07-861d-62582a044d51}, ! Handle
+  MAT-SHEATH,                             ! Name
+  Rough,                                  ! Roughness
+  0.36256,                                ! Thermal Resistance {m2-K/W}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {efb25018-600e-4707-a70c-f7a24ca5a13c}, ! Handle
+  Wall Insulation [59],                   ! Name
+  MediumRough,                            ! Roughness
+  0.0965812,                              ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {376a1214-9a31-4a99-acc6-53ecb7b7d0ac}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {53b3ee86-d8e3-43a6-94fa-702d3a035e7c}, ! Handle
+  AEDG SHC Nonres 2A Ext Wall Steel-Framed, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  AEDG SHC Nonres 2A Ext Wall Steel-Framed, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  0,                                      ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:ComponentData,
+  {23ae3ed4-e588-448d-a2c2-e06587a0fb7c}, ! Handle
+  Component Data 1,                       ! Name
+  {6fafc7e0-1ca3-46ef-8eb6-ebd0e497b770}, ! UUID
+  {a27a8fe6-a5b3-4b85-bdac-5f58a65865ed}, ! Version UUID
+  1363981915,                             ! Creation Timestamp
+  1363981915,                             ! Version Timestamp
+  {b19c99b2-4226-4705-9643-cf0e68e1bb7c}, ! Name of Object 1
+  {7094f1cd-7fcc-4f07-861d-62582a044d51}, ! Name of Object 2
+  {efb25018-600e-4707-a70c-f7a24ca5a13c}, ! Name of Object 3
+  {376a1214-9a31-4a99-acc6-53ecb7b7d0ac}, ! Name of Object 4
+  {53b3ee86-d8e3-43a6-94fa-702d3a035e7c}; ! Name of Object 5
+

@@ -1,0 +1,55 @@
+
+OS:Version,
+  {ecbbcabc-6b49-4035-8824-04267b4bfc5c}, !- Handle
+  1.0.6;                                  !- Version Identifier
+
+OS:Construction,
+  {f0c799f3-6a17-40ad-910d-eb6543a648a1}, !- Handle
+  189.1-2011 Nonres 1 Ext Wall Mass 8in CMU partially grouted, !- Name
+  ,                                       !- Surface Rendering Name
+  {04a9413d-f29a-4d1c-aea2-63d4d458ee67}, !- Layer 1
+  {43d1be08-b766-499d-8b7c-f099192d0efc}, !- Layer 2
+  {192de4ff-75ed-4790-90ff-92d605584601}; !- Layer 3
+
+OS:Material,
+  {04a9413d-f29a-4d1c-aea2-63d4d458ee67}, !- Handle
+  M10 200mm concrete block wall,          !- Name
+  MediumRough,                            !- Roughness
+  0.2032,                                 !- Thickness {m}
+  0.72,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  920;                                    !- Specific Heat {J/kg-K}
+
+OS:Material:NoMass,
+  {43d1be08-b766-499d-8b7c-f099192d0efc}, !- Handle
+  Continuous Insulation,                  !- Name
+  MediumSmooth,                           !- Roughness
+  0.655001789886127,                      !- Thermal Resistance {m2-K/W}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+OS:Material,
+  {192de4ff-75ed-4790-90ff-92d605584601}, !- Handle
+  G01 13mm gypsum board,                  !- Name
+  Smooth,                                 !- Roughness
+  0.0127,                                 !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  800,                                    !- Density {kg/m3}
+  1090,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+OS:ComponentData,
+  {208f3f65-e6a4-4b4e-adfa-741c85571c06}, !- Handle
+  Component Data 1,                       !- Name
+  {61b82c35-df4f-4892-9133-8b01223df9b2}, !- UUID
+  {f5f8af87-7139-4b1f-9514-bbae3e894f1c}, !- Version UUID
+  1380910780,                             !- Creation Timestamp
+  1380910780,                             !- Version Timestamp
+  {f0c799f3-6a17-40ad-910d-eb6543a648a1}, !- Name of Object 1
+  {04a9413d-f29a-4d1c-aea2-63d4d458ee67}, !- Name of Object 2
+  {43d1be08-b766-499d-8b7c-f099192d0efc}, !- Name of Object 3
+  {192de4ff-75ed-4790-90ff-92d605584601}; !- Name of Object 4
+

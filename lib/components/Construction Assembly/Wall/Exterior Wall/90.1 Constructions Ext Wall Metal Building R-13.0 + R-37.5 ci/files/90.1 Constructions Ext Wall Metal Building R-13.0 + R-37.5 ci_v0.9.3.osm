@@ -1,0 +1,60 @@
+
+OS:Version,
+  {25c29f72-2962-44b9-9332-6a909d30efbb}, ! Handle
+  0.9.3;                                  ! Version Identifier
+
+OS:Material,
+  {f2367bc3-a947-448a-b2e0-c56c96f7bbfb}, ! Handle
+  Wall Insulation [125],                  ! Name
+  MediumRough,                            ! Roughness
+  0.356417,                               ! Thickness {m}
+  0.045,                                  ! Conductivity {W/m-K}
+  265,                                    ! Density {kg/m3}
+  836.8,                                  ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.7,                                    ! Solar Absorptance
+  0.7;                                    ! Visible Absorptance
+
+OS:Material,
+  {2d1ea131-0589-4be8-8845-59a7caa86cb7}, ! Handle
+  1/2IN Gypsum,                           ! Name
+  Smooth,                                 ! Roughness
+  0.01271,                                ! Thickness {m}
+  0.16,                                   ! Conductivity {W/m-K}
+  784.9,                                  ! Density {kg/m3}
+  830,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.92,                                   ! Solar Absorptance
+  0.92;                                   ! Visible Absorptance
+
+OS:Material,
+  {ee1b7cd9-4197-4ddf-aad5-eac33edb23e3}, ! Handle
+  Metal Siding,                           ! Name
+  Smooth,                                 ! Roughness
+  0.0015,                                 ! Thickness {m}
+  44.96,                                  ! Conductivity {W/m-K}
+  7688.86,                                ! Density {kg/m3}
+  410,                                    ! Specific Heat {J/kg-K}
+  0.9,                                    ! Thermal Absorptance
+  0.2,                                    ! Solar Absorptance
+  0.2;                                    ! Visible Absorptance
+
+OS:ComponentCost:LineItem,
+  {3f58d2dc-bad5-4458-952c-7adcfc5f446f}, ! Handle
+  90.1 Constructions Ext Wall Metal Building R-13.0 + R-37.5 ci, ! Name
+  ,                                       ! Type
+  Construction,                           ! Line Item Type
+  90.1 Constructions Ext Wall Metal Building R-13.0 + R-37.5 ci, ! Item Name
+  ,                                       ! Object End Use Key
+  ,                                       ! Quantity {dimensionless}
+  138.373,                                ! Material Cost {$}
+  CostPerArea;                            ! Material Cost Units
+
+OS:Construction,
+  {7a16a834-13ee-4fff-b61c-aeab2e5f0c83}, ! Handle
+  90.1 Constructions Ext Wall Metal Building R-13.0 + R-37.5 ci, ! Name
+  ,                                       ! Surface Rendering Name
+  {ee1b7cd9-4197-4ddf-aad5-eac33edb23e3}, ! Layer 1
+  {f2367bc3-a947-448a-b2e0-c56c96f7bbfb}, ! Layer 2
+  {2d1ea131-0589-4be8-8845-59a7caa86cb7}; ! Layer 3
+

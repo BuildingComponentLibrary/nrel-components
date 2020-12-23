@@ -1,0 +1,38 @@
+
+OS:Version,
+  {1f01c3df-aadb-4ce7-a165-ebffcb803390}, !- Handle
+  1.1.0;                                  !- Version Identifier
+
+OS:Construction,
+  {a3337c91-6913-428d-bc8c-6b868b640d7b}, !- Handle
+  Trp Clr 3mm/13mm Air,                   !- Name
+  ,                                       !- Surface Rendering Name
+  {e7c5ac85-8eaa-4005-8ea1-43dd08c3bdf7}, !- Layer 1
+  {2932a45f-61e5-475c-8d15-c209fcba9600}, !- Layer 2
+  {e7c5ac85-8eaa-4005-8ea1-43dd08c3bdf7}, !- Layer 3
+  {2932a45f-61e5-475c-8d15-c209fcba9600}, !- Layer 4
+  {e7c5ac85-8eaa-4005-8ea1-43dd08c3bdf7}; !- Layer 5
+
+OS:WindowMaterial:Glazing,
+  {e7c5ac85-8eaa-4005-8ea1-43dd08c3bdf7}, !- Handle
+  CLEAR 3MM,                              !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.003,                                  !- Thickness {m}
+  0.837,                                  !- Solar Transmittance at Normal Incidence
+  0.075,                                  !- Front Side Solar Reflectance at Normal Incidence
+  0.075,                                  !- Back Side Solar Reflectance at Normal Incidence
+  0.898,                                  !- Visible Transmittance at Normal Incidence
+  0.081,                                  !- Front Side Visible Reflectance at Normal Incidence
+  0.081,                                  !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.84,                                   !- Back Side Infrared Hemispherical Emissivity
+  0.9;                                    !- Conductivity {W/m-K}
+
+OS:WindowMaterial:Gas,
+  {2932a45f-61e5-475c-8d15-c209fcba9600}, !- Handle
+  AIR 13MM,                               !- Name
+  Air,                                    !- Gas Type
+  0.0127;                                 !- Thickness {m}
+
