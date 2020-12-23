@@ -36,6 +36,7 @@ The hierarchy of components in this repo is as follows:
 		- Lamp Ballasts
 	- Lamps
 		- Non-SSL Lamps
+		- SSL Replacement Lamps
 - EmissionFactors
 	- Electricity Emission Factors (by State)
 	- FossilFuel Emission Factors (by Type)
